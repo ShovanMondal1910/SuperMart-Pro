@@ -24,24 +24,24 @@ namespace SuperMart_Pro.View.Admin
             if (!ValidateInputs()) return;
 
             var admin = new Models.Admin(
-                adminID: AdminIDtextBox.Text.Trim(),
-                adminType: (AdminType)(AdminTypecomboBox.SelectedIndex + 1),
                 userID: UserIDtextBox.Text.Trim(),
                 fullName: FullNametextBox.Text.Trim(),
                 dateOfBirth: DateOfBirthdatePicker.Value,
-                gender: GendercomboBox.SelectedItem?.ToString() ?? string.Empty,
+                gender: MaleradioButton.Checked ? "Male" : "Female",
                 photo: Array.Empty<byte>(),
                 phoneNumber: PhoneNumbertextBox.Text.Trim(),
                 email: EmailtextBox.Text.Trim(),
-                address: AddresstextBox.Text.Trim(),
+                address: AddressrichTextBox.Text.Trim(),
                 username: UsernametextBox.Text.Trim(),
                 passwordHash: PasswordtextBox.Text.Trim(),
+                isActive: IsActivecheckBox.Checked,
+                branchID: BranchIDtextBox.Text.Trim(),
                 securityQuestion1: FirstSecurityQuestioncomboBox.SelectedItem?.ToString() ?? string.Empty,
                 securityAnswer1: FirstSecurityAnswertextBox.Text.Trim(),
                 securityQuestion2: SecondSecurityQuestioncomboBox.SelectedItem?.ToString() ?? string.Empty,
                 securityAnswer2: SecondSecurityAnswertextBox.Text.Trim(),
-                isActive: IsActivecheckBox.Checked,
-                branchID: BranchIDtextBox.Text.Trim(),
+                adminID: AdminIDtextBox.Text.Trim(),
+                adminType: (AdminType)(AdminTypecomboBox.SelectedIndex + 1),
                 lastLogin: null,
                 lastLogout: null,
                 canManageUsers: CanManageUserscheckBox.Checked,
@@ -72,40 +72,162 @@ namespace SuperMart_Pro.View.Admin
 
         private bool ValidateInputs()
         {
-            if (string.IsNullOrWhiteSpace(AdminIDtextBox.Text))
-            { 
-                MessageBox.Show("Admin ID is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning); AdminIDtextBox.Focus(); 
-                return false; 
-            }
+            // --- Left column (top to bottom) ---
+
+            // User ID
             if (string.IsNullOrWhiteSpace(UserIDtextBox.Text))
-            { 
-                MessageBox.Show("User ID is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning); UserIDtextBox.Focus(); 
+            {
+                MessageBox.Show("User ID is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                UserIDtextBox.Focus();
                 return false;
             }
+
+            // Full Name
             if (string.IsNullOrWhiteSpace(FullNametextBox.Text))
-            {   
-                MessageBox.Show("Full Name is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning); FullNametextBox.Focus(); 
-                return false; 
+            {
+                MessageBox.Show("Full Name is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                FullNametextBox.Focus();
+                return false;
             }
-            if (GendercomboBox.SelectedIndex == -1)
-            { 
-                MessageBox.Show("Please select a Gender.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning); GendercomboBox.Focus(); 
-                return false; 
+
+            // Date of Birth – must be in the past
+            if (DateOfBirthdatePicker.Value.Date >= DateTime.Today)
+            {
+                MessageBox.Show("Date of Birth must be in the past.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                DateOfBirthdatePicker.Focus();
+                return false;
             }
-            if (AdminTypecomboBox.SelectedIndex == -1)
-            { 
-                MessageBox.Show("Please select an Admin Type.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning); AdminTypecomboBox.Focus(); 
-                return false; 
+
+            // Gender
+            if (!MaleradioButton.Checked && !FemaleradioButton.Checked)
+            {
+                MessageBox.Show("Please select a Gender.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MaleradioButton.Focus();
+                return false;
             }
+
+            // Phone Number
+            if (string.IsNullOrWhiteSpace(PhoneNumbertextBox.Text))
+            {
+                MessageBox.Show("Phone Number is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                PhoneNumbertextBox.Focus();
+                return false;
+            }
+            if (!System.Text.RegularExpressions.Regex.IsMatch(PhoneNumbertextBox.Text.Trim(), @"^\+?[0-9\s\-]{7,15}$"))
+            {
+                MessageBox.Show("Phone Number is not valid.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                PhoneNumbertextBox.Focus();
+                return false;
+            }
+
+            // Email
+            if (string.IsNullOrWhiteSpace(EmailtextBox.Text))
+            {
+                MessageBox.Show("Email is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                EmailtextBox.Focus();
+                return false;
+            }
+            if (!System.Text.RegularExpressions.Regex.IsMatch(EmailtextBox.Text.Trim(), @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                MessageBox.Show("Email address is not valid.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                EmailtextBox.Focus();
+                return false;
+            }
+
+            // Address
+            if (string.IsNullOrWhiteSpace(AddressrichTextBox.Text))
+            {
+                MessageBox.Show("Address is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                AddressrichTextBox.Focus();
+                return false;
+            }
+
+            // --- Right column (top to bottom) ---
+
+            // Username
             if (string.IsNullOrWhiteSpace(UsernametextBox.Text))
-            { 
-                MessageBox.Show("Username is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning); UsernametextBox.Focus(); 
-                return false; 
+            {
+                MessageBox.Show("Username is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                UsernametextBox.Focus();
+                return false;
             }
+
+            // Password
             if (string.IsNullOrWhiteSpace(PasswordtextBox.Text))
             {
-                MessageBox.Show("Password is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning); PasswordtextBox.Focus(); 
-                return false; 
+                MessageBox.Show("Password is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                PasswordtextBox.Focus();
+                return false;
+            }
+            if (PasswordtextBox.Text.Length < 8)
+            {
+                MessageBox.Show("Password must be at least 8 characters.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                PasswordtextBox.Focus();
+                return false;
+            }
+
+            // Branch ID
+            if (string.IsNullOrWhiteSpace(BranchIDtextBox.Text))
+            {
+                MessageBox.Show("Branch ID is required. Use the Search button to select a branch.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                BranchIDtextBox.Focus();
+                return false;
+            }
+
+            // First Security Question
+            if (FirstSecurityQuestioncomboBox.SelectedIndex == -1 || string.IsNullOrWhiteSpace(FirstSecurityQuestioncomboBox.SelectedItem?.ToString()))
+            {
+                MessageBox.Show("Please select a First Security Question.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                FirstSecurityQuestioncomboBox.Focus();
+                return false;
+            }
+
+            // First Security Answer
+            if (string.IsNullOrWhiteSpace(FirstSecurityAnswertextBox.Text))
+            {
+                MessageBox.Show("First Security Answer is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                FirstSecurityAnswertextBox.Focus();
+                return false;
+            }
+
+            // Second Security Question
+            if (SecondSecurityQuestioncomboBox.SelectedIndex == -1 || string.IsNullOrWhiteSpace(SecondSecurityQuestioncomboBox.SelectedItem?.ToString()))
+            {
+                MessageBox.Show("Please select a Second Security Question.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                SecondSecurityQuestioncomboBox.Focus();
+                return false;
+            }
+
+            // Second Security Answer
+            if (string.IsNullOrWhiteSpace(SecondSecurityAnswertextBox.Text))
+            {
+                MessageBox.Show("Second Security Answer is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                SecondSecurityAnswertextBox.Focus();
+                return false;
+            }
+
+            // Both security questions must be different
+            if (FirstSecurityQuestioncomboBox.SelectedItem?.ToString() == SecondSecurityQuestioncomboBox.SelectedItem?.ToString())
+            {
+                MessageBox.Show("First and Second Security Questions must be different.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                SecondSecurityQuestioncomboBox.Focus();
+                return false;
+            }
+
+            // Admin ID
+            if (string.IsNullOrWhiteSpace(AdminIDtextBox.Text))
+            {
+                MessageBox.Show("Admin ID is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                AdminIDtextBox.Focus();
+                return false;
+            }
+
+            // Admin Type
+            if (AdminTypecomboBox.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please select an Admin Type.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                AdminTypecomboBox.Focus();
+                return false;
             }
 
             return true;
@@ -117,11 +239,12 @@ namespace SuperMart_Pro.View.Admin
             UserIDtextBox.Clear();
             FullNametextBox.Clear();
             DateOfBirthdatePicker.Value = DateTime.Today;
-            GendercomboBox.SelectedIndex = -1;
+            MaleradioButton.Checked = false;
+            FemaleradioButton.Checked = false;
             PhotopictureBox.Image = null;
             PhoneNumbertextBox.Clear();
             EmailtextBox.Clear();
-            AddresstextBox.Clear();
+            AddressrichTextBox.Clear();
             UsernametextBox.Clear();
             PasswordtextBox.Clear();
             AdminTypecomboBox.SelectedIndex = -1;
@@ -132,6 +255,11 @@ namespace SuperMart_Pro.View.Admin
             CanManageBranchescheckBox.Checked = false;
             CanViewReportscheckBox.Checked = false;
             AdminIDtextBox.Focus();
+        }
+
+        private void BranchIDsearchbutton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

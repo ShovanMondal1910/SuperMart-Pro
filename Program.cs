@@ -1,3 +1,6 @@
+using SuperMart_Pro.View.Auth;
+using SuperMart_Pro.View.Admin;
+
 namespace SuperMart_Pro
 {
     internal static class Program
@@ -11,7 +14,7 @@ namespace SuperMart_Pro
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new UpdateAdminGUI());
         }
     }
 }

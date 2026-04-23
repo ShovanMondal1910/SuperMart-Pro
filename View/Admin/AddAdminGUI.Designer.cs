@@ -22,7 +22,6 @@ namespace SuperMart_Pro.View.Admin
             DateOfBirthlabel = new Label();
             DateOfBirthdatePicker = new DateTimePicker();
             Genderlabel = new Label();
-            GendercomboBox = new ComboBox();
             Photolabel = new Label();
             PhotopictureBox = new PictureBox();
             BrowsePhotobutton = new Button();
@@ -31,7 +30,6 @@ namespace SuperMart_Pro.View.Admin
             Emaillabel = new Label();
             EmailtextBox = new TextBox();
             Addresslabel = new Label();
-            AddresstextBox = new TextBox();
             Usernamelabel = new Label();
             UsernametextBox = new TextBox();
             Passwordlabel = new Label();
@@ -60,6 +58,9 @@ namespace SuperMart_Pro.View.Admin
             FirstSecurityAnswertextBox = new TextBox();
             FirstSecurityQuestioncomboBox = new ComboBox();
             FirstSecurityQuestionlabel = new Label();
+            MaleradioButton = new RadioButton();
+            FemaleradioButton = new RadioButton();
+            AddressrichTextBox = new RichTextBox();
             ((System.ComponentModel.ISupportInitialize)PhotopictureBox).BeginInit();
             SuspendLayout();
             // 
@@ -131,21 +132,11 @@ namespace SuperMart_Pro.View.Admin
             // 
             Genderlabel.Anchor = AnchorStyles.None;
             Genderlabel.AutoSize = true;
-            Genderlabel.Location = new Point(139, 297);
+            Genderlabel.Location = new Point(139, 287);
             Genderlabel.Name = "Genderlabel";
             Genderlabel.Size = new Size(74, 21);
             Genderlabel.TabIndex = 7;
             Genderlabel.Text = "Gender :";
-            // 
-            // GendercomboBox
-            // 
-            GendercomboBox.Anchor = AnchorStyles.None;
-            GendercomboBox.FormattingEnabled = true;
-            GendercomboBox.Items.AddRange(new object[] { "Male", "Female", "Other" });
-            GendercomboBox.Location = new Point(229, 294);
-            GendercomboBox.Name = "GendercomboBox";
-            GendercomboBox.Size = new Size(280, 29);
-            GendercomboBox.TabIndex = 8;
             // 
             // Photolabel
             // 
@@ -225,14 +216,6 @@ namespace SuperMart_Pro.View.Admin
             Addresslabel.TabIndex = 16;
             Addresslabel.Text = "Address :";
             // 
-            // AddresstextBox
-            // 
-            AddresstextBox.Anchor = AnchorStyles.None;
-            AddresstextBox.Location = new Point(229, 648);
-            AddresstextBox.Name = "AddresstextBox";
-            AddresstextBox.Size = new Size(280, 29);
-            AddresstextBox.TabIndex = 17;
-            // 
             // Usernamelabel
             // 
             Usernamelabel.Anchor = AnchorStyles.None;
@@ -303,7 +286,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             BranchNamelabel.Anchor = AnchorStyles.None;
             BranchNamelabel.AutoSize = true;
-            BranchNamelabel.Location = new Point(630, 344);
+            BranchNamelabel.Location = new Point(630, 342);
             BranchNamelabel.Name = "BranchNamelabel";
             BranchNamelabel.Size = new Size(120, 21);
             BranchNamelabel.TabIndex = 25;
@@ -312,7 +295,7 @@ namespace SuperMart_Pro.View.Admin
             // BranchNametextBox
             // 
             BranchNametextBox.Anchor = AnchorStyles.None;
-            BranchNametextBox.Location = new Point(777, 340);
+            BranchNametextBox.Location = new Point(777, 338);
             BranchNametextBox.Name = "BranchNametextBox";
             BranchNametextBox.ReadOnly = true;
             BranchNametextBox.Size = new Size(280, 29);
@@ -340,7 +323,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             AdminTypelabel.Anchor = AnchorStyles.None;
             AdminTypelabel.AutoSize = true;
-            AdminTypelabel.Location = new Point(653, 679);
+            AdminTypelabel.Location = new Point(653, 680);
             AdminTypelabel.Name = "AdminTypelabel";
             AdminTypelabel.Size = new Size(112, 21);
             AdminTypelabel.TabIndex = 29;
@@ -351,7 +334,7 @@ namespace SuperMart_Pro.View.Admin
             AdminTypecomboBox.Anchor = AnchorStyles.None;
             AdminTypecomboBox.FormattingEnabled = true;
             AdminTypecomboBox.Items.AddRange(new object[] { "Super Admin", "Branch Admin" });
-            AdminTypecomboBox.Location = new Point(777, 673);
+            AdminTypecomboBox.Location = new Point(777, 677);
             AdminTypecomboBox.Name = "AdminTypecomboBox";
             AdminTypecomboBox.Size = new Size(280, 29);
             AdminTypecomboBox.TabIndex = 30;
@@ -360,7 +343,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             CanManageUserscheckBox.Anchor = AnchorStyles.None;
             CanManageUserscheckBox.AutoSize = true;
-            CanManageUserscheckBox.Location = new Point(673, 735);
+            CanManageUserscheckBox.Location = new Point(542, 735);
             CanManageUserscheckBox.Name = "CanManageUserscheckBox";
             CanManageUserscheckBox.Size = new Size(170, 25);
             CanManageUserscheckBox.TabIndex = 31;
@@ -371,7 +354,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             CanManageBranchescheckBox.Anchor = AnchorStyles.None;
             CanManageBranchescheckBox.AutoSize = true;
-            CanManageBranchescheckBox.Location = new Point(849, 735);
+            CanManageBranchescheckBox.Location = new Point(738, 735);
             CanManageBranchescheckBox.Name = "CanManageBranchescheckBox";
             CanManageBranchescheckBox.Size = new Size(196, 25);
             CanManageBranchescheckBox.TabIndex = 32;
@@ -382,7 +365,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             CanViewReportscheckBox.Anchor = AnchorStyles.None;
             CanViewReportscheckBox.AutoSize = true;
-            CanViewReportscheckBox.Location = new Point(1051, 735);
+            CanViewReportscheckBox.Location = new Point(957, 735);
             CanViewReportscheckBox.Name = "CanViewReportscheckBox";
             CanViewReportscheckBox.Size = new Size(166, 25);
             CanViewReportscheckBox.TabIndex = 33;
@@ -436,6 +419,7 @@ namespace SuperMart_Pro.View.Admin
             BranchIDsearchbutton.TabIndex = 37;
             BranchIDsearchbutton.Text = "Search";
             BranchIDsearchbutton.UseVisualStyleBackColor = true;
+            BranchIDsearchbutton.Click += BranchIDsearchbutton_Click;
             // 
             // SecondSecurityAnswerlabel
             // 
@@ -450,7 +434,7 @@ namespace SuperMart_Pro.View.Admin
             // SecondSecurityAnswertextBox
             // 
             SecondSecurityAnswertextBox.Anchor = AnchorStyles.None;
-            SecondSecurityAnswertextBox.Location = new Point(777, 569);
+            SecondSecurityAnswertextBox.Location = new Point(777, 566);
             SecondSecurityAnswertextBox.Name = "SecondSecurityAnswertextBox";
             SecondSecurityAnswertextBox.Size = new Size(280, 29);
             SecondSecurityAnswertextBox.TabIndex = 44;
@@ -462,7 +446,7 @@ namespace SuperMart_Pro.View.Admin
             SecondSecurityQuestioncomboBox.Items.AddRange(new object[] { "What was the name of your first school?", "", "In which city or village were you born?", "", "What is the name of your childhood best friend?", "What was your first pet’s name?", "", "What is your favorite teacher’s name?", "", "What was the model of your first mobile phone?", "", "What is your mother’s middle name?", "", "What is the name of the street you grew up on?", "", "What is your favorite book or movie from childhood?", "", "What was your dream job as a child?" });
             SecondSecurityQuestioncomboBox.Location = new Point(777, 511);
             SecondSecurityQuestioncomboBox.Name = "SecondSecurityQuestioncomboBox";
-            SecondSecurityQuestioncomboBox.Size = new Size(280, 29);
+            SecondSecurityQuestioncomboBox.Size = new Size(389, 29);
             SecondSecurityQuestioncomboBox.TabIndex = 43;
             // 
             // SecondSecurityQuestionlalabel
@@ -500,7 +484,7 @@ namespace SuperMart_Pro.View.Admin
             FirstSecurityQuestioncomboBox.Items.AddRange(new object[] { "What was the name of your first school?", "", "In which city or village were you born?", "", "What is the name of your childhood best friend?", "What was your first pet’s name?", "", "What is your favorite teacher’s name?", "", "What was the model of your first mobile phone?", "", "What is your mother’s middle name?", "", "What is the name of the street you grew up on?", "", "What is your favorite book or movie from childhood?", "", "What was your dream job as a child?" });
             FirstSecurityQuestioncomboBox.Location = new Point(777, 395);
             FirstSecurityQuestioncomboBox.Name = "FirstSecurityQuestioncomboBox";
-            FirstSecurityQuestioncomboBox.Size = new Size(280, 29);
+            FirstSecurityQuestioncomboBox.Size = new Size(389, 29);
             FirstSecurityQuestioncomboBox.TabIndex = 39;
             // 
             // FirstSecurityQuestionlabel
@@ -513,11 +497,47 @@ namespace SuperMart_Pro.View.Admin
             FirstSecurityQuestionlabel.TabIndex = 38;
             FirstSecurityQuestionlabel.Text = "First Security Question :";
             // 
+            // MaleradioButton
+            // 
+            MaleradioButton.Anchor = AnchorStyles.None;
+            MaleradioButton.AutoSize = true;
+            MaleradioButton.Location = new Point(229, 285);
+            MaleradioButton.Name = "MaleradioButton";
+            MaleradioButton.Size = new Size(64, 25);
+            MaleradioButton.TabIndex = 46;
+            MaleradioButton.TabStop = true;
+            MaleradioButton.Text = "Male";
+            MaleradioButton.UseVisualStyleBackColor = true;
+            // 
+            // FemaleradioButton
+            // 
+            FemaleradioButton.Anchor = AnchorStyles.None;
+            FemaleradioButton.AutoSize = true;
+            FemaleradioButton.Location = new Point(347, 287);
+            FemaleradioButton.Name = "FemaleradioButton";
+            FemaleradioButton.Size = new Size(81, 25);
+            FemaleradioButton.TabIndex = 47;
+            FemaleradioButton.TabStop = true;
+            FemaleradioButton.Text = "Female";
+            FemaleradioButton.UseVisualStyleBackColor = true;
+            // 
+            // AddressrichTextBox
+            // 
+            AddressrichTextBox.Anchor = AnchorStyles.None;
+            AddressrichTextBox.Location = new Point(229, 648);
+            AddressrichTextBox.Name = "AddressrichTextBox";
+            AddressrichTextBox.Size = new Size(275, 81);
+            AddressrichTextBox.TabIndex = 48;
+            AddressrichTextBox.Text = "";
+            // 
             // AddAdminGUI
             // 
             AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1231, 858);
+            Controls.Add(AddressrichTextBox);
+            Controls.Add(FemaleradioButton);
+            Controls.Add(MaleradioButton);
             Controls.Add(SecondSecurityAnswerlabel);
             Controls.Add(SecondSecurityAnswertextBox);
             Controls.Add(SecondSecurityQuestioncomboBox);
@@ -546,7 +566,6 @@ namespace SuperMart_Pro.View.Admin
             Controls.Add(Passwordlabel);
             Controls.Add(UsernametextBox);
             Controls.Add(Usernamelabel);
-            Controls.Add(AddresstextBox);
             Controls.Add(Addresslabel);
             Controls.Add(EmailtextBox);
             Controls.Add(Emaillabel);
@@ -555,7 +574,6 @@ namespace SuperMart_Pro.View.Admin
             Controls.Add(BrowsePhotobutton);
             Controls.Add(PhotopictureBox);
             Controls.Add(Photolabel);
-            Controls.Add(GendercomboBox);
             Controls.Add(Genderlabel);
             Controls.Add(DateOfBirthdatePicker);
             Controls.Add(DateOfBirthlabel);
@@ -584,7 +602,6 @@ namespace SuperMart_Pro.View.Admin
         private Label DateOfBirthlabel;
         private DateTimePicker DateOfBirthdatePicker;
         private Label Genderlabel;
-        private ComboBox GendercomboBox;
         private Label Photolabel;
         private PictureBox PhotopictureBox;
         private Button BrowsePhotobutton;
@@ -593,7 +610,6 @@ namespace SuperMart_Pro.View.Admin
         private Label Emaillabel;
         private TextBox EmailtextBox;
         private Label Addresslabel;
-        private TextBox AddresstextBox;
         private Label Usernamelabel;
         private TextBox UsernametextBox;
         private Label Passwordlabel;
@@ -622,5 +638,8 @@ namespace SuperMart_Pro.View.Admin
         private TextBox FirstSecurityAnswertextBox;
         private ComboBox FirstSecurityQuestioncomboBox;
         private Label FirstSecurityQuestionlabel;
+        private RadioButton MaleradioButton;
+        private RadioButton FemaleradioButton;
+        private RichTextBox AddressrichTextBox;
     }
 }
