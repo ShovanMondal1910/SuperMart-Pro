@@ -66,10 +66,10 @@
             FullNamelabel = new Label();
             UserIDtextBox = new TextBox();
             UserIDlabel = new Label();
-            Headerpanel = new Panel();
             SearchgroupBox = new GroupBox();
             UserSearchbutton = new Button();
             SearchUserTextBox = new TextBox();
+            Headerpanel = new Panel();
             ((System.ComponentModel.ISupportInitialize)PhotopictureBox).BeginInit();
             SearchgroupBox.SuspendLayout();
             SuspendLayout();
@@ -459,15 +459,6 @@
             UserIDlabel.TabIndex = 50;
             UserIDlabel.Text = "User ID :";
             // 
-            // Headerpanel
-            // 
-            Headerpanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            Headerpanel.BackColor = Color.Tomato;
-            Headerpanel.Location = new Point(0, 1);
-            Headerpanel.Name = "Headerpanel";
-            Headerpanel.Size = new Size(1231, 96);
-            Headerpanel.TabIndex = 49;
-            // 
             // SearchgroupBox
             // 
             SearchgroupBox.Anchor = AnchorStyles.None;
@@ -491,13 +482,22 @@
             UserSearchbutton.UseVisualStyleBackColor = true;
             UserSearchbutton.Click += UserSearchbutton_Click;
             // 
-            // textBox1
+            // SearchUserTextBox
             // 
             SearchUserTextBox.Anchor = AnchorStyles.None;
             SearchUserTextBox.Location = new Point(85, 36);
-            SearchUserTextBox.Name = "textBox1";
+            SearchUserTextBox.Name = "SearchUserTextBox";
             SearchUserTextBox.Size = new Size(280, 29);
             SearchUserTextBox.TabIndex = 67;
+            // 
+            // Headerpanel
+            // 
+            Headerpanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            Headerpanel.BackColor = Color.Tomato;
+            Headerpanel.Location = new Point(0, 1);
+            Headerpanel.Name = "Headerpanel";
+            Headerpanel.Size = new Size(1231, 96);
+            Headerpanel.TabIndex = 49;
             // 
             // UpdateAdminGUI
             // 
@@ -595,9 +595,9 @@
         private Label FullNamelabel;
         private TextBox UserIDtextBox;
         private Label UserIDlabel;
-        private Panel Headerpanel;
         private GroupBox SearchgroupBox;
         private Button UserSearchbutton;
         private TextBox SearchUserTextBox;
+        private Panel Headerpanel;
     }
 }
