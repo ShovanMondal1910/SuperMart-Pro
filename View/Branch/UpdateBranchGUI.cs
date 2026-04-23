@@ -1,0 +1,106 @@
+using SuperMart_Pro.Models;
+using System;
+using System.Windows.Forms;
+
+namespace SuperMart_Pro.View.Branch
+{
+    public partial class UpdateBranchGUI : Form
+    {
+        public UpdateBranchGUI()
+        {
+            InitializeComponent();
+        }
+
+        private void Searchbutton_Click(object sender, EventArgs e)
+        {
+            string searchId = SearchtextBox.Text.Trim();
+            if (string.IsNullOrWhiteSpace(searchId))
+            {
+                MessageBox.Show("Please enter a Branch ID to search.", "Search", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            // TODO: load branch from controller/service by searchId and populate fields
+            MessageBox.Show($"Search for branch '{searchId}' not yet implemented.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void Savebutton_Click(object sender, EventArgs e)
+        {
+            if (!ValidateInputs())
+            {
+                return;
+            }
+
+            var branch = new Models.Branch(
+                branchID: BranchIDtextBox.Text.Trim(),
+                branchName: BranchNametextBox.Text.Trim(),
+                branchType: BranchTypecomboBox.SelectedItem?.ToString() ?? string.Empty,
+                branchAddress: BranchAddresstextBox.Text.Trim(),
+                branchZip: BranchZiptextBox.Text.Trim(),
+                branchPhone: BranchPhonetextBox.Text.Trim(),
+                branchEmail: BranchEmailtextBox.Text.Trim(),
+                isActive: IsActivecheckBox.Checked,
+                managerID: ManagerIDtextBox.Text.Trim(),
+                createdAt: DateTime.Now,
+                createdBy: Environment.UserName,
+                updatedAt: DateTime.Now,
+                updatedBy: Environment.UserName,
+                deletedAt: null,
+                deletedBy: string.Empty
+            );
+
+            // TODO: pass branch to controller/service layer for update
+            MessageBox.Show("Branch updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ClearFields();
+        }
+
+        private void Clearbutton_Click(object sender, EventArgs e)
+        {
+            ClearFields();
+        }
+
+        private void Cancelbutton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private bool ValidateInputs()
+        {
+            if (string.IsNullOrWhiteSpace(BranchIDtextBox.Text))
+            {
+                MessageBox.Show("Please search and load a branch first.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(BranchNametextBox.Text))
+            {
+                MessageBox.Show("Branch Name is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                BranchNametextBox.Focus(); return false;
+            }
+            if (BranchTypecomboBox.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please select a Branch Type.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                BranchTypecomboBox.Focus(); return false;
+            }
+            if (string.IsNullOrWhiteSpace(BranchPhonetextBox.Text))
+            {
+                MessageBox.Show("Branch Phone is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                BranchPhonetextBox.Focus(); return false;
+            }
+            return true;
+        }
+
+        private void ClearFields()
+        {
+            BranchIDtextBox.Clear();
+            BranchNametextBox.Clear();
+            BranchTypecomboBox.SelectedIndex = -1;
+            BranchAddresstextBox.Clear();
+            BranchZiptextBox.Clear();
+            BranchPhonetextBox.Clear();
+            BranchEmailtextBox.Clear();
+            ManagerIDtextBox.Clear();
+            IsActivecheckBox.Checked = false;
+            SearchtextBox.Clear();
+            SearchtextBox.Focus();
+        }
+    }
+}
