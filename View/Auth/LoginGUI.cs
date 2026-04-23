@@ -54,9 +54,10 @@ namespace SuperMart_Pro.View.Auth
 
         private void ForgetPasswordlabel_Click(object sender, EventArgs e)
         {
-            
             ForgetPasswordGUI forgetPasswordGUI = new ForgetPasswordGUI();
+            this.Hide();
             forgetPasswordGUI.ShowDialog();
+            this.Show();
         }
     }
 }

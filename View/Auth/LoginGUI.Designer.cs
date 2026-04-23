@@ -142,7 +142,7 @@
             // ForgetPasswordlabel
             // 
             ForgetPasswordlabel.AutoSize = true;
-            ForgetPasswordlabel.Location = new Point(985, 598);
+            ForgetPasswordlabel.Location = new Point(930, 596);
             ForgetPasswordlabel.Name = "ForgetPasswordlabel";
             ForgetPasswordlabel.Size = new Size(146, 21);
             ForgetPasswordlabel.TabIndex = 4;

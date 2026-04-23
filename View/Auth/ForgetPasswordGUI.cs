@@ -23,5 +23,10 @@ namespace SuperMart_Pro.View.Auth
         {
 
         }
+
+        private void Cancelbutton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

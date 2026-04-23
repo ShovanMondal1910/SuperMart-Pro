@@ -43,6 +43,7 @@
             label5 = new Label();
             ConfirmNewPasswordtextBox = new TextBox();
             ChangePasswordbutton = new Button();
+            Cancelbutton = new Button();
             SuspendLayout();
             // 
             // panel1
@@ -51,14 +52,14 @@
             panel1.BackColor = Color.Tomato;
             panel1.Location = new Point(3, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(942, 82);
+            panel1.Size = new Size(964, 82);
             panel1.TabIndex = 0;
             // 
             // FirstSecurityQuestionlabel
             // 
             FirstSecurityQuestionlabel.Anchor = AnchorStyles.None;
             FirstSecurityQuestionlabel.AutoSize = true;
-            FirstSecurityQuestionlabel.Location = new Point(112, 128);
+            FirstSecurityQuestionlabel.Location = new Point(123, 128);
             FirstSecurityQuestionlabel.Name = "FirstSecurityQuestionlabel";
             FirstSecurityQuestionlabel.Size = new Size(191, 21);
             FirstSecurityQuestionlabel.TabIndex = 1;
@@ -69,7 +70,7 @@
             FirstSecurityQuestioncomboBox.Anchor = AnchorStyles.None;
             FirstSecurityQuestioncomboBox.FormattingEnabled = true;
             FirstSecurityQuestioncomboBox.Items.AddRange(new object[] { "What was the name of your first school?", "", "In which city or village were you born?", "", "What is the name of your childhood best friend?", "What was your first pet’s name?", "", "What is your favorite teacher’s name?", "", "What was the model of your first mobile phone?", "", "What is your mother’s middle name?", "", "What is the name of the street you grew up on?", "", "What is your favorite book or movie from childhood?", "", "What was your dream job as a child?" });
-            FirstSecurityQuestioncomboBox.Location = new Point(319, 123);
+            FirstSecurityQuestioncomboBox.Location = new Point(330, 123);
             FirstSecurityQuestioncomboBox.Name = "FirstSecurityQuestioncomboBox";
             FirstSecurityQuestioncomboBox.Size = new Size(440, 29);
             FirstSecurityQuestioncomboBox.TabIndex = 2;
@@ -77,7 +78,7 @@
             // FirstSecurityAnswertextBox
             // 
             FirstSecurityAnswertextBox.Anchor = AnchorStyles.None;
-            FirstSecurityAnswertextBox.Location = new Point(319, 181);
+            FirstSecurityAnswertextBox.Location = new Point(330, 181);
             FirstSecurityAnswertextBox.Name = "FirstSecurityAnswertextBox";
             FirstSecurityAnswertextBox.Size = new Size(440, 29);
             FirstSecurityAnswertextBox.TabIndex = 3;
@@ -86,7 +87,7 @@
             // 
             FirstSecurityAnswerlabel.Anchor = AnchorStyles.None;
             FirstSecurityAnswerlabel.AutoSize = true;
-            FirstSecurityAnswerlabel.Location = new Point(123, 186);
+            FirstSecurityAnswerlabel.Location = new Point(134, 186);
             FirstSecurityAnswerlabel.Name = "FirstSecurityAnswerlabel";
             FirstSecurityAnswerlabel.Size = new Size(180, 21);
             FirstSecurityAnswerlabel.TabIndex = 4;
@@ -96,7 +97,7 @@
             // 
             SecondSecurityAnswerlabel.Anchor = AnchorStyles.None;
             SecondSecurityAnswerlabel.AutoSize = true;
-            SecondSecurityAnswerlabel.Location = new Point(101, 300);
+            SecondSecurityAnswerlabel.Location = new Point(112, 300);
             SecondSecurityAnswerlabel.Name = "SecondSecurityAnswerlabel";
             SecondSecurityAnswerlabel.Size = new Size(203, 21);
             SecondSecurityAnswerlabel.TabIndex = 8;
@@ -105,7 +106,7 @@
             // SecondSecurityAnswertextBox
             // 
             SecondSecurityAnswertextBox.Anchor = AnchorStyles.None;
-            SecondSecurityAnswertextBox.Location = new Point(319, 297);
+            SecondSecurityAnswertextBox.Location = new Point(330, 297);
             SecondSecurityAnswertextBox.Name = "SecondSecurityAnswertextBox";
             SecondSecurityAnswertextBox.Size = new Size(440, 29);
             SecondSecurityAnswertextBox.TabIndex = 7;
@@ -115,7 +116,7 @@
             SecondSecurityQuestioncomboBox.Anchor = AnchorStyles.None;
             SecondSecurityQuestioncomboBox.FormattingEnabled = true;
             SecondSecurityQuestioncomboBox.Items.AddRange(new object[] { "What was the name of your first school?", "", "In which city or village were you born?", "", "What is the name of your childhood best friend?", "What was your first pet’s name?", "", "What is your favorite teacher’s name?", "", "What was the model of your first mobile phone?", "", "What is your mother’s middle name?", "", "What is the name of the street you grew up on?", "", "What is your favorite book or movie from childhood?", "", "What was your dream job as a child?" });
-            SecondSecurityQuestioncomboBox.Location = new Point(319, 239);
+            SecondSecurityQuestioncomboBox.Location = new Point(330, 239);
             SecondSecurityQuestioncomboBox.Name = "SecondSecurityQuestioncomboBox";
             SecondSecurityQuestioncomboBox.Size = new Size(440, 29);
             SecondSecurityQuestioncomboBox.TabIndex = 6;
@@ -124,7 +125,7 @@
             // 
             SecondSecurityQuestionlalabel.Anchor = AnchorStyles.None;
             SecondSecurityQuestionlalabel.AutoSize = true;
-            SecondSecurityQuestionlalabel.Location = new Point(89, 243);
+            SecondSecurityQuestionlalabel.Location = new Point(100, 243);
             SecondSecurityQuestionlalabel.Name = "SecondSecurityQuestionlalabel";
             SecondSecurityQuestionlalabel.Size = new Size(214, 21);
             SecondSecurityQuestionlalabel.TabIndex = 5;
@@ -133,7 +134,7 @@
             // Validatebutton
             // 
             Validatebutton.Anchor = AnchorStyles.None;
-            Validatebutton.Location = new Point(465, 354);
+            Validatebutton.Location = new Point(476, 354);
             Validatebutton.Name = "Validatebutton";
             Validatebutton.Size = new Size(121, 35);
             Validatebutton.TabIndex = 9;
@@ -145,7 +146,7 @@
             // 
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
-            label4.Location = new Point(172, 420);
+            label4.Location = new Point(183, 420);
             label4.Name = "label4";
             label4.Size = new Size(132, 21);
             label4.TabIndex = 11;
@@ -154,7 +155,7 @@
             // NewPasswordtextBox
             // 
             NewPasswordtextBox.Anchor = AnchorStyles.None;
-            NewPasswordtextBox.Location = new Point(319, 416);
+            NewPasswordtextBox.Location = new Point(330, 416);
             NewPasswordtextBox.Name = "NewPasswordtextBox";
             NewPasswordtextBox.Size = new Size(440, 29);
             NewPasswordtextBox.TabIndex = 10;
@@ -163,7 +164,7 @@
             // 
             label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
-            label5.Location = new Point(105, 487);
+            label5.Location = new Point(116, 487);
             label5.Name = "label5";
             label5.Size = new Size(199, 21);
             label5.TabIndex = 13;
@@ -172,7 +173,7 @@
             // ConfirmNewPasswordtextBox
             // 
             ConfirmNewPasswordtextBox.Anchor = AnchorStyles.None;
-            ConfirmNewPasswordtextBox.Location = new Point(319, 484);
+            ConfirmNewPasswordtextBox.Location = new Point(330, 484);
             ConfirmNewPasswordtextBox.Name = "ConfirmNewPasswordtextBox";
             ConfirmNewPasswordtextBox.Size = new Size(440, 29);
             ConfirmNewPasswordtextBox.TabIndex = 12;
@@ -180,7 +181,7 @@
             // ChangePasswordbutton
             // 
             ChangePasswordbutton.Anchor = AnchorStyles.None;
-            ChangePasswordbutton.Location = new Point(465, 543);
+            ChangePasswordbutton.Location = new Point(417, 541);
             ChangePasswordbutton.Name = "ChangePasswordbutton";
             ChangePasswordbutton.Size = new Size(121, 32);
             ChangePasswordbutton.TabIndex = 14;
@@ -188,11 +189,22 @@
             ChangePasswordbutton.UseVisualStyleBackColor = true;
             ChangePasswordbutton.Click += ChangePasswordbutton_Click;
             // 
+            // Cancelbutton
+            // 
+            Cancelbutton.Location = new Point(571, 541);
+            Cancelbutton.Name = "Cancelbutton";
+            Cancelbutton.Size = new Size(96, 32);
+            Cancelbutton.TabIndex = 15;
+            Cancelbutton.Text = "Cancel";
+            Cancelbutton.UseVisualStyleBackColor = true;
+            Cancelbutton.Click += Cancelbutton_Click;
+            // 
             // ForgetPasswordGUI
             // 
             AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(945, 642);
+            ClientSize = new Size(967, 642);
+            Controls.Add(Cancelbutton);
             Controls.Add(ChangePasswordbutton);
             Controls.Add(label5);
             Controls.Add(ConfirmNewPasswordtextBox);
@@ -233,5 +245,6 @@
         private Label label5;
         private TextBox ConfirmNewPasswordtextBox;
         private Button ChangePasswordbutton;
+        private Button Cancelbutton;
     }
 }
