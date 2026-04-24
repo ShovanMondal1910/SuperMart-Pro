@@ -15,8 +15,6 @@ namespace SuperMart_Pro.View.Admin
         private void InitializeComponent()
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            Headerpanel = new Panel();
-            HeaderTitlelabel = new Label();
             SearchpanelPanel = new Panel();
             Searchlabel = new Label();
             SearchtextBox = new TextBox();
@@ -26,32 +24,10 @@ namespace SuperMart_Pro.View.Admin
             AdmindataGridView = new DataGridView();
             FooterpanelPanel = new Panel();
             Closebutton = new Button();
-            Headerpanel.SuspendLayout();
             SearchpanelPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)AdmindataGridView).BeginInit();
             FooterpanelPanel.SuspendLayout();
             SuspendLayout();
-            // 
-            // Headerpanel
-            // 
-            Headerpanel.BackColor = Color.Tomato;
-            Headerpanel.Controls.Add(HeaderTitlelabel);
-            Headerpanel.Dock = DockStyle.Top;
-            Headerpanel.Location = new Point(0, 0);
-            Headerpanel.Name = "Headerpanel";
-            Headerpanel.Size = new Size(1400, 65);
-            Headerpanel.TabIndex = 0;
-            // 
-            // HeaderTitlelabel
-            // 
-            HeaderTitlelabel.AutoSize = true;
-            HeaderTitlelabel.Font = new Font("Times New Roman", 22F, FontStyle.Bold);
-            HeaderTitlelabel.ForeColor = Color.White;
-            HeaderTitlelabel.Location = new Point(20, 14);
-            HeaderTitlelabel.Name = "HeaderTitlelabel";
-            HeaderTitlelabel.Size = new Size(220, 35);
-            HeaderTitlelabel.TabIndex = 0;
-            HeaderTitlelabel.Text = "View All Admins";
             // 
             // SearchpanelPanel
             // 
@@ -63,7 +39,7 @@ namespace SuperMart_Pro.View.Admin
             SearchpanelPanel.Controls.Add(Refreshbutton);
             SearchpanelPanel.Controls.Add(TotalRecordslabel);
             SearchpanelPanel.Dock = DockStyle.Top;
-            SearchpanelPanel.Location = new Point(0, 65);
+            SearchpanelPanel.Location = new Point(0, 0);
             SearchpanelPanel.Name = "SearchpanelPanel";
             SearchpanelPanel.Size = new Size(1400, 55);
             SearchpanelPanel.TabIndex = 1;
@@ -130,13 +106,13 @@ namespace SuperMart_Pro.View.Admin
             AdmindataGridView.Dock = DockStyle.Fill;
             AdmindataGridView.EnableHeadersVisualStyles = false;
             AdmindataGridView.GridColor = Color.LightGray;
-            AdmindataGridView.Location = new Point(0, 120);
+            AdmindataGridView.Location = new Point(0, 55);
             AdmindataGridView.Name = "AdmindataGridView";
             AdmindataGridView.ReadOnly = true;
             AdmindataGridView.RowHeadersWidth = 40;
             AdmindataGridView.RowTemplate.Height = 32;
             AdmindataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            AdmindataGridView.Size = new Size(1400, 625);
+            AdmindataGridView.Size = new Size(1400, 690);
             AdmindataGridView.TabIndex = 2;
             AdmindataGridView.SelectionChanged += AdmindataGridView_SelectionChanged;
             // 
@@ -172,15 +148,12 @@ namespace SuperMart_Pro.View.Admin
             Controls.Add(AdmindataGridView);
             Controls.Add(FooterpanelPanel);
             Controls.Add(SearchpanelPanel);
-            Controls.Add(Headerpanel);
             Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
             Name = "ViewAllAdminGUI";
             Text = "View All Admins";
             WindowState = FormWindowState.Maximized;
             Load += ViewAllAdminGUI_Load;
-            Headerpanel.ResumeLayout(false);
-            Headerpanel.PerformLayout();
             SearchpanelPanel.ResumeLayout(false);
             SearchpanelPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)AdmindataGridView).EndInit();
@@ -189,9 +162,6 @@ namespace SuperMart_Pro.View.Admin
         }
 
         #endregion
-
-        private Panel Headerpanel;
-        private Label HeaderTitlelabel;
         private Panel SearchpanelPanel;
         private Label Searchlabel;
         private TextBox SearchtextBox;

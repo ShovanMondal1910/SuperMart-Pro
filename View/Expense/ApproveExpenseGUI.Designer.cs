@@ -15,8 +15,6 @@ namespace SuperMart_Pro.View.Expense
         private void InitializeComponent()
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            Headerpanel = new Panel();
-            HeaderTitlelabel = new Label();
             SearchpanelPanel = new Panel();
             Searchlabel = new Label();
             SearchtextBox = new TextBox();
@@ -52,7 +50,6 @@ namespace SuperMart_Pro.View.Expense
             Rejectbutton = new Button();
             FooterpanelPanel = new Panel();
             Closebutton = new Button();
-            Headerpanel.SuspendLayout();
             SearchpanelPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)MainsplitContainer).BeginInit();
             MainsplitContainer.Panel1.SuspendLayout();
@@ -66,27 +63,6 @@ namespace SuperMart_Pro.View.Expense
             FooterpanelPanel.SuspendLayout();
             SuspendLayout();
             // 
-            // Headerpanel
-            // 
-            Headerpanel.BackColor = Color.Tomato;
-            Headerpanel.Controls.Add(HeaderTitlelabel);
-            Headerpanel.Dock = DockStyle.Top;
-            Headerpanel.Location = new Point(0, 0);
-            Headerpanel.Name = "Headerpanel";
-            Headerpanel.Size = new Size(1463, 65);
-            Headerpanel.TabIndex = 0;
-            // 
-            // HeaderTitlelabel
-            // 
-            HeaderTitlelabel.AutoSize = true;
-            HeaderTitlelabel.Font = new Font("Times New Roman", 22F, FontStyle.Bold);
-            HeaderTitlelabel.ForeColor = Color.White;
-            HeaderTitlelabel.Location = new Point(20, 14);
-            HeaderTitlelabel.Name = "HeaderTitlelabel";
-            HeaderTitlelabel.Size = new Size(243, 35);
-            HeaderTitlelabel.TabIndex = 0;
-            HeaderTitlelabel.Text = "Expense Approval";
-            // 
             // SearchpanelPanel
             // 
             SearchpanelPanel.BackColor = Color.WhiteSmoke;
@@ -97,7 +73,7 @@ namespace SuperMart_Pro.View.Expense
             SearchpanelPanel.Controls.Add(Refreshbutton);
             SearchpanelPanel.Controls.Add(PendingCountlabel);
             SearchpanelPanel.Dock = DockStyle.Top;
-            SearchpanelPanel.Location = new Point(0, 65);
+            SearchpanelPanel.Location = new Point(0, 0);
             SearchpanelPanel.Name = "SearchpanelPanel";
             SearchpanelPanel.Size = new Size(1463, 55);
             SearchpanelPanel.TabIndex = 1;
@@ -156,7 +132,7 @@ namespace SuperMart_Pro.View.Expense
             // MainsplitContainer
             // 
             MainsplitContainer.Dock = DockStyle.Fill;
-            MainsplitContainer.Location = new Point(0, 120);
+            MainsplitContainer.Location = new Point(0, 55);
             MainsplitContainer.Name = "MainsplitContainer";
             // 
             // MainsplitContainer.Panel1
@@ -167,7 +143,7 @@ namespace SuperMart_Pro.View.Expense
             // 
             MainsplitContainer.Panel2.Controls.Add(DetailpanelPanel);
             MainsplitContainer.Panel2.Controls.Add(ActionpanelPanel);
-            MainsplitContainer.Size = new Size(1463, 625);
+            MainsplitContainer.Size = new Size(1463, 690);
             MainsplitContainer.SplitterDistance = 1088;
             MainsplitContainer.TabIndex = 2;
             // 
@@ -193,7 +169,7 @@ namespace SuperMart_Pro.View.Expense
             PendingExpensesdataGridView.RowHeadersWidth = 40;
             PendingExpensesdataGridView.RowTemplate.Height = 32;
             PendingExpensesdataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            PendingExpensesdataGridView.Size = new Size(1088, 625);
+            PendingExpensesdataGridView.Size = new Size(1088, 690);
             PendingExpensesdataGridView.TabIndex = 0;
             PendingExpensesdataGridView.SelectionChanged += PendingExpensesdataGridView_SelectionChanged;
             // 
@@ -205,7 +181,7 @@ namespace SuperMart_Pro.View.Expense
             DetailpanelPanel.Dock = DockStyle.Fill;
             DetailpanelPanel.Location = new Point(0, 0);
             DetailpanelPanel.Name = "DetailpanelPanel";
-            DetailpanelPanel.Size = new Size(371, 565);
+            DetailpanelPanel.Size = new Size(371, 630);
             DetailpanelPanel.TabIndex = 0;
             // 
             // DetailGroupBox
@@ -235,7 +211,7 @@ namespace SuperMart_Pro.View.Expense
             DetailGroupBox.Location = new Point(0, 0);
             DetailGroupBox.Name = "DetailGroupBox";
             DetailGroupBox.Padding = new Padding(12);
-            DetailGroupBox.Size = new Size(371, 565);
+            DetailGroupBox.Size = new Size(371, 630);
             DetailGroupBox.TabIndex = 0;
             DetailGroupBox.TabStop = false;
             DetailGroupBox.Text = "Expense Details";
@@ -429,7 +405,7 @@ namespace SuperMart_Pro.View.Expense
             ActionpanelPanel.Controls.Add(Approvebutton);
             ActionpanelPanel.Controls.Add(Rejectbutton);
             ActionpanelPanel.Dock = DockStyle.Bottom;
-            ActionpanelPanel.Location = new Point(0, 565);
+            ActionpanelPanel.Location = new Point(0, 630);
             ActionpanelPanel.Name = "ActionpanelPanel";
             ActionpanelPanel.Size = new Size(371, 60);
             ActionpanelPanel.TabIndex = 1;
@@ -492,15 +468,12 @@ namespace SuperMart_Pro.View.Expense
             Controls.Add(MainsplitContainer);
             Controls.Add(FooterpanelPanel);
             Controls.Add(SearchpanelPanel);
-            Controls.Add(Headerpanel);
             Font = new Font("Times New Roman", 11F);
             MinimumSize = new Size(1100, 680);
             Name = "ApproveExpenseGUI";
             Text = "Expense Approval";
             WindowState = FormWindowState.Maximized;
             Load += ApproveExpenseGUI_Load;
-            Headerpanel.ResumeLayout(false);
-            Headerpanel.PerformLayout();
             SearchpanelPanel.ResumeLayout(false);
             SearchpanelPanel.PerformLayout();
             MainsplitContainer.Panel1.ResumeLayout(false);
@@ -518,9 +491,6 @@ namespace SuperMart_Pro.View.Expense
         }
 
         #endregion
-
-        private Panel Headerpanel;
-        private Label HeaderTitlelabel;
         private Panel SearchpanelPanel;
         private Label Searchlabel;
         private TextBox SearchtextBox;

@@ -67,7 +67,6 @@
             FullNamelabel = new Label();
             UserIDtextBox = new TextBox();
             UserIDlabel = new Label();
-            Headerpanel = new Panel();
             SearchgroupBox = new GroupBox();
             UserSearchbutton = new Button();
             SearchUserTextBox = new TextBox();
@@ -79,7 +78,7 @@
             // 
             CanViewBranchReportscheckBox.Anchor = AnchorStyles.None;
             CanViewBranchReportscheckBox.AutoSize = true;
-            CanViewBranchReportscheckBox.Location = new Point(787, 718);
+            CanViewBranchReportscheckBox.Location = new Point(738, 642);
             CanViewBranchReportscheckBox.Name = "CanViewBranchReportscheckBox";
             CanViewBranchReportscheckBox.Size = new Size(224, 25);
             CanViewBranchReportscheckBox.TabIndex = 143;
@@ -90,7 +89,7 @@
             // 
             CanApprovePurchasescheckBox.Anchor = AnchorStyles.None;
             CanApprovePurchasescheckBox.AutoSize = true;
-            CanApprovePurchasescheckBox.Location = new Point(787, 675);
+            CanApprovePurchasescheckBox.Location = new Point(738, 599);
             CanApprovePurchasescheckBox.Name = "CanApprovePurchasescheckBox";
             CanApprovePurchasescheckBox.Size = new Size(210, 25);
             CanApprovePurchasescheckBox.TabIndex = 142;
@@ -101,7 +100,7 @@
             // 
             CanManageInventoryescheckBox.Anchor = AnchorStyles.None;
             CanManageInventoryescheckBox.AutoSize = true;
-            CanManageInventoryescheckBox.Location = new Point(787, 631);
+            CanManageInventoryescheckBox.Location = new Point(738, 555);
             CanManageInventoryescheckBox.Name = "CanManageInventoryescheckBox";
             CanManageInventoryescheckBox.Size = new Size(198, 25);
             CanManageInventoryescheckBox.TabIndex = 141;
@@ -112,7 +111,7 @@
             // 
             CanManageStuffcheckBox.Anchor = AnchorStyles.None;
             CanManageStuffcheckBox.AutoSize = true;
-            CanManageStuffcheckBox.Location = new Point(787, 586);
+            CanManageStuffcheckBox.Location = new Point(738, 510);
             CanManageStuffcheckBox.Name = "CanManageStuffcheckBox";
             CanManageStuffcheckBox.Size = new Size(164, 25);
             CanManageStuffcheckBox.TabIndex = 140;
@@ -124,7 +123,7 @@
             Cancelbutton.Anchor = AnchorStyles.None;
             Cancelbutton.BackColor = Color.Red;
             Cancelbutton.ForeColor = Color.White;
-            Cancelbutton.Location = new Point(943, 781);
+            Cancelbutton.Location = new Point(894, 705);
             Cancelbutton.Name = "Cancelbutton";
             Cancelbutton.Size = new Size(124, 41);
             Cancelbutton.TabIndex = 139;
@@ -136,7 +135,7 @@
             // 
             Clearbutton.Anchor = AnchorStyles.None;
             Clearbutton.BackColor = Color.Tan;
-            Clearbutton.Location = new Point(790, 781);
+            Clearbutton.Location = new Point(741, 705);
             Clearbutton.Name = "Clearbutton";
             Clearbutton.Size = new Size(124, 41);
             Clearbutton.TabIndex = 138;
@@ -149,7 +148,7 @@
             Savebutton.Anchor = AnchorStyles.None;
             Savebutton.BackColor = Color.OliveDrab;
             Savebutton.ForeColor = Color.White;
-            Savebutton.Location = new Point(637, 781);
+            Savebutton.Location = new Point(588, 705);
             Savebutton.Name = "Savebutton";
             Savebutton.Size = new Size(124, 41);
             Savebutton.TabIndex = 137;
@@ -162,7 +161,7 @@
             ManagerTypecomboBox.Anchor = AnchorStyles.None;
             ManagerTypecomboBox.FormattingEnabled = true;
             ManagerTypecomboBox.Items.AddRange(new object[] { "BranchManager", "RegionalManager" });
-            ManagerTypecomboBox.Location = new Point(787, 524);
+            ManagerTypecomboBox.Location = new Point(738, 448);
             ManagerTypecomboBox.Name = "ManagerTypecomboBox";
             ManagerTypecomboBox.Size = new Size(280, 29);
             ManagerTypecomboBox.TabIndex = 136;
@@ -171,7 +170,7 @@
             // 
             ManagerTypelabel.Anchor = AnchorStyles.None;
             ManagerTypelabel.AutoSize = true;
-            ManagerTypelabel.Location = new Point(640, 527);
+            ManagerTypelabel.Location = new Point(591, 451);
             ManagerTypelabel.Name = "ManagerTypelabel";
             ManagerTypelabel.Size = new Size(126, 21);
             ManagerTypelabel.TabIndex = 135;
@@ -180,7 +179,7 @@
             // ManagerIDtextBox
             // 
             ManagerIDtextBox.Anchor = AnchorStyles.None;
-            ManagerIDtextBox.Location = new Point(787, 468);
+            ManagerIDtextBox.Location = new Point(738, 392);
             ManagerIDtextBox.Name = "ManagerIDtextBox";
             ManagerIDtextBox.ReadOnly = true;
             ManagerIDtextBox.Size = new Size(280, 29);
@@ -190,7 +189,7 @@
             // 
             ManagerIDlabel.Anchor = AnchorStyles.None;
             ManagerIDlabel.AutoSize = true;
-            ManagerIDlabel.Location = new Point(663, 476);
+            ManagerIDlabel.Location = new Point(614, 400);
             ManagerIDlabel.Name = "ManagerIDlabel";
             ManagerIDlabel.Size = new Size(107, 21);
             ManagerIDlabel.TabIndex = 133;
@@ -199,7 +198,7 @@
             // BranchIDsearchbutton
             // 
             BranchIDsearchbutton.Anchor = AnchorStyles.None;
-            BranchIDsearchbutton.Location = new Point(1098, 345);
+            BranchIDsearchbutton.Location = new Point(1034, 272);
             BranchIDsearchbutton.Name = "BranchIDsearchbutton";
             BranchIDsearchbutton.Size = new Size(75, 29);
             BranchIDsearchbutton.TabIndex = 124;
@@ -210,7 +209,7 @@
             // BranchNametextBox
             // 
             BranchNametextBox.Anchor = AnchorStyles.None;
-            BranchNametextBox.Location = new Point(787, 405);
+            BranchNametextBox.Location = new Point(738, 329);
             BranchNametextBox.Name = "BranchNametextBox";
             BranchNametextBox.ReadOnly = true;
             BranchNametextBox.Size = new Size(280, 29);
@@ -220,7 +219,7 @@
             // 
             BranchNamelabel.Anchor = AnchorStyles.None;
             BranchNamelabel.AutoSize = true;
-            BranchNamelabel.Location = new Point(640, 409);
+            BranchNamelabel.Location = new Point(591, 333);
             BranchNamelabel.Name = "BranchNamelabel";
             BranchNamelabel.Size = new Size(120, 21);
             BranchNamelabel.TabIndex = 122;
@@ -229,7 +228,7 @@
             // BranchIDtextBox
             // 
             BranchIDtextBox.Anchor = AnchorStyles.None;
-            BranchIDtextBox.Location = new Point(787, 346);
+            BranchIDtextBox.Location = new Point(738, 270);
             BranchIDtextBox.Name = "BranchIDtextBox";
             BranchIDtextBox.Size = new Size(280, 29);
             BranchIDtextBox.TabIndex = 121;
@@ -238,7 +237,7 @@
             // 
             BranchIDlabel.Anchor = AnchorStyles.None;
             BranchIDlabel.AutoSize = true;
-            BranchIDlabel.Location = new Point(664, 349);
+            BranchIDlabel.Location = new Point(615, 273);
             BranchIDlabel.Name = "BranchIDlabel";
             BranchIDlabel.Size = new Size(96, 21);
             BranchIDlabel.TabIndex = 120;
@@ -248,7 +247,7 @@
             // 
             IsActivecheckBox.Anchor = AnchorStyles.None;
             IsActivecheckBox.AutoSize = true;
-            IsActivecheckBox.Location = new Point(787, 299);
+            IsActivecheckBox.Location = new Point(738, 223);
             IsActivecheckBox.Name = "IsActivecheckBox";
             IsActivecheckBox.Size = new Size(95, 25);
             IsActivecheckBox.TabIndex = 119;
@@ -258,7 +257,7 @@
             // PasswordtextBox
             // 
             PasswordtextBox.Anchor = AnchorStyles.None;
-            PasswordtextBox.Location = new Point(787, 239);
+            PasswordtextBox.Location = new Point(738, 163);
             PasswordtextBox.Name = "PasswordtextBox";
             PasswordtextBox.PasswordChar = '*';
             PasswordtextBox.ReadOnly = true;
@@ -269,7 +268,7 @@
             // 
             Passwordlabel.Anchor = AnchorStyles.None;
             Passwordlabel.AutoSize = true;
-            Passwordlabel.Location = new Point(667, 242);
+            Passwordlabel.Location = new Point(618, 166);
             Passwordlabel.Name = "Passwordlabel";
             Passwordlabel.Size = new Size(93, 21);
             Passwordlabel.TabIndex = 117;
@@ -278,7 +277,7 @@
             // UsernametextBox
             // 
             UsernametextBox.Anchor = AnchorStyles.None;
-            UsernametextBox.Location = new Point(787, 182);
+            UsernametextBox.Location = new Point(738, 106);
             UsernametextBox.Name = "UsernametextBox";
             UsernametextBox.ReadOnly = true;
             UsernametextBox.Size = new Size(280, 29);
@@ -288,7 +287,7 @@
             // 
             Usernamelabel.Anchor = AnchorStyles.None;
             Usernamelabel.AutoSize = true;
-            Usernamelabel.Location = new Point(667, 185);
+            Usernamelabel.Location = new Point(618, 109);
             Usernamelabel.Name = "Usernamelabel";
             Usernamelabel.Size = new Size(93, 21);
             Usernamelabel.TabIndex = 115;
@@ -297,7 +296,7 @@
             // AddressrichTextBox
             // 
             AddressrichTextBox.Anchor = AnchorStyles.None;
-            AddressrichTextBox.Location = new Point(236, 715);
+            AddressrichTextBox.Location = new Point(187, 639);
             AddressrichTextBox.Name = "AddressrichTextBox";
             AddressrichTextBox.Size = new Size(275, 81);
             AddressrichTextBox.TabIndex = 114;
@@ -307,7 +306,7 @@
             // 
             FemaleradioButton.Anchor = AnchorStyles.None;
             FemaleradioButton.AutoSize = true;
-            FemaleradioButton.Location = new Point(354, 354);
+            FemaleradioButton.Location = new Point(305, 278);
             FemaleradioButton.Name = "FemaleradioButton";
             FemaleradioButton.Size = new Size(81, 25);
             FemaleradioButton.TabIndex = 113;
@@ -319,7 +318,7 @@
             // 
             MaleradioButton.Anchor = AnchorStyles.None;
             MaleradioButton.AutoSize = true;
-            MaleradioButton.Location = new Point(236, 352);
+            MaleradioButton.Location = new Point(187, 276);
             MaleradioButton.Name = "MaleradioButton";
             MaleradioButton.Size = new Size(64, 25);
             MaleradioButton.TabIndex = 112;
@@ -331,7 +330,7 @@
             // 
             Addresslabel.Anchor = AnchorStyles.None;
             Addresslabel.AutoSize = true;
-            Addresslabel.Location = new Point(127, 718);
+            Addresslabel.Location = new Point(78, 642);
             Addresslabel.Name = "Addresslabel";
             Addresslabel.Size = new Size(82, 21);
             Addresslabel.TabIndex = 111;
@@ -340,7 +339,7 @@
             // EmailtextBox
             // 
             EmailtextBox.Anchor = AnchorStyles.None;
-            EmailtextBox.Location = new Point(236, 658);
+            EmailtextBox.Location = new Point(187, 582);
             EmailtextBox.Name = "EmailtextBox";
             EmailtextBox.Size = new Size(280, 29);
             EmailtextBox.TabIndex = 110;
@@ -349,7 +348,7 @@
             // 
             Emaillabel.Anchor = AnchorStyles.None;
             Emaillabel.AutoSize = true;
-            Emaillabel.Location = new Point(156, 658);
+            Emaillabel.Location = new Point(107, 582);
             Emaillabel.Name = "Emaillabel";
             Emaillabel.Size = new Size(60, 21);
             Emaillabel.TabIndex = 109;
@@ -358,7 +357,7 @@
             // PhoneNumbertextBox
             // 
             PhoneNumbertextBox.Anchor = AnchorStyles.None;
-            PhoneNumbertextBox.Location = new Point(236, 601);
+            PhoneNumbertextBox.Location = new Point(187, 525);
             PhoneNumbertextBox.Name = "PhoneNumbertextBox";
             PhoneNumbertextBox.Size = new Size(280, 29);
             PhoneNumbertextBox.TabIndex = 108;
@@ -367,7 +366,7 @@
             // 
             PhoneNumberlabel.Anchor = AnchorStyles.None;
             PhoneNumberlabel.AutoSize = true;
-            PhoneNumberlabel.Location = new Point(89, 604);
+            PhoneNumberlabel.Location = new Point(40, 528);
             PhoneNumberlabel.Name = "PhoneNumberlabel";
             PhoneNumberlabel.Size = new Size(131, 21);
             PhoneNumberlabel.TabIndex = 107;
@@ -376,7 +375,7 @@
             // BrowsePhotobutton
             // 
             BrowsePhotobutton.Anchor = AnchorStyles.None;
-            BrowsePhotobutton.Location = new Point(421, 480);
+            BrowsePhotobutton.Location = new Point(372, 404);
             BrowsePhotobutton.Name = "BrowsePhotobutton";
             BrowsePhotobutton.Size = new Size(90, 30);
             BrowsePhotobutton.TabIndex = 106;
@@ -388,7 +387,7 @@
             // 
             PhotopictureBox.Anchor = AnchorStyles.None;
             PhotopictureBox.BorderStyle = BorderStyle.FixedSingle;
-            PhotopictureBox.Location = new Point(236, 405);
+            PhotopictureBox.Location = new Point(187, 329);
             PhotopictureBox.Name = "PhotopictureBox";
             PhotopictureBox.Size = new Size(156, 180);
             PhotopictureBox.SizeMode = PictureBoxSizeMode.Zoom;
@@ -399,7 +398,7 @@
             // 
             Photolabel.Anchor = AnchorStyles.None;
             Photolabel.AutoSize = true;
-            Photolabel.Location = new Point(156, 480);
+            Photolabel.Location = new Point(107, 404);
             Photolabel.Name = "Photolabel";
             Photolabel.Size = new Size(64, 21);
             Photolabel.TabIndex = 104;
@@ -409,7 +408,7 @@
             // 
             Genderlabel.Anchor = AnchorStyles.None;
             Genderlabel.AutoSize = true;
-            Genderlabel.Location = new Point(146, 354);
+            Genderlabel.Location = new Point(97, 278);
             Genderlabel.Name = "Genderlabel";
             Genderlabel.Size = new Size(74, 21);
             Genderlabel.TabIndex = 103;
@@ -419,7 +418,7 @@
             // 
             DateOfBirthdatePicker.Anchor = AnchorStyles.None;
             DateOfBirthdatePicker.Format = DateTimePickerFormat.Short;
-            DateOfBirthdatePicker.Location = new Point(236, 296);
+            DateOfBirthdatePicker.Location = new Point(187, 220);
             DateOfBirthdatePicker.Name = "DateOfBirthdatePicker";
             DateOfBirthdatePicker.Size = new Size(280, 29);
             DateOfBirthdatePicker.TabIndex = 102;
@@ -428,7 +427,7 @@
             // 
             DateOfBirthlabel.Anchor = AnchorStyles.None;
             DateOfBirthlabel.AutoSize = true;
-            DateOfBirthlabel.Location = new Point(105, 298);
+            DateOfBirthlabel.Location = new Point(56, 222);
             DateOfBirthlabel.Name = "DateOfBirthlabel";
             DateOfBirthlabel.Size = new Size(115, 21);
             DateOfBirthlabel.TabIndex = 101;
@@ -437,7 +436,7 @@
             // FullNametextBox
             // 
             FullNametextBox.Anchor = AnchorStyles.None;
-            FullNametextBox.Location = new Point(236, 234);
+            FullNametextBox.Location = new Point(187, 158);
             FullNametextBox.Name = "FullNametextBox";
             FullNametextBox.Size = new Size(280, 29);
             FullNametextBox.TabIndex = 100;
@@ -446,7 +445,7 @@
             // 
             FullNamelabel.Anchor = AnchorStyles.None;
             FullNamelabel.AutoSize = true;
-            FullNamelabel.Location = new Point(125, 238);
+            FullNamelabel.Location = new Point(76, 162);
             FullNamelabel.Name = "FullNamelabel";
             FullNamelabel.Size = new Size(95, 21);
             FullNamelabel.TabIndex = 99;
@@ -455,7 +454,7 @@
             // UserIDtextBox
             // 
             UserIDtextBox.Anchor = AnchorStyles.None;
-            UserIDtextBox.Location = new Point(236, 177);
+            UserIDtextBox.Location = new Point(187, 101);
             UserIDtextBox.Name = "UserIDtextBox";
             UserIDtextBox.ReadOnly = true;
             UserIDtextBox.Size = new Size(280, 29);
@@ -465,27 +464,18 @@
             // 
             UserIDlabel.Anchor = AnchorStyles.None;
             UserIDlabel.AutoSize = true;
-            UserIDlabel.Location = new Point(142, 182);
+            UserIDlabel.Location = new Point(93, 106);
             UserIDlabel.Name = "UserIDlabel";
             UserIDlabel.Size = new Size(78, 21);
             UserIDlabel.TabIndex = 97;
             UserIDlabel.Text = "User ID :";
-            // 
-            // Headerpanel
-            // 
-            Headerpanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            Headerpanel.BackColor = Color.Tomato;
-            Headerpanel.Location = new Point(0, 3);
-            Headerpanel.Name = "Headerpanel";
-            Headerpanel.Size = new Size(1231, 76);
-            Headerpanel.TabIndex = 96;
             // 
             // SearchgroupBox
             // 
             SearchgroupBox.Anchor = AnchorStyles.None;
             SearchgroupBox.Controls.Add(UserSearchbutton);
             SearchgroupBox.Controls.Add(SearchUserTextBox);
-            SearchgroupBox.Location = new Point(361, 88);
+            SearchgroupBox.Location = new Point(312, 12);
             SearchgroupBox.Name = "SearchgroupBox";
             SearchgroupBox.Size = new Size(498, 86);
             SearchgroupBox.TabIndex = 144;
@@ -515,7 +505,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1231, 834);
+            ClientSize = new Size(1132, 771);
             Controls.Add(SearchgroupBox);
             Controls.Add(CanViewBranchReportscheckBox);
             Controls.Add(CanApprovePurchasescheckBox);
@@ -556,9 +546,8 @@
             Controls.Add(FullNamelabel);
             Controls.Add(UserIDtextBox);
             Controls.Add(UserIDlabel);
-            Controls.Add(Headerpanel);
             Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "UpdateManagerGUI";
             Text = "UpdateManagerGUI";
             ((System.ComponentModel.ISupportInitialize)PhotopictureBox).EndInit();
@@ -609,7 +598,6 @@
         private Label FullNamelabel;
         private TextBox UserIDtextBox;
         private Label UserIDlabel;
-        private Panel Headerpanel;
         private GroupBox SearchgroupBox;
         private Button UserSearchbutton;
         private TextBox SearchUserTextBox;

@@ -15,8 +15,6 @@ namespace SuperMart_Pro.View.Customer
         private void InitializeComponent()
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            Headerpanel = new Panel();
-            HeaderTitlelabel = new Label();
             SearchpanelPanel = new Panel();
             Searchlabel = new Label();
             SearchtextBox = new TextBox();
@@ -26,32 +24,10 @@ namespace SuperMart_Pro.View.Customer
             CustomerdataGridView = new DataGridView();
             FooterpanelPanel = new Panel();
             Closebutton = new Button();
-            Headerpanel.SuspendLayout();
             SearchpanelPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)CustomerdataGridView).BeginInit();
             FooterpanelPanel.SuspendLayout();
             SuspendLayout();
-            // 
-            // Headerpanel
-            // 
-            Headerpanel.BackColor = Color.Tomato;
-            Headerpanel.Controls.Add(HeaderTitlelabel);
-            Headerpanel.Dock = DockStyle.Top;
-            Headerpanel.Location = new Point(0, 0);
-            Headerpanel.Name = "Headerpanel";
-            Headerpanel.Size = new Size(1400, 65);
-            Headerpanel.TabIndex = 0;
-            // 
-            // HeaderTitlelabel
-            // 
-            HeaderTitlelabel.AutoSize = true;
-            HeaderTitlelabel.Font = new Font("Times New Roman", 22F, FontStyle.Bold);
-            HeaderTitlelabel.ForeColor = Color.White;
-            HeaderTitlelabel.Location = new Point(20, 14);
-            HeaderTitlelabel.Name = "HeaderTitlelabel";
-            HeaderTitlelabel.Size = new Size(255, 35);
-            HeaderTitlelabel.TabIndex = 0;
-            HeaderTitlelabel.Text = "View All Customers";
             // 
             // SearchpanelPanel
             // 
@@ -63,7 +39,7 @@ namespace SuperMart_Pro.View.Customer
             SearchpanelPanel.Controls.Add(Refreshbutton);
             SearchpanelPanel.Controls.Add(TotalRecordslabel);
             SearchpanelPanel.Dock = DockStyle.Top;
-            SearchpanelPanel.Location = new Point(0, 65);
+            SearchpanelPanel.Location = new Point(0, 0);
             SearchpanelPanel.Name = "SearchpanelPanel";
             SearchpanelPanel.Size = new Size(1400, 55);
             SearchpanelPanel.TabIndex = 1;
@@ -130,13 +106,13 @@ namespace SuperMart_Pro.View.Customer
             CustomerdataGridView.Dock = DockStyle.Fill;
             CustomerdataGridView.EnableHeadersVisualStyles = false;
             CustomerdataGridView.GridColor = Color.LightGray;
-            CustomerdataGridView.Location = new Point(0, 120);
+            CustomerdataGridView.Location = new Point(0, 55);
             CustomerdataGridView.Name = "CustomerdataGridView";
             CustomerdataGridView.ReadOnly = true;
             CustomerdataGridView.RowHeadersWidth = 40;
             CustomerdataGridView.RowTemplate.Height = 32;
             CustomerdataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            CustomerdataGridView.Size = new Size(1400, 625);
+            CustomerdataGridView.Size = new Size(1400, 690);
             CustomerdataGridView.TabIndex = 2;
             CustomerdataGridView.SelectionChanged += CustomerdataGridView_SelectionChanged;
             // 
@@ -172,15 +148,12 @@ namespace SuperMart_Pro.View.Customer
             Controls.Add(CustomerdataGridView);
             Controls.Add(FooterpanelPanel);
             Controls.Add(SearchpanelPanel);
-            Controls.Add(Headerpanel);
             Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
             Name = "ViewAllCustomerGUI";
             Text = "View All Customers";
             WindowState = FormWindowState.Maximized;
             Load += ViewAllCustomerGUI_Load;
-            Headerpanel.ResumeLayout(false);
-            Headerpanel.PerformLayout();
             SearchpanelPanel.ResumeLayout(false);
             SearchpanelPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)CustomerdataGridView).EndInit();
@@ -189,9 +162,6 @@ namespace SuperMart_Pro.View.Customer
         }
 
         #endregion
-
-        private Panel Headerpanel;
-        private Label HeaderTitlelabel;
         private Panel SearchpanelPanel;
         private Label Searchlabel;
         private TextBox SearchtextBox;

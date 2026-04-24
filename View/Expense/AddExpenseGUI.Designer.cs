@@ -14,7 +14,6 @@ namespace SuperMart_Pro.View.Expense
 
         private void InitializeComponent()
         {
-            Headerpanel = new Panel();
             ExpenseIDlabel = new Label();
             ExpenseIDtextBox = new TextBox();
             Descriptionlabel = new Label();
@@ -43,20 +42,11 @@ namespace SuperMart_Pro.View.Expense
             ((System.ComponentModel.ISupportInitialize)ReceiptpictureBox).BeginInit();
             SuspendLayout();
             // 
-            // Headerpanel
-            // 
-            Headerpanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            Headerpanel.BackColor = Color.Tomato;
-            Headerpanel.Location = new Point(0, 0);
-            Headerpanel.Name = "Headerpanel";
-            Headerpanel.Size = new Size(709, 85);
-            Headerpanel.TabIndex = 0;
-            // 
             // ExpenseIDlabel
             // 
             ExpenseIDlabel.Anchor = AnchorStyles.None;
             ExpenseIDlabel.AutoSize = true;
-            ExpenseIDlabel.Location = new Point(76, 99);
+            ExpenseIDlabel.Location = new Point(67, 18);
             ExpenseIDlabel.Name = "ExpenseIDlabel";
             ExpenseIDlabel.Size = new Size(106, 21);
             ExpenseIDlabel.TabIndex = 1;
@@ -65,7 +55,7 @@ namespace SuperMart_Pro.View.Expense
             // ExpenseIDtextBox
             // 
             ExpenseIDtextBox.Anchor = AnchorStyles.None;
-            ExpenseIDtextBox.Location = new Point(206, 96);
+            ExpenseIDtextBox.Location = new Point(197, 15);
             ExpenseIDtextBox.Name = "ExpenseIDtextBox";
             ExpenseIDtextBox.Size = new Size(280, 29);
             ExpenseIDtextBox.TabIndex = 2;
@@ -74,7 +64,7 @@ namespace SuperMart_Pro.View.Expense
             // 
             Descriptionlabel.Anchor = AnchorStyles.None;
             Descriptionlabel.AutoSize = true;
-            Descriptionlabel.Location = new Point(77, 177);
+            Descriptionlabel.Location = new Point(68, 96);
             Descriptionlabel.Name = "Descriptionlabel";
             Descriptionlabel.Size = new Size(105, 21);
             Descriptionlabel.TabIndex = 3;
@@ -83,7 +73,7 @@ namespace SuperMart_Pro.View.Expense
             // DescriptionrichTextBox
             // 
             DescriptionrichTextBox.Anchor = AnchorStyles.None;
-            DescriptionrichTextBox.Location = new Point(206, 148);
+            DescriptionrichTextBox.Location = new Point(197, 67);
             DescriptionrichTextBox.Name = "DescriptionrichTextBox";
             DescriptionrichTextBox.Size = new Size(280, 80);
             DescriptionrichTextBox.TabIndex = 4;
@@ -93,7 +83,7 @@ namespace SuperMart_Pro.View.Expense
             // 
             ExpenseTypelabel.Anchor = AnchorStyles.None;
             ExpenseTypelabel.AutoSize = true;
-            ExpenseTypelabel.Location = new Point(57, 249);
+            ExpenseTypelabel.Location = new Point(48, 168);
             ExpenseTypelabel.Name = "ExpenseTypelabel";
             ExpenseTypelabel.Size = new Size(125, 21);
             ExpenseTypelabel.TabIndex = 5;
@@ -105,7 +95,7 @@ namespace SuperMart_Pro.View.Expense
             ExpenseTypecomboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             ExpenseTypecomboBox.FormattingEnabled = true;
             ExpenseTypecomboBox.Items.AddRange(new object[] { "Food", "Transportation", "Entertainment", "Utilities", "Healthcare", "Education", "Miscellaneous" });
-            ExpenseTypecomboBox.Location = new Point(206, 246);
+            ExpenseTypecomboBox.Location = new Point(197, 165);
             ExpenseTypecomboBox.Name = "ExpenseTypecomboBox";
             ExpenseTypecomboBox.Size = new Size(280, 29);
             ExpenseTypecomboBox.TabIndex = 6;
@@ -114,7 +104,7 @@ namespace SuperMart_Pro.View.Expense
             // 
             Amountlabel.Anchor = AnchorStyles.None;
             Amountlabel.AutoSize = true;
-            Amountlabel.Location = new Point(103, 297);
+            Amountlabel.Location = new Point(94, 216);
             Amountlabel.Name = "Amountlabel";
             Amountlabel.Size = new Size(79, 21);
             Amountlabel.TabIndex = 7;
@@ -123,7 +113,7 @@ namespace SuperMart_Pro.View.Expense
             // AmounttextBox
             // 
             AmounttextBox.Anchor = AnchorStyles.None;
-            AmounttextBox.Location = new Point(206, 294);
+            AmounttextBox.Location = new Point(197, 213);
             AmounttextBox.Name = "AmounttextBox";
             AmounttextBox.Size = new Size(280, 29);
             AmounttextBox.TabIndex = 8;
@@ -132,7 +122,7 @@ namespace SuperMart_Pro.View.Expense
             // 
             Datelabel.Anchor = AnchorStyles.None;
             Datelabel.AutoSize = true;
-            Datelabel.Location = new Point(129, 350);
+            Datelabel.Location = new Point(120, 269);
             Datelabel.Name = "Datelabel";
             Datelabel.Size = new Size(53, 21);
             Datelabel.TabIndex = 9;
@@ -142,7 +132,7 @@ namespace SuperMart_Pro.View.Expense
             // 
             DatedatePicker.Anchor = AnchorStyles.None;
             DatedatePicker.Format = DateTimePickerFormat.Short;
-            DatedatePicker.Location = new Point(206, 347);
+            DatedatePicker.Location = new Point(197, 266);
             DatedatePicker.Name = "DatedatePicker";
             DatedatePicker.Size = new Size(280, 29);
             DatedatePicker.TabIndex = 10;
@@ -151,7 +141,7 @@ namespace SuperMart_Pro.View.Expense
             // 
             Receiptlabel.Anchor = AnchorStyles.None;
             Receiptlabel.AutoSize = true;
-            Receiptlabel.Location = new Point(110, 462);
+            Receiptlabel.Location = new Point(101, 381);
             Receiptlabel.Name = "Receiptlabel";
             Receiptlabel.Size = new Size(76, 21);
             Receiptlabel.TabIndex = 11;
@@ -161,7 +151,7 @@ namespace SuperMart_Pro.View.Expense
             // 
             ReceiptpictureBox.Anchor = AnchorStyles.None;
             ReceiptpictureBox.BorderStyle = BorderStyle.FixedSingle;
-            ReceiptpictureBox.Location = new Point(206, 395);
+            ReceiptpictureBox.Location = new Point(197, 314);
             ReceiptpictureBox.Name = "ReceiptpictureBox";
             ReceiptpictureBox.Size = new Size(156, 160);
             ReceiptpictureBox.SizeMode = PictureBoxSizeMode.Zoom;
@@ -171,7 +161,7 @@ namespace SuperMart_Pro.View.Expense
             // BrowseReceiptbutton
             // 
             BrowseReceiptbutton.Anchor = AnchorStyles.None;
-            BrowseReceiptbutton.Location = new Point(381, 453);
+            BrowseReceiptbutton.Location = new Point(372, 372);
             BrowseReceiptbutton.Name = "BrowseReceiptbutton";
             BrowseReceiptbutton.Size = new Size(100, 30);
             BrowseReceiptbutton.TabIndex = 13;
@@ -183,7 +173,7 @@ namespace SuperMart_Pro.View.Expense
             // 
             Noteslabel.Anchor = AnchorStyles.None;
             Noteslabel.AutoSize = true;
-            Noteslabel.Location = new Point(119, 601);
+            Noteslabel.Location = new Point(110, 520);
             Noteslabel.Name = "Noteslabel";
             Noteslabel.Size = new Size(63, 21);
             Noteslabel.TabIndex = 14;
@@ -192,7 +182,7 @@ namespace SuperMart_Pro.View.Expense
             // NotesrichTextBox
             // 
             NotesrichTextBox.Anchor = AnchorStyles.None;
-            NotesrichTextBox.Location = new Point(206, 573);
+            NotesrichTextBox.Location = new Point(197, 492);
             NotesrichTextBox.Name = "NotesrichTextBox";
             NotesrichTextBox.Size = new Size(280, 80);
             NotesrichTextBox.TabIndex = 15;
@@ -202,7 +192,7 @@ namespace SuperMart_Pro.View.Expense
             // 
             BranchIDlabel.Anchor = AnchorStyles.None;
             BranchIDlabel.AutoSize = true;
-            BranchIDlabel.Location = new Point(86, 677);
+            BranchIDlabel.Location = new Point(77, 596);
             BranchIDlabel.Name = "BranchIDlabel";
             BranchIDlabel.Size = new Size(96, 21);
             BranchIDlabel.TabIndex = 16;
@@ -211,7 +201,7 @@ namespace SuperMart_Pro.View.Expense
             // BranchIDtextBox
             // 
             BranchIDtextBox.Anchor = AnchorStyles.None;
-            BranchIDtextBox.Location = new Point(206, 673);
+            BranchIDtextBox.Location = new Point(197, 592);
             BranchIDtextBox.Name = "BranchIDtextBox";
             BranchIDtextBox.Size = new Size(280, 29);
             BranchIDtextBox.TabIndex = 17;
@@ -220,7 +210,7 @@ namespace SuperMart_Pro.View.Expense
             // 
             BranchNamelabel.Anchor = AnchorStyles.None;
             BranchNamelabel.AutoSize = true;
-            BranchNamelabel.Location = new Point(66, 726);
+            BranchNamelabel.Location = new Point(57, 645);
             BranchNamelabel.Name = "BranchNamelabel";
             BranchNamelabel.Size = new Size(120, 21);
             BranchNamelabel.TabIndex = 18;
@@ -229,7 +219,7 @@ namespace SuperMart_Pro.View.Expense
             // BranchNametextBox
             // 
             BranchNametextBox.Anchor = AnchorStyles.None;
-            BranchNametextBox.Location = new Point(206, 726);
+            BranchNametextBox.Location = new Point(197, 645);
             BranchNametextBox.Name = "BranchNametextBox";
             BranchNametextBox.ReadOnly = true;
             BranchNametextBox.Size = new Size(280, 29);
@@ -238,7 +228,7 @@ namespace SuperMart_Pro.View.Expense
             // BranchIDsearchbutton
             // 
             BranchIDsearchbutton.Anchor = AnchorStyles.None;
-            BranchIDsearchbutton.Location = new Point(506, 672);
+            BranchIDsearchbutton.Location = new Point(497, 591);
             BranchIDsearchbutton.Name = "BranchIDsearchbutton";
             BranchIDsearchbutton.Size = new Size(75, 29);
             BranchIDsearchbutton.TabIndex = 20;
@@ -251,7 +241,7 @@ namespace SuperMart_Pro.View.Expense
             Savebutton.Anchor = AnchorStyles.None;
             Savebutton.BackColor = Color.OliveDrab;
             Savebutton.ForeColor = Color.White;
-            Savebutton.Location = new Point(108, 837);
+            Savebutton.Location = new Point(99, 756);
             Savebutton.Name = "Savebutton";
             Savebutton.Size = new Size(124, 41);
             Savebutton.TabIndex = 23;
@@ -263,7 +253,7 @@ namespace SuperMart_Pro.View.Expense
             // 
             Clearbutton.Anchor = AnchorStyles.None;
             Clearbutton.BackColor = Color.Tan;
-            Clearbutton.Location = new Point(258, 837);
+            Clearbutton.Location = new Point(249, 756);
             Clearbutton.Name = "Clearbutton";
             Clearbutton.Size = new Size(124, 41);
             Clearbutton.TabIndex = 26;
@@ -276,7 +266,7 @@ namespace SuperMart_Pro.View.Expense
             Cancelbutton.Anchor = AnchorStyles.None;
             Cancelbutton.BackColor = Color.Red;
             Cancelbutton.ForeColor = Color.White;
-            Cancelbutton.Location = new Point(408, 837);
+            Cancelbutton.Location = new Point(399, 756);
             Cancelbutton.Name = "Cancelbutton";
             Cancelbutton.Size = new Size(124, 41);
             Cancelbutton.TabIndex = 27;
@@ -290,7 +280,7 @@ namespace SuperMart_Pro.View.Expense
             PaymentMethodcomboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             PaymentMethodcomboBox.FormattingEnabled = true;
             PaymentMethodcomboBox.Items.AddRange(new object[] { "Cash", "Credit Card", "Debit Card", "Bank Transfer", "Mobile Payment", "Check", "Other" });
-            PaymentMethodcomboBox.Location = new Point(206, 781);
+            PaymentMethodcomboBox.Location = new Point(197, 700);
             PaymentMethodcomboBox.Name = "PaymentMethodcomboBox";
             PaymentMethodcomboBox.Size = new Size(280, 29);
             PaymentMethodcomboBox.TabIndex = 29;
@@ -299,7 +289,7 @@ namespace SuperMart_Pro.View.Expense
             // 
             PaymentMethodlabel.Anchor = AnchorStyles.None;
             PaymentMethodlabel.AutoSize = true;
-            PaymentMethodlabel.Location = new Point(56, 784);
+            PaymentMethodlabel.Location = new Point(47, 703);
             PaymentMethodlabel.Name = "PaymentMethodlabel";
             PaymentMethodlabel.Size = new Size(146, 21);
             PaymentMethodlabel.TabIndex = 28;
@@ -309,7 +299,7 @@ namespace SuperMart_Pro.View.Expense
             // 
             AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(708, 890);
+            ClientSize = new Size(686, 812);
             Controls.Add(PaymentMethodcomboBox);
             Controls.Add(PaymentMethodlabel);
             Controls.Add(Cancelbutton);
@@ -335,7 +325,6 @@ namespace SuperMart_Pro.View.Expense
             Controls.Add(Descriptionlabel);
             Controls.Add(ExpenseIDtextBox);
             Controls.Add(ExpenseIDlabel);
-            Controls.Add(Headerpanel);
             Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
             Name = "AddExpenseGUI";
@@ -346,8 +335,6 @@ namespace SuperMart_Pro.View.Expense
         }
 
         #endregion
-
-        private Panel Headerpanel;
         private Label ExpenseIDlabel;
         private TextBox ExpenseIDtextBox;
         private Label Descriptionlabel;

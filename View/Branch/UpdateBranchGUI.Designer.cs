@@ -14,7 +14,6 @@ namespace SuperMart_Pro.View.Branch
 
         private void InitializeComponent()
         {
-            Headerpanel = new Panel();
             SearchgroupBox = new GroupBox();
             Searchbutton = new Button();
             SearchtextBox = new TextBox();
@@ -41,21 +40,12 @@ namespace SuperMart_Pro.View.Branch
             SearchgroupBox.SuspendLayout();
             SuspendLayout();
             // 
-            // Headerpanel
-            // 
-            Headerpanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            Headerpanel.BackColor = Color.Tomato;
-            Headerpanel.Location = new Point(0, 0);
-            Headerpanel.Name = "Headerpanel";
-            Headerpanel.Size = new Size(763, 85);
-            Headerpanel.TabIndex = 0;
-            // 
             // SearchgroupBox
             // 
             SearchgroupBox.Anchor = AnchorStyles.None;
             SearchgroupBox.Controls.Add(Searchbutton);
             SearchgroupBox.Controls.Add(SearchtextBox);
-            SearchgroupBox.Location = new Point(161, 103);
+            SearchgroupBox.Location = new Point(50, 35);
             SearchgroupBox.Name = "SearchgroupBox";
             SearchgroupBox.Size = new Size(441, 80);
             SearchgroupBox.TabIndex = 1;
@@ -83,7 +73,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             BranchIDlabel.Anchor = AnchorStyles.None;
             BranchIDlabel.AutoSize = true;
-            BranchIDlabel.Location = new Point(226, 210);
+            BranchIDlabel.Location = new Point(115, 142);
             BranchIDlabel.Name = "BranchIDlabel";
             BranchIDlabel.Size = new Size(96, 21);
             BranchIDlabel.TabIndex = 2;
@@ -92,7 +82,7 @@ namespace SuperMart_Pro.View.Branch
             // BranchIDtextBox
             // 
             BranchIDtextBox.Anchor = AnchorStyles.None;
-            BranchIDtextBox.Location = new Point(342, 207);
+            BranchIDtextBox.Location = new Point(231, 139);
             BranchIDtextBox.Name = "BranchIDtextBox";
             BranchIDtextBox.ReadOnly = true;
             BranchIDtextBox.Size = new Size(273, 29);
@@ -102,7 +92,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             BranchNamelabel.Anchor = AnchorStyles.None;
             BranchNamelabel.AutoSize = true;
-            BranchNamelabel.Location = new Point(202, 258);
+            BranchNamelabel.Location = new Point(91, 190);
             BranchNamelabel.Name = "BranchNamelabel";
             BranchNamelabel.Size = new Size(120, 21);
             BranchNamelabel.TabIndex = 4;
@@ -111,7 +101,7 @@ namespace SuperMart_Pro.View.Branch
             // BranchNametextBox
             // 
             BranchNametextBox.Anchor = AnchorStyles.None;
-            BranchNametextBox.Location = new Point(342, 255);
+            BranchNametextBox.Location = new Point(231, 187);
             BranchNametextBox.Name = "BranchNametextBox";
             BranchNametextBox.Size = new Size(273, 29);
             BranchNametextBox.TabIndex = 5;
@@ -120,7 +110,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             BranchTypelabel.Anchor = AnchorStyles.None;
             BranchTypelabel.AutoSize = true;
-            BranchTypelabel.Location = new Point(207, 307);
+            BranchTypelabel.Location = new Point(96, 239);
             BranchTypelabel.Name = "BranchTypelabel";
             BranchTypelabel.Size = new Size(115, 21);
             BranchTypelabel.TabIndex = 6;
@@ -131,7 +121,7 @@ namespace SuperMart_Pro.View.Branch
             BranchTypecomboBox.Anchor = AnchorStyles.None;
             BranchTypecomboBox.FormattingEnabled = true;
             BranchTypecomboBox.Items.AddRange(new object[] { "Main", "Sub", "Warehouse", "Outlet" });
-            BranchTypecomboBox.Location = new Point(342, 304);
+            BranchTypecomboBox.Location = new Point(231, 236);
             BranchTypecomboBox.Name = "BranchTypecomboBox";
             BranchTypecomboBox.Size = new Size(273, 29);
             BranchTypecomboBox.TabIndex = 7;
@@ -140,7 +130,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             BranchAddresslabel.Anchor = AnchorStyles.None;
             BranchAddresslabel.AutoSize = true;
-            BranchAddresslabel.Location = new Point(185, 356);
+            BranchAddresslabel.Location = new Point(74, 288);
             BranchAddresslabel.Name = "BranchAddresslabel";
             BranchAddresslabel.Size = new Size(139, 21);
             BranchAddresslabel.TabIndex = 8;
@@ -149,7 +139,7 @@ namespace SuperMart_Pro.View.Branch
             // BranchAddresstextBox
             // 
             BranchAddresstextBox.Anchor = AnchorStyles.None;
-            BranchAddresstextBox.Location = new Point(342, 353);
+            BranchAddresstextBox.Location = new Point(231, 285);
             BranchAddresstextBox.Name = "BranchAddresstextBox";
             BranchAddresstextBox.Size = new Size(273, 29);
             BranchAddresstextBox.TabIndex = 9;
@@ -158,7 +148,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             BranchZiplabel.Anchor = AnchorStyles.None;
             BranchZiplabel.AutoSize = true;
-            BranchZiplabel.Location = new Point(222, 405);
+            BranchZiplabel.Location = new Point(111, 337);
             BranchZiplabel.Name = "BranchZiplabel";
             BranchZiplabel.Size = new Size(102, 21);
             BranchZiplabel.TabIndex = 10;
@@ -167,7 +157,7 @@ namespace SuperMart_Pro.View.Branch
             // BranchZiptextBox
             // 
             BranchZiptextBox.Anchor = AnchorStyles.None;
-            BranchZiptextBox.Location = new Point(342, 402);
+            BranchZiptextBox.Location = new Point(231, 334);
             BranchZiptextBox.Name = "BranchZiptextBox";
             BranchZiptextBox.Size = new Size(273, 29);
             BranchZiptextBox.TabIndex = 11;
@@ -176,7 +166,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             BranchPhonelabel.Anchor = AnchorStyles.None;
             BranchPhonelabel.AutoSize = true;
-            BranchPhonelabel.Location = new Point(196, 454);
+            BranchPhonelabel.Location = new Point(85, 386);
             BranchPhonelabel.Name = "BranchPhonelabel";
             BranchPhonelabel.Size = new Size(124, 21);
             BranchPhonelabel.TabIndex = 12;
@@ -185,7 +175,7 @@ namespace SuperMart_Pro.View.Branch
             // BranchPhonetextBox
             // 
             BranchPhonetextBox.Anchor = AnchorStyles.None;
-            BranchPhonetextBox.Location = new Point(342, 451);
+            BranchPhonetextBox.Location = new Point(231, 383);
             BranchPhonetextBox.Name = "BranchPhonetextBox";
             BranchPhonetextBox.Size = new Size(273, 29);
             BranchPhonetextBox.TabIndex = 13;
@@ -194,7 +184,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             BranchEmaillabel.Anchor = AnchorStyles.None;
             BranchEmaillabel.AutoSize = true;
-            BranchEmaillabel.Location = new Point(204, 503);
+            BranchEmaillabel.Location = new Point(93, 435);
             BranchEmaillabel.Name = "BranchEmaillabel";
             BranchEmaillabel.Size = new Size(118, 21);
             BranchEmaillabel.TabIndex = 14;
@@ -203,7 +193,7 @@ namespace SuperMart_Pro.View.Branch
             // BranchEmailtextBox
             // 
             BranchEmailtextBox.Anchor = AnchorStyles.None;
-            BranchEmailtextBox.Location = new Point(342, 500);
+            BranchEmailtextBox.Location = new Point(231, 432);
             BranchEmailtextBox.Name = "BranchEmailtextBox";
             BranchEmailtextBox.Size = new Size(273, 29);
             BranchEmailtextBox.TabIndex = 15;
@@ -212,7 +202,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             ManagerIDlabel.Anchor = AnchorStyles.None;
             ManagerIDlabel.AutoSize = true;
-            ManagerIDlabel.Location = new Point(213, 552);
+            ManagerIDlabel.Location = new Point(102, 484);
             ManagerIDlabel.Name = "ManagerIDlabel";
             ManagerIDlabel.Size = new Size(107, 21);
             ManagerIDlabel.TabIndex = 16;
@@ -221,7 +211,7 @@ namespace SuperMart_Pro.View.Branch
             // ManagerIDtextBox
             // 
             ManagerIDtextBox.Anchor = AnchorStyles.None;
-            ManagerIDtextBox.Location = new Point(342, 549);
+            ManagerIDtextBox.Location = new Point(231, 481);
             ManagerIDtextBox.Name = "ManagerIDtextBox";
             ManagerIDtextBox.Size = new Size(273, 29);
             ManagerIDtextBox.TabIndex = 17;
@@ -230,7 +220,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             IsActivecheckBox.Anchor = AnchorStyles.None;
             IsActivecheckBox.AutoSize = true;
-            IsActivecheckBox.Location = new Point(342, 598);
+            IsActivecheckBox.Location = new Point(231, 530);
             IsActivecheckBox.Name = "IsActivecheckBox";
             IsActivecheckBox.Size = new Size(95, 25);
             IsActivecheckBox.TabIndex = 18;
@@ -242,7 +232,7 @@ namespace SuperMart_Pro.View.Branch
             Savebutton.Anchor = AnchorStyles.None;
             Savebutton.BackColor = Color.OliveDrab;
             Savebutton.ForeColor = Color.White;
-            Savebutton.Location = new Point(163, 655);
+            Savebutton.Location = new Point(52, 587);
             Savebutton.Name = "Savebutton";
             Savebutton.Size = new Size(124, 41);
             Savebutton.TabIndex = 19;
@@ -254,7 +244,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             Clearbutton.Anchor = AnchorStyles.None;
             Clearbutton.BackColor = Color.Tan;
-            Clearbutton.Location = new Point(318, 655);
+            Clearbutton.Location = new Point(207, 587);
             Clearbutton.Name = "Clearbutton";
             Clearbutton.Size = new Size(124, 41);
             Clearbutton.TabIndex = 20;
@@ -267,7 +257,7 @@ namespace SuperMart_Pro.View.Branch
             Cancelbutton.Anchor = AnchorStyles.None;
             Cancelbutton.BackColor = Color.Red;
             Cancelbutton.ForeColor = Color.White;
-            Cancelbutton.Location = new Point(473, 655);
+            Cancelbutton.Location = new Point(362, 587);
             Cancelbutton.Name = "Cancelbutton";
             Cancelbutton.Size = new Size(124, 41);
             Cancelbutton.TabIndex = 21;
@@ -279,7 +269,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(763, 720);
+            ClientSize = new Size(572, 671);
             Controls.Add(Cancelbutton);
             Controls.Add(Clearbutton);
             Controls.Add(Savebutton);
@@ -301,7 +291,6 @@ namespace SuperMart_Pro.View.Branch
             Controls.Add(BranchIDtextBox);
             Controls.Add(BranchIDlabel);
             Controls.Add(SearchgroupBox);
-            Controls.Add(Headerpanel);
             Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
             Name = "UpdateBranchGUI";
@@ -313,8 +302,6 @@ namespace SuperMart_Pro.View.Branch
         }
 
         #endregion
-
-        private Panel Headerpanel;
         private GroupBox SearchgroupBox;
         private Button Searchbutton;
         private TextBox SearchtextBox;

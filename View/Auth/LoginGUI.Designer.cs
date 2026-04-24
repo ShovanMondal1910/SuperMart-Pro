@@ -80,7 +80,7 @@
             LogingroupBox.Controls.Add(PasswordtextBox);
             LogingroupBox.Controls.Add(UserNamelabel);
             LogingroupBox.Controls.Add(UserNametextBox);
-            LogingroupBox.Location = new Point(150, 102);
+            LogingroupBox.Location = new Point(161, 144);
             LogingroupBox.Name = "LogingroupBox";
             LogingroupBox.Size = new Size(628, 338);
             LogingroupBox.TabIndex = 3;
@@ -143,7 +143,7 @@
             // ForgetPasswordlabel
             // 
             ForgetPasswordlabel.AutoSize = true;
-            ForgetPasswordlabel.Location = new Point(746, 472);
+            ForgetPasswordlabel.Location = new Point(771, 527);
             ForgetPasswordlabel.Name = "ForgetPasswordlabel";
             ForgetPasswordlabel.Size = new Size(146, 21);
             ForgetPasswordlabel.TabIndex = 4;

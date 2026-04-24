@@ -15,8 +15,6 @@ namespace SuperMart_Pro.View.Expense
         private void InitializeComponent()
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            Headerpanel = new Panel();
-            HeaderTitlelabel = new Label();
             SearchpanelPanel = new Panel();
             Searchlabel = new Label();
             SearchtextBox = new TextBox();
@@ -34,32 +32,11 @@ namespace SuperMart_Pro.View.Expense
             ExpensedataGridView = new DataGridView();
             FooterpanelPanel = new Panel();
             Closebutton = new Button();
-            Headerpanel.SuspendLayout();
             SearchpanelPanel.SuspendLayout();
             FilterpanelPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ExpensedataGridView).BeginInit();
             FooterpanelPanel.SuspendLayout();
             SuspendLayout();
-            // 
-            // Headerpanel
-            // 
-            Headerpanel.BackColor = Color.Tomato;
-            Headerpanel.Controls.Add(HeaderTitlelabel);
-            Headerpanel.Dock = DockStyle.Top;
-            Headerpanel.Location = new Point(0, 0);
-            Headerpanel.Name = "Headerpanel";
-            Headerpanel.Size = new Size(1400, 65);
-            Headerpanel.TabIndex = 0;
-            // 
-            // HeaderTitlelabel
-            // 
-            HeaderTitlelabel.AutoSize = true;
-            HeaderTitlelabel.Font = new Font("Times New Roman", 22F, FontStyle.Bold);
-            HeaderTitlelabel.ForeColor = Color.White;
-            HeaderTitlelabel.Location = new Point(20, 14);
-            HeaderTitlelabel.Name = "HeaderTitlelabel";
-            HeaderTitlelabel.TabIndex = 0;
-            HeaderTitlelabel.Text = "View All Expenses";
             // 
             // SearchpanelPanel
             // 
@@ -71,7 +48,7 @@ namespace SuperMart_Pro.View.Expense
             SearchpanelPanel.Controls.Add(Refreshbutton);
             SearchpanelPanel.Controls.Add(TotalRecordslabel);
             SearchpanelPanel.Dock = DockStyle.Top;
-            SearchpanelPanel.Location = new Point(0, 65);
+            SearchpanelPanel.Location = new Point(0, 0);
             SearchpanelPanel.Name = "SearchpanelPanel";
             SearchpanelPanel.Size = new Size(1400, 55);
             SearchpanelPanel.TabIndex = 1;
@@ -81,6 +58,7 @@ namespace SuperMart_Pro.View.Expense
             Searchlabel.AutoSize = true;
             Searchlabel.Location = new Point(15, 15);
             Searchlabel.Name = "Searchlabel";
+            Searchlabel.Size = new Size(70, 21);
             Searchlabel.TabIndex = 0;
             Searchlabel.Text = "Search :";
             // 
@@ -120,6 +98,7 @@ namespace SuperMart_Pro.View.Expense
             TotalRecordslabel.AutoSize = true;
             TotalRecordslabel.Location = new Point(1240, 15);
             TotalRecordslabel.Name = "TotalRecordslabel";
+            TotalRecordslabel.Size = new Size(135, 21);
             TotalRecordslabel.TabIndex = 4;
             TotalRecordslabel.Text = "Total Records: 0";
             // 
@@ -135,7 +114,7 @@ namespace SuperMart_Pro.View.Expense
             FilterpanelPanel.Controls.Add(ToDatedatePicker);
             FilterpanelPanel.Controls.Add(FilterbyDatebutton);
             FilterpanelPanel.Dock = DockStyle.Top;
-            FilterpanelPanel.Location = new Point(0, 120);
+            FilterpanelPanel.Location = new Point(0, 55);
             FilterpanelPanel.Name = "FilterpanelPanel";
             FilterpanelPanel.Size = new Size(1400, 55);
             FilterpanelPanel.TabIndex = 2;
@@ -145,6 +124,7 @@ namespace SuperMart_Pro.View.Expense
             ExpenseTypeFilterlabel.AutoSize = true;
             ExpenseTypeFilterlabel.Location = new Point(15, 15);
             ExpenseTypeFilterlabel.Name = "ExpenseTypeFilterlabel";
+            ExpenseTypeFilterlabel.Size = new Size(57, 21);
             ExpenseTypeFilterlabel.TabIndex = 0;
             ExpenseTypeFilterlabel.Text = "Type :";
             // 
@@ -152,28 +132,18 @@ namespace SuperMart_Pro.View.Expense
             // 
             ExpenseTypeFiltercomboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             ExpenseTypeFiltercomboBox.FormattingEnabled = true;
-            ExpenseTypeFiltercomboBox.Items.AddRange(new object[]
-            {
-                "All",
-                "Food",
-                "Transportation",
-                "Entertainment",
-                "Utilities",
-                "Healthcare",
-                "Education",
-                "Miscellaneous"
-            });
+            ExpenseTypeFiltercomboBox.Items.AddRange(new object[] { "All", "Food", "Transportation", "Entertainment", "Utilities", "Healthcare", "Education", "Miscellaneous" });
             ExpenseTypeFiltercomboBox.Location = new Point(70, 12);
             ExpenseTypeFiltercomboBox.Name = "ExpenseTypeFiltercomboBox";
             ExpenseTypeFiltercomboBox.Size = new Size(160, 29);
             ExpenseTypeFiltercomboBox.TabIndex = 1;
-            ExpenseTypeFiltercomboBox.SelectedIndex = 0;
             // 
             // FromDatelabel
             // 
             FromDatelabel.AutoSize = true;
             FromDatelabel.Location = new Point(250, 15);
             FromDatelabel.Name = "FromDatelabel";
+            FromDatelabel.Size = new Size(60, 21);
             FromDatelabel.TabIndex = 2;
             FromDatelabel.Text = "From :";
             // 
@@ -190,6 +160,7 @@ namespace SuperMart_Pro.View.Expense
             ToDatelabel.AutoSize = true;
             ToDatelabel.Location = new Point(475, 15);
             ToDatelabel.Name = "ToDatelabel";
+            ToDatelabel.Size = new Size(40, 21);
             ToDatelabel.TabIndex = 4;
             ToDatelabel.Text = "To :";
             // 
@@ -222,20 +193,20 @@ namespace SuperMart_Pro.View.Expense
             ExpensedataGridView.BorderStyle = BorderStyle.None;
             ExpensedataGridView.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dataGridViewCellStyle1.BackColor = Color.Tomato;
-            dataGridViewCellStyle1.ForeColor = Color.White;
             dataGridViewCellStyle1.Font = new Font("Times New Roman", 11F, FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = Color.White;
             ExpensedataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             ExpensedataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             ExpensedataGridView.Dock = DockStyle.Fill;
             ExpensedataGridView.EnableHeadersVisualStyles = false;
             ExpensedataGridView.GridColor = Color.LightGray;
-            ExpensedataGridView.Location = new Point(0, 175);
+            ExpensedataGridView.Location = new Point(0, 110);
             ExpensedataGridView.Name = "ExpensedataGridView";
             ExpensedataGridView.ReadOnly = true;
             ExpensedataGridView.RowHeadersWidth = 40;
             ExpensedataGridView.RowTemplate.Height = 32;
             ExpensedataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            ExpensedataGridView.Size = new Size(1400, 570);
+            ExpensedataGridView.Size = new Size(1400, 635);
             ExpensedataGridView.TabIndex = 3;
             ExpensedataGridView.SelectionChanged += ExpensedataGridView_SelectionChanged;
             // 
@@ -272,15 +243,12 @@ namespace SuperMart_Pro.View.Expense
             Controls.Add(FooterpanelPanel);
             Controls.Add(FilterpanelPanel);
             Controls.Add(SearchpanelPanel);
-            Controls.Add(Headerpanel);
             Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
             Name = "ViewAllExpenseGUI";
             Text = "View All Expenses";
             WindowState = FormWindowState.Maximized;
             Load += ViewAllExpenseGUI_Load;
-            Headerpanel.ResumeLayout(false);
-            Headerpanel.PerformLayout();
             SearchpanelPanel.ResumeLayout(false);
             SearchpanelPanel.PerformLayout();
             FilterpanelPanel.ResumeLayout(false);
@@ -291,9 +259,6 @@ namespace SuperMart_Pro.View.Expense
         }
 
         #endregion
-
-        private Panel Headerpanel;
-        private Label HeaderTitlelabel;
         private Panel SearchpanelPanel;
         private Label Searchlabel;
         private TextBox SearchtextBox;

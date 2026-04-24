@@ -14,7 +14,6 @@
 
         private void InitializeComponent()
         {
-            Headerpanel = new Panel();
             ProductIDlabel = new Label();
             ProductIDtextBox = new TextBox();
             ProductNamelabel = new Label();
@@ -67,20 +66,11 @@
             ((System.ComponentModel.ISupportInitialize)PhotopictureBox).BeginInit();
             SuspendLayout();
             // 
-            // Headerpanel
-            // 
-            Headerpanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            Headerpanel.BackColor = Color.Tomato;
-            Headerpanel.Location = new Point(0, 0);
-            Headerpanel.Name = "Headerpanel";
-            Headerpanel.Size = new Size(1411, 85);
-            Headerpanel.TabIndex = 0;
-            // 
             // ProductIDlabel
             // 
             ProductIDlabel.Anchor = AnchorStyles.None;
             ProductIDlabel.AutoSize = true;
-            ProductIDlabel.Location = new Point(223, 115);
+            ProductIDlabel.Location = new Point(86, 35);
             ProductIDlabel.Name = "ProductIDlabel";
             ProductIDlabel.Size = new Size(103, 21);
             ProductIDlabel.TabIndex = 1;
@@ -89,7 +79,7 @@
             // ProductIDtextBox
             // 
             ProductIDtextBox.Anchor = AnchorStyles.None;
-            ProductIDtextBox.Location = new Point(390, 112);
+            ProductIDtextBox.Location = new Point(253, 32);
             ProductIDtextBox.Name = "ProductIDtextBox";
             ProductIDtextBox.Size = new Size(290, 29);
             ProductIDtextBox.TabIndex = 2;
@@ -98,7 +88,7 @@
             // 
             ProductNamelabel.Anchor = AnchorStyles.None;
             ProductNamelabel.AutoSize = true;
-            ProductNamelabel.Location = new Point(199, 160);
+            ProductNamelabel.Location = new Point(62, 80);
             ProductNamelabel.Name = "ProductNamelabel";
             ProductNamelabel.Size = new Size(127, 21);
             ProductNamelabel.TabIndex = 3;
@@ -107,7 +97,7 @@
             // ProductNametextBox
             // 
             ProductNametextBox.Anchor = AnchorStyles.None;
-            ProductNametextBox.Location = new Point(390, 157);
+            ProductNametextBox.Location = new Point(253, 77);
             ProductNametextBox.Name = "ProductNametextBox";
             ProductNametextBox.Size = new Size(290, 29);
             ProductNametextBox.TabIndex = 4;
@@ -116,7 +106,7 @@
             // 
             Brandlabel.Anchor = AnchorStyles.None;
             Brandlabel.AutoSize = true;
-            Brandlabel.Location = new Point(262, 205);
+            Brandlabel.Location = new Point(125, 125);
             Brandlabel.Name = "Brandlabel";
             Brandlabel.Size = new Size(64, 21);
             Brandlabel.TabIndex = 5;
@@ -125,7 +115,7 @@
             // BrandtextBox
             // 
             BrandtextBox.Anchor = AnchorStyles.None;
-            BrandtextBox.Location = new Point(390, 202);
+            BrandtextBox.Location = new Point(253, 122);
             BrandtextBox.Name = "BrandtextBox";
             BrandtextBox.Size = new Size(290, 29);
             BrandtextBox.TabIndex = 6;
@@ -134,7 +124,7 @@
             // 
             Photolabel.Anchor = AnchorStyles.None;
             Photolabel.AutoSize = true;
-            Photolabel.Location = new Point(262, 315);
+            Photolabel.Location = new Point(125, 235);
             Photolabel.Name = "Photolabel";
             Photolabel.Size = new Size(64, 21);
             Photolabel.TabIndex = 7;
@@ -144,7 +134,7 @@
             // 
             PhotopictureBox.Anchor = AnchorStyles.None;
             PhotopictureBox.BorderStyle = BorderStyle.FixedSingle;
-            PhotopictureBox.Location = new Point(390, 248);
+            PhotopictureBox.Location = new Point(253, 168);
             PhotopictureBox.Name = "PhotopictureBox";
             PhotopictureBox.Size = new Size(158, 180);
             PhotopictureBox.SizeMode = PictureBoxSizeMode.Zoom;
@@ -154,7 +144,7 @@
             // BrowsePhotobutton
             // 
             BrowsePhotobutton.Anchor = AnchorStyles.None;
-            BrowsePhotobutton.Location = new Point(578, 315);
+            BrowsePhotobutton.Location = new Point(441, 235);
             BrowsePhotobutton.Name = "BrowsePhotobutton";
             BrowsePhotobutton.Size = new Size(90, 30);
             BrowsePhotobutton.TabIndex = 9;
@@ -166,7 +156,7 @@
             // 
             ProductTypelabel.Anchor = AnchorStyles.None;
             ProductTypelabel.AutoSize = true;
-            ProductTypelabel.Location = new Point(204, 449);
+            ProductTypelabel.Location = new Point(67, 369);
             ProductTypelabel.Name = "ProductTypelabel";
             ProductTypelabel.Size = new Size(122, 21);
             ProductTypelabel.TabIndex = 10;
@@ -175,7 +165,7 @@
             // ProductTypetextBox
             // 
             ProductTypetextBox.Anchor = AnchorStyles.None;
-            ProductTypetextBox.Location = new Point(390, 446);
+            ProductTypetextBox.Location = new Point(253, 366);
             ProductTypetextBox.Name = "ProductTypetextBox";
             ProductTypetextBox.Size = new Size(290, 29);
             ProductTypetextBox.TabIndex = 11;
@@ -184,7 +174,7 @@
             // 
             ProductCategorylabel.Anchor = AnchorStyles.None;
             ProductCategorylabel.AutoSize = true;
-            ProductCategorylabel.Location = new Point(174, 494);
+            ProductCategorylabel.Location = new Point(37, 414);
             ProductCategorylabel.Name = "ProductCategorylabel";
             ProductCategorylabel.Size = new Size(152, 21);
             ProductCategorylabel.TabIndex = 12;
@@ -193,7 +183,7 @@
             // ProductCategorytextBox
             // 
             ProductCategorytextBox.Anchor = AnchorStyles.None;
-            ProductCategorytextBox.Location = new Point(390, 491);
+            ProductCategorytextBox.Location = new Point(253, 411);
             ProductCategorytextBox.Name = "ProductCategorytextBox";
             ProductCategorytextBox.Size = new Size(290, 29);
             ProductCategorytextBox.TabIndex = 13;
@@ -202,7 +192,7 @@
             // 
             Barcodelabel.Anchor = AnchorStyles.None;
             Barcodelabel.AutoSize = true;
-            Barcodelabel.Location = new Point(244, 539);
+            Barcodelabel.Location = new Point(107, 459);
             Barcodelabel.Name = "Barcodelabel";
             Barcodelabel.Size = new Size(82, 21);
             Barcodelabel.TabIndex = 14;
@@ -211,7 +201,7 @@
             // BarcodetextBox
             // 
             BarcodetextBox.Anchor = AnchorStyles.None;
-            BarcodetextBox.Location = new Point(390, 536);
+            BarcodetextBox.Location = new Point(253, 456);
             BarcodetextBox.Name = "BarcodetextBox";
             BarcodetextBox.Size = new Size(290, 29);
             BarcodetextBox.TabIndex = 15;
@@ -220,7 +210,7 @@
             // 
             SKUlabel.Anchor = AnchorStyles.None;
             SKUlabel.AutoSize = true;
-            SKUlabel.Location = new Point(270, 584);
+            SKUlabel.Location = new Point(133, 504);
             SKUlabel.Name = "SKUlabel";
             SKUlabel.Size = new Size(56, 21);
             SKUlabel.TabIndex = 16;
@@ -229,7 +219,7 @@
             // SKUtextBox
             // 
             SKUtextBox.Anchor = AnchorStyles.None;
-            SKUtextBox.Location = new Point(390, 581);
+            SKUtextBox.Location = new Point(253, 501);
             SKUtextBox.Name = "SKUtextBox";
             SKUtextBox.Size = new Size(290, 29);
             SKUtextBox.TabIndex = 17;
@@ -238,7 +228,7 @@
             // 
             Unitlabel.Anchor = AnchorStyles.None;
             Unitlabel.AutoSize = true;
-            Unitlabel.Location = new Point(276, 629);
+            Unitlabel.Location = new Point(139, 549);
             Unitlabel.Name = "Unitlabel";
             Unitlabel.Size = new Size(50, 21);
             Unitlabel.TabIndex = 18;
@@ -247,7 +237,7 @@
             // UnittextBox
             // 
             UnittextBox.Anchor = AnchorStyles.None;
-            UnittextBox.Location = new Point(390, 626);
+            UnittextBox.Location = new Point(253, 546);
             UnittextBox.Name = "UnittextBox";
             UnittextBox.Size = new Size(290, 29);
             UnittextBox.TabIndex = 19;
@@ -256,7 +246,7 @@
             // 
             ExpiryDatelabel.Anchor = AnchorStyles.None;
             ExpiryDatelabel.AutoSize = true;
-            ExpiryDatelabel.Location = new Point(219, 674);
+            ExpiryDatelabel.Location = new Point(82, 594);
             ExpiryDatelabel.Name = "ExpiryDatelabel";
             ExpiryDatelabel.Size = new Size(107, 21);
             ExpiryDatelabel.TabIndex = 20;
@@ -266,7 +256,7 @@
             // 
             ExpiryDatedatePicker.Anchor = AnchorStyles.None;
             ExpiryDatedatePicker.Format = DateTimePickerFormat.Short;
-            ExpiryDatedatePicker.Location = new Point(390, 671);
+            ExpiryDatedatePicker.Location = new Point(253, 591);
             ExpiryDatedatePicker.Name = "ExpiryDatedatePicker";
             ExpiryDatedatePicker.Size = new Size(290, 29);
             ExpiryDatedatePicker.TabIndex = 21;
@@ -275,7 +265,7 @@
             // 
             StockQuantitylabel.Anchor = AnchorStyles.None;
             StockQuantitylabel.AutoSize = true;
-            StockQuantitylabel.Location = new Point(195, 719);
+            StockQuantitylabel.Location = new Point(58, 639);
             StockQuantitylabel.Name = "StockQuantitylabel";
             StockQuantitylabel.Size = new Size(131, 21);
             StockQuantitylabel.TabIndex = 22;
@@ -284,7 +274,7 @@
             // StockQuantitytextBox
             // 
             StockQuantitytextBox.Anchor = AnchorStyles.None;
-            StockQuantitytextBox.Location = new Point(390, 716);
+            StockQuantitytextBox.Location = new Point(253, 636);
             StockQuantitytextBox.Name = "StockQuantitytextBox";
             StockQuantitytextBox.Size = new Size(290, 29);
             StockQuantitytextBox.TabIndex = 23;
@@ -293,7 +283,7 @@
             // 
             Weightlabel.Anchor = AnchorStyles.None;
             Weightlabel.AutoSize = true;
-            Weightlabel.Location = new Point(816, 118);
+            Weightlabel.Location = new Point(679, 38);
             Weightlabel.Name = "Weightlabel";
             Weightlabel.Size = new Size(70, 21);
             Weightlabel.TabIndex = 24;
@@ -302,7 +292,7 @@
             // WeighttextBox
             // 
             WeighttextBox.Anchor = AnchorStyles.None;
-            WeighttextBox.Location = new Point(956, 115);
+            WeighttextBox.Location = new Point(819, 35);
             WeighttextBox.Name = "WeighttextBox";
             WeighttextBox.Size = new Size(290, 29);
             WeighttextBox.TabIndex = 25;
@@ -311,7 +301,7 @@
             // 
             TotalSaleQuantitylabel.Anchor = AnchorStyles.None;
             TotalSaleQuantitylabel.AutoSize = true;
-            TotalSaleQuantitylabel.Location = new Point(725, 163);
+            TotalSaleQuantitylabel.Location = new Point(588, 83);
             TotalSaleQuantitylabel.Name = "TotalSaleQuantitylabel";
             TotalSaleQuantitylabel.Size = new Size(161, 21);
             TotalSaleQuantitylabel.TabIndex = 26;
@@ -320,7 +310,7 @@
             // TotalSaleQuantitytextBox
             // 
             TotalSaleQuantitytextBox.Anchor = AnchorStyles.None;
-            TotalSaleQuantitytextBox.Location = new Point(956, 160);
+            TotalSaleQuantitytextBox.Location = new Point(819, 80);
             TotalSaleQuantitytextBox.Name = "TotalSaleQuantitytextBox";
             TotalSaleQuantitytextBox.Size = new Size(290, 29);
             TotalSaleQuantitytextBox.TabIndex = 27;
@@ -329,7 +319,7 @@
             // 
             ReorderLevellabel.Anchor = AnchorStyles.None;
             ReorderLevellabel.AutoSize = true;
-            ReorderLevellabel.Location = new Point(761, 208);
+            ReorderLevellabel.Location = new Point(624, 128);
             ReorderLevellabel.Name = "ReorderLevellabel";
             ReorderLevellabel.Size = new Size(125, 21);
             ReorderLevellabel.TabIndex = 28;
@@ -338,7 +328,7 @@
             // ReorderLeveltextBox
             // 
             ReorderLeveltextBox.Anchor = AnchorStyles.None;
-            ReorderLeveltextBox.Location = new Point(956, 205);
+            ReorderLeveltextBox.Location = new Point(819, 125);
             ReorderLeveltextBox.Name = "ReorderLeveltextBox";
             ReorderLeveltextBox.Size = new Size(290, 29);
             ReorderLeveltextBox.TabIndex = 29;
@@ -347,7 +337,7 @@
             // 
             MinStockLevellabel.Anchor = AnchorStyles.None;
             MinStockLevellabel.AutoSize = true;
-            MinStockLevellabel.Location = new Point(744, 253);
+            MinStockLevellabel.Location = new Point(607, 173);
             MinStockLevellabel.Name = "MinStockLevellabel";
             MinStockLevellabel.Size = new Size(142, 21);
             MinStockLevellabel.TabIndex = 30;
@@ -356,7 +346,7 @@
             // MinStockLeveltextBox
             // 
             MinStockLeveltextBox.Anchor = AnchorStyles.None;
-            MinStockLeveltextBox.Location = new Point(956, 250);
+            MinStockLeveltextBox.Location = new Point(819, 170);
             MinStockLeveltextBox.Name = "MinStockLeveltextBox";
             MinStockLeveltextBox.Size = new Size(290, 29);
             MinStockLeveltextBox.TabIndex = 31;
@@ -365,7 +355,7 @@
             // 
             IsExpirablecheckBox.Anchor = AnchorStyles.None;
             IsExpirablecheckBox.AutoSize = true;
-            IsExpirablecheckBox.Location = new Point(956, 298);
+            IsExpirablecheckBox.Location = new Point(819, 218);
             IsExpirablecheckBox.Name = "IsExpirablecheckBox";
             IsExpirablecheckBox.Size = new Size(118, 25);
             IsExpirablecheckBox.TabIndex = 32;
@@ -376,7 +366,7 @@
             // 
             SupplierIDlabel.Anchor = AnchorStyles.None;
             SupplierIDlabel.AutoSize = true;
-            SupplierIDlabel.Location = new Point(781, 342);
+            SupplierIDlabel.Location = new Point(644, 262);
             SupplierIDlabel.Name = "SupplierIDlabel";
             SupplierIDlabel.Size = new Size(105, 21);
             SupplierIDlabel.TabIndex = 33;
@@ -385,7 +375,7 @@
             // SupplierIDtextBox
             // 
             SupplierIDtextBox.Anchor = AnchorStyles.None;
-            SupplierIDtextBox.Location = new Point(956, 339);
+            SupplierIDtextBox.Location = new Point(819, 259);
             SupplierIDtextBox.Name = "SupplierIDtextBox";
             SupplierIDtextBox.Size = new Size(290, 29);
             SupplierIDtextBox.TabIndex = 34;
@@ -394,7 +384,7 @@
             // 
             BuyingPricelabel.Anchor = AnchorStyles.None;
             BuyingPricelabel.AutoSize = true;
-            BuyingPricelabel.Location = new Point(772, 387);
+            BuyingPricelabel.Location = new Point(635, 307);
             BuyingPricelabel.Name = "BuyingPricelabel";
             BuyingPricelabel.Size = new Size(114, 21);
             BuyingPricelabel.TabIndex = 35;
@@ -403,7 +393,7 @@
             // BuyingPricetextBox
             // 
             BuyingPricetextBox.Anchor = AnchorStyles.None;
-            BuyingPricetextBox.Location = new Point(956, 384);
+            BuyingPricetextBox.Location = new Point(819, 304);
             BuyingPricetextBox.Name = "BuyingPricetextBox";
             BuyingPricetextBox.Size = new Size(290, 29);
             BuyingPricetextBox.TabIndex = 36;
@@ -412,7 +402,7 @@
             // 
             SellingPricelabel.Anchor = AnchorStyles.None;
             SellingPricelabel.AutoSize = true;
-            SellingPricelabel.Location = new Point(775, 432);
+            SellingPricelabel.Location = new Point(638, 352);
             SellingPricelabel.Name = "SellingPricelabel";
             SellingPricelabel.Size = new Size(111, 21);
             SellingPricelabel.TabIndex = 37;
@@ -421,7 +411,7 @@
             // SellingPricetextBox
             // 
             SellingPricetextBox.Anchor = AnchorStyles.None;
-            SellingPricetextBox.Location = new Point(956, 429);
+            SellingPricetextBox.Location = new Point(819, 349);
             SellingPricetextBox.Name = "SellingPricetextBox";
             SellingPricetextBox.Size = new Size(290, 29);
             SellingPricetextBox.TabIndex = 38;
@@ -430,7 +420,7 @@
             // 
             Discountlabel.Anchor = AnchorStyles.None;
             Discountlabel.AutoSize = true;
-            Discountlabel.Location = new Point(800, 477);
+            Discountlabel.Location = new Point(663, 397);
             Discountlabel.Name = "Discountlabel";
             Discountlabel.Size = new Size(86, 21);
             Discountlabel.TabIndex = 39;
@@ -439,7 +429,7 @@
             // DiscounttextBox
             // 
             DiscounttextBox.Anchor = AnchorStyles.None;
-            DiscounttextBox.Location = new Point(956, 474);
+            DiscounttextBox.Location = new Point(819, 394);
             DiscounttextBox.Name = "DiscounttextBox";
             DiscounttextBox.Size = new Size(290, 29);
             DiscounttextBox.TabIndex = 40;
@@ -448,7 +438,7 @@
             // 
             Taxlabel.Anchor = AnchorStyles.None;
             Taxlabel.AutoSize = true;
-            Taxlabel.Location = new Point(839, 522);
+            Taxlabel.Location = new Point(702, 442);
             Taxlabel.Name = "Taxlabel";
             Taxlabel.Size = new Size(47, 21);
             Taxlabel.TabIndex = 41;
@@ -457,7 +447,7 @@
             // TaxtextBox
             // 
             TaxtextBox.Anchor = AnchorStyles.None;
-            TaxtextBox.Location = new Point(956, 519);
+            TaxtextBox.Location = new Point(819, 439);
             TaxtextBox.Name = "TaxtextBox";
             TaxtextBox.Size = new Size(290, 29);
             TaxtextBox.TabIndex = 42;
@@ -466,7 +456,7 @@
             // 
             MRPlabel.Anchor = AnchorStyles.None;
             MRPlabel.AutoSize = true;
-            MRPlabel.Location = new Point(828, 567);
+            MRPlabel.Location = new Point(691, 487);
             MRPlabel.Name = "MRPlabel";
             MRPlabel.Size = new Size(58, 21);
             MRPlabel.TabIndex = 43;
@@ -475,7 +465,7 @@
             // MRPtextBox
             // 
             MRPtextBox.Anchor = AnchorStyles.None;
-            MRPtextBox.Location = new Point(956, 564);
+            MRPtextBox.Location = new Point(819, 484);
             MRPtextBox.Name = "MRPtextBox";
             MRPtextBox.Size = new Size(290, 29);
             MRPtextBox.TabIndex = 44;
@@ -484,7 +474,7 @@
             // 
             IsActivecheckBox.Anchor = AnchorStyles.None;
             IsActivecheckBox.AutoSize = true;
-            IsActivecheckBox.Location = new Point(956, 612);
+            IsActivecheckBox.Location = new Point(819, 532);
             IsActivecheckBox.Name = "IsActivecheckBox";
             IsActivecheckBox.Size = new Size(95, 25);
             IsActivecheckBox.TabIndex = 45;
@@ -495,7 +485,7 @@
             // 
             ReturnablecheckBox.Anchor = AnchorStyles.None;
             ReturnablecheckBox.AutoSize = true;
-            ReturnablecheckBox.Location = new Point(956, 657);
+            ReturnablecheckBox.Location = new Point(819, 577);
             ReturnablecheckBox.Name = "ReturnablecheckBox";
             ReturnablecheckBox.Size = new Size(109, 25);
             ReturnablecheckBox.TabIndex = 46;
@@ -507,7 +497,7 @@
             Savebutton.Anchor = AnchorStyles.None;
             Savebutton.BackColor = Color.OliveDrab;
             Savebutton.ForeColor = Color.White;
-            Savebutton.Location = new Point(816, 732);
+            Savebutton.Location = new Point(679, 652);
             Savebutton.Name = "Savebutton";
             Savebutton.Size = new Size(124, 41);
             Savebutton.TabIndex = 47;
@@ -519,7 +509,7 @@
             // 
             Clearbutton.Anchor = AnchorStyles.None;
             Clearbutton.BackColor = Color.Tan;
-            Clearbutton.Location = new Point(969, 732);
+            Clearbutton.Location = new Point(832, 652);
             Clearbutton.Name = "Clearbutton";
             Clearbutton.Size = new Size(124, 41);
             Clearbutton.TabIndex = 48;
@@ -532,7 +522,7 @@
             Cancelbutton.Anchor = AnchorStyles.None;
             Cancelbutton.BackColor = Color.Red;
             Cancelbutton.ForeColor = Color.White;
-            Cancelbutton.Location = new Point(1122, 732);
+            Cancelbutton.Location = new Point(985, 652);
             Cancelbutton.Name = "Cancelbutton";
             Cancelbutton.Size = new Size(124, 41);
             Cancelbutton.TabIndex = 49;
@@ -545,7 +535,7 @@
             AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            ClientSize = new Size(1412, 821);
+            ClientSize = new Size(1235, 741);
             Controls.Add(Cancelbutton);
             Controls.Add(Clearbutton);
             Controls.Add(Savebutton);
@@ -595,7 +585,6 @@
             Controls.Add(ProductNamelabel);
             Controls.Add(ProductIDtextBox);
             Controls.Add(ProductIDlabel);
-            Controls.Add(Headerpanel);
             Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
             Name = "AddProductGUI";
@@ -607,8 +596,6 @@
         }
 
         #endregion
-
-        private Panel Headerpanel;
         private Label ProductIDlabel;
         private TextBox ProductIDtextBox;
         private Label ProductNamelabel;

@@ -15,8 +15,6 @@ namespace SuperMart_Pro.View.Cashier
         private void InitializeComponent()
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            Headerpanel = new Panel();
-            HeaderTitlelabel = new Label();
             SearchpanelPanel = new Panel();
             Searchlabel = new Label();
             SearchtextBox = new TextBox();
@@ -26,32 +24,10 @@ namespace SuperMart_Pro.View.Cashier
             CashierdataGridView = new DataGridView();
             FooterpanelPanel = new Panel();
             Closebutton = new Button();
-            Headerpanel.SuspendLayout();
             SearchpanelPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)CashierdataGridView).BeginInit();
             FooterpanelPanel.SuspendLayout();
             SuspendLayout();
-            // 
-            // Headerpanel
-            // 
-            Headerpanel.BackColor = Color.Tomato;
-            Headerpanel.Controls.Add(HeaderTitlelabel);
-            Headerpanel.Dock = DockStyle.Top;
-            Headerpanel.Location = new Point(0, 0);
-            Headerpanel.Name = "Headerpanel";
-            Headerpanel.Size = new Size(1400, 65);
-            Headerpanel.TabIndex = 0;
-            // 
-            // HeaderTitlelabel
-            // 
-            HeaderTitlelabel.AutoSize = true;
-            HeaderTitlelabel.Font = new Font("Times New Roman", 22F, FontStyle.Bold);
-            HeaderTitlelabel.ForeColor = Color.White;
-            HeaderTitlelabel.Location = new Point(20, 14);
-            HeaderTitlelabel.Name = "HeaderTitlelabel";
-            HeaderTitlelabel.Size = new Size(245, 35);
-            HeaderTitlelabel.TabIndex = 0;
-            HeaderTitlelabel.Text = "View All Cashiers";
             // 
             // SearchpanelPanel
             // 
@@ -63,7 +39,7 @@ namespace SuperMart_Pro.View.Cashier
             SearchpanelPanel.Controls.Add(Refreshbutton);
             SearchpanelPanel.Controls.Add(TotalRecordslabel);
             SearchpanelPanel.Dock = DockStyle.Top;
-            SearchpanelPanel.Location = new Point(0, 65);
+            SearchpanelPanel.Location = new Point(0, 0);
             SearchpanelPanel.Name = "SearchpanelPanel";
             SearchpanelPanel.Size = new Size(1400, 55);
             SearchpanelPanel.TabIndex = 1;
@@ -130,13 +106,13 @@ namespace SuperMart_Pro.View.Cashier
             CashierdataGridView.Dock = DockStyle.Fill;
             CashierdataGridView.EnableHeadersVisualStyles = false;
             CashierdataGridView.GridColor = Color.LightGray;
-            CashierdataGridView.Location = new Point(0, 120);
+            CashierdataGridView.Location = new Point(0, 55);
             CashierdataGridView.Name = "CashierdataGridView";
             CashierdataGridView.ReadOnly = true;
             CashierdataGridView.RowHeadersWidth = 40;
             CashierdataGridView.RowTemplate.Height = 32;
             CashierdataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            CashierdataGridView.Size = new Size(1400, 625);
+            CashierdataGridView.Size = new Size(1400, 690);
             CashierdataGridView.TabIndex = 2;
             CashierdataGridView.SelectionChanged += CashierdataGridView_SelectionChanged;
             // 
@@ -172,15 +148,12 @@ namespace SuperMart_Pro.View.Cashier
             Controls.Add(CashierdataGridView);
             Controls.Add(FooterpanelPanel);
             Controls.Add(SearchpanelPanel);
-            Controls.Add(Headerpanel);
             Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
             Name = "ViewAllCashierGUI";
             Text = "View All Cashiers";
             WindowState = FormWindowState.Maximized;
             Load += ViewAllCashierGUI_Load;
-            Headerpanel.ResumeLayout(false);
-            Headerpanel.PerformLayout();
             SearchpanelPanel.ResumeLayout(false);
             SearchpanelPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)CashierdataGridView).EndInit();
@@ -189,9 +162,6 @@ namespace SuperMart_Pro.View.Cashier
         }
 
         #endregion
-
-        private Panel Headerpanel;
-        private Label HeaderTitlelabel;
         private Panel SearchpanelPanel;
         private Label Searchlabel;
         private TextBox SearchtextBox;

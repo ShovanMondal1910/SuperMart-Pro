@@ -15,7 +15,6 @@ namespace SuperMart_Pro.View.Supplier
 
         private void InitializeComponent()
         {
-            Headerpanel = new Panel();
             SearchgroupBox = new GroupBox();
             Searchbutton = new Button();
             SearchtextBox = new TextBox();
@@ -46,21 +45,12 @@ namespace SuperMart_Pro.View.Supplier
             SearchgroupBox.SuspendLayout();
             SuspendLayout();
             // 
-            // Headerpanel
-            // 
-            Headerpanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            Headerpanel.BackColor = Color.Tomato;
-            Headerpanel.Location = new Point(0, 0);
-            Headerpanel.Name = "Headerpanel";
-            Headerpanel.Size = new Size(863, 85);
-            Headerpanel.TabIndex = 0;
-            // 
             // SearchgroupBox
             // 
             SearchgroupBox.Anchor = AnchorStyles.None;
             SearchgroupBox.Controls.Add(Searchbutton);
             SearchgroupBox.Controls.Add(SearchtextBox);
-            SearchgroupBox.Location = new Point(196, 103);
+            SearchgroupBox.Location = new Point(84, 23);
             SearchgroupBox.Name = "SearchgroupBox";
             SearchgroupBox.Size = new Size(441, 80);
             SearchgroupBox.TabIndex = 1;
@@ -88,7 +78,7 @@ namespace SuperMart_Pro.View.Supplier
             // 
             SupplierIDlabel.Anchor = AnchorStyles.None;
             SupplierIDlabel.AutoSize = true;
-            SupplierIDlabel.Location = new Point(226, 210);
+            SupplierIDlabel.Location = new Point(114, 130);
             SupplierIDlabel.Name = "SupplierIDlabel";
             SupplierIDlabel.Size = new Size(105, 21);
             SupplierIDlabel.TabIndex = 2;
@@ -97,7 +87,7 @@ namespace SuperMart_Pro.View.Supplier
             // SupplierIDtextBox
             // 
             SupplierIDtextBox.Anchor = AnchorStyles.None;
-            SupplierIDtextBox.Location = new Point(342, 207);
+            SupplierIDtextBox.Location = new Point(230, 127);
             SupplierIDtextBox.Name = "SupplierIDtextBox";
             SupplierIDtextBox.ReadOnly = true;
             SupplierIDtextBox.Size = new Size(273, 29);
@@ -107,7 +97,7 @@ namespace SuperMart_Pro.View.Supplier
             // 
             SupplierNamelabel.Anchor = AnchorStyles.None;
             SupplierNamelabel.AutoSize = true;
-            SupplierNamelabel.Location = new Point(202, 258);
+            SupplierNamelabel.Location = new Point(90, 178);
             SupplierNamelabel.Name = "SupplierNamelabel";
             SupplierNamelabel.Size = new Size(129, 21);
             SupplierNamelabel.TabIndex = 4;
@@ -116,7 +106,7 @@ namespace SuperMart_Pro.View.Supplier
             // SupplierNametextBox
             // 
             SupplierNametextBox.Anchor = AnchorStyles.None;
-            SupplierNametextBox.Location = new Point(342, 255);
+            SupplierNametextBox.Location = new Point(230, 175);
             SupplierNametextBox.Name = "SupplierNametextBox";
             SupplierNametextBox.Size = new Size(273, 29);
             SupplierNametextBox.TabIndex = 5;
@@ -125,7 +115,7 @@ namespace SuperMart_Pro.View.Supplier
             // 
             ContactNumberlabel.Anchor = AnchorStyles.None;
             ContactNumberlabel.AutoSize = true;
-            ContactNumberlabel.Location = new Point(175, 307);
+            ContactNumberlabel.Location = new Point(63, 227);
             ContactNumberlabel.Name = "ContactNumberlabel";
             ContactNumberlabel.Size = new Size(143, 21);
             ContactNumberlabel.TabIndex = 6;
@@ -134,7 +124,7 @@ namespace SuperMart_Pro.View.Supplier
             // ContactNumbertextBox
             // 
             ContactNumbertextBox.Anchor = AnchorStyles.None;
-            ContactNumbertextBox.Location = new Point(342, 304);
+            ContactNumbertextBox.Location = new Point(230, 224);
             ContactNumbertextBox.Name = "ContactNumbertextBox";
             ContactNumbertextBox.Size = new Size(273, 29);
             ContactNumbertextBox.TabIndex = 7;
@@ -143,7 +133,7 @@ namespace SuperMart_Pro.View.Supplier
             // 
             Emaillabel.Anchor = AnchorStyles.None;
             Emaillabel.AutoSize = true;
-            Emaillabel.Location = new Point(270, 356);
+            Emaillabel.Location = new Point(158, 276);
             Emaillabel.Name = "Emaillabel";
             Emaillabel.Size = new Size(60, 21);
             Emaillabel.TabIndex = 8;
@@ -152,7 +142,7 @@ namespace SuperMart_Pro.View.Supplier
             // EmailtextBox
             // 
             EmailtextBox.Anchor = AnchorStyles.None;
-            EmailtextBox.Location = new Point(342, 353);
+            EmailtextBox.Location = new Point(230, 273);
             EmailtextBox.Name = "EmailtextBox";
             EmailtextBox.Size = new Size(273, 29);
             EmailtextBox.TabIndex = 9;
@@ -161,7 +151,7 @@ namespace SuperMart_Pro.View.Supplier
             // 
             Addresslabel.Anchor = AnchorStyles.None;
             Addresslabel.AutoSize = true;
-            Addresslabel.Location = new Point(248, 405);
+            Addresslabel.Location = new Point(136, 325);
             Addresslabel.Name = "Addresslabel";
             Addresslabel.Size = new Size(82, 21);
             Addresslabel.TabIndex = 10;
@@ -170,7 +160,7 @@ namespace SuperMart_Pro.View.Supplier
             // AddresstextBox
             // 
             AddresstextBox.Anchor = AnchorStyles.None;
-            AddresstextBox.Location = new Point(342, 402);
+            AddresstextBox.Location = new Point(230, 322);
             AddresstextBox.Name = "AddresstextBox";
             AddresstextBox.Size = new Size(273, 29);
             AddresstextBox.TabIndex = 11;
@@ -179,7 +169,7 @@ namespace SuperMart_Pro.View.Supplier
             // 
             Countrylabel.Anchor = AnchorStyles.None;
             Countrylabel.AutoSize = true;
-            Countrylabel.Location = new Point(252, 454);
+            Countrylabel.Location = new Point(140, 374);
             Countrylabel.Name = "Countrylabel";
             Countrylabel.Size = new Size(80, 21);
             Countrylabel.TabIndex = 12;
@@ -188,7 +178,7 @@ namespace SuperMart_Pro.View.Supplier
             // CountrytextBox
             // 
             CountrytextBox.Anchor = AnchorStyles.None;
-            CountrytextBox.Location = new Point(342, 451);
+            CountrytextBox.Location = new Point(230, 371);
             CountrytextBox.Name = "CountrytextBox";
             CountrytextBox.Size = new Size(273, 29);
             CountrytextBox.TabIndex = 13;
@@ -197,7 +187,7 @@ namespace SuperMart_Pro.View.Supplier
             // 
             CompanyNamelabel.Anchor = AnchorStyles.None;
             CompanyNamelabel.AutoSize = true;
-            CompanyNamelabel.Location = new Point(196, 503);
+            CompanyNamelabel.Location = new Point(84, 423);
             CompanyNamelabel.Name = "CompanyNamelabel";
             CompanyNamelabel.Size = new Size(140, 21);
             CompanyNamelabel.TabIndex = 14;
@@ -206,7 +196,7 @@ namespace SuperMart_Pro.View.Supplier
             // CompanyNametextBox
             // 
             CompanyNametextBox.Anchor = AnchorStyles.None;
-            CompanyNametextBox.Location = new Point(342, 500);
+            CompanyNametextBox.Location = new Point(230, 420);
             CompanyNametextBox.Name = "CompanyNametextBox";
             CompanyNametextBox.Size = new Size(273, 29);
             CompanyNametextBox.TabIndex = 15;
@@ -215,7 +205,7 @@ namespace SuperMart_Pro.View.Supplier
             // 
             TotalPurchaseAmountlabel.Anchor = AnchorStyles.None;
             TotalPurchaseAmountlabel.AutoSize = true;
-            TotalPurchaseAmountlabel.Location = new Point(136, 552);
+            TotalPurchaseAmountlabel.Location = new Point(24, 472);
             TotalPurchaseAmountlabel.Name = "TotalPurchaseAmountlabel";
             TotalPurchaseAmountlabel.Size = new Size(194, 21);
             TotalPurchaseAmountlabel.TabIndex = 16;
@@ -224,7 +214,7 @@ namespace SuperMart_Pro.View.Supplier
             // TotalPurchaseAmounttextBox
             // 
             TotalPurchaseAmounttextBox.Anchor = AnchorStyles.None;
-            TotalPurchaseAmounttextBox.Location = new Point(342, 549);
+            TotalPurchaseAmounttextBox.Location = new Point(230, 469);
             TotalPurchaseAmounttextBox.Name = "TotalPurchaseAmounttextBox";
             TotalPurchaseAmounttextBox.Size = new Size(273, 29);
             TotalPurchaseAmounttextBox.TabIndex = 17;
@@ -233,7 +223,7 @@ namespace SuperMart_Pro.View.Supplier
             // 
             DueAmountlabel.Anchor = AnchorStyles.None;
             DueAmountlabel.AutoSize = true;
-            DueAmountlabel.Location = new Point(217, 601);
+            DueAmountlabel.Location = new Point(105, 521);
             DueAmountlabel.Name = "DueAmountlabel";
             DueAmountlabel.Size = new Size(113, 21);
             DueAmountlabel.TabIndex = 18;
@@ -242,7 +232,7 @@ namespace SuperMart_Pro.View.Supplier
             // DueAmounttextBox
             // 
             DueAmounttextBox.Anchor = AnchorStyles.None;
-            DueAmounttextBox.Location = new Point(342, 598);
+            DueAmounttextBox.Location = new Point(230, 518);
             DueAmounttextBox.Name = "DueAmounttextBox";
             DueAmounttextBox.Size = new Size(273, 29);
             DueAmounttextBox.TabIndex = 19;
@@ -251,7 +241,7 @@ namespace SuperMart_Pro.View.Supplier
             // 
             Websitelabel.Anchor = AnchorStyles.None;
             Websitelabel.AutoSize = true;
-            Websitelabel.Location = new Point(252, 650);
+            Websitelabel.Location = new Point(140, 570);
             Websitelabel.Name = "Websitelabel";
             Websitelabel.Size = new Size(78, 21);
             Websitelabel.TabIndex = 20;
@@ -260,7 +250,7 @@ namespace SuperMart_Pro.View.Supplier
             // WebsitetextBox
             // 
             WebsitetextBox.Anchor = AnchorStyles.None;
-            WebsitetextBox.Location = new Point(342, 647);
+            WebsitetextBox.Location = new Point(230, 567);
             WebsitetextBox.Name = "WebsitetextBox";
             WebsitetextBox.Size = new Size(273, 29);
             WebsitetextBox.TabIndex = 21;
@@ -269,7 +259,7 @@ namespace SuperMart_Pro.View.Supplier
             // 
             IsActivecheckBox.Anchor = AnchorStyles.None;
             IsActivecheckBox.AutoSize = true;
-            IsActivecheckBox.Location = new Point(342, 698);
+            IsActivecheckBox.Location = new Point(230, 618);
             IsActivecheckBox.Name = "IsActivecheckBox";
             IsActivecheckBox.Size = new Size(95, 25);
             IsActivecheckBox.TabIndex = 22;
@@ -281,7 +271,7 @@ namespace SuperMart_Pro.View.Supplier
             Savebutton.Anchor = AnchorStyles.None;
             Savebutton.BackColor = Color.OliveDrab;
             Savebutton.ForeColor = Color.White;
-            Savebutton.Location = new Point(213, 755);
+            Savebutton.Location = new Point(101, 675);
             Savebutton.Name = "Savebutton";
             Savebutton.Size = new Size(124, 41);
             Savebutton.TabIndex = 23;
@@ -293,7 +283,7 @@ namespace SuperMart_Pro.View.Supplier
             // 
             Clearbutton.Anchor = AnchorStyles.None;
             Clearbutton.BackColor = Color.Tan;
-            Clearbutton.Location = new Point(368, 755);
+            Clearbutton.Location = new Point(256, 675);
             Clearbutton.Name = "Clearbutton";
             Clearbutton.Size = new Size(124, 41);
             Clearbutton.TabIndex = 24;
@@ -306,7 +296,7 @@ namespace SuperMart_Pro.View.Supplier
             Cancelbutton.Anchor = AnchorStyles.None;
             Cancelbutton.BackColor = Color.Red;
             Cancelbutton.ForeColor = Color.White;
-            Cancelbutton.Location = new Point(523, 755);
+            Cancelbutton.Location = new Point(411, 675);
             Cancelbutton.Name = "Cancelbutton";
             Cancelbutton.Size = new Size(124, 41);
             Cancelbutton.TabIndex = 25;
@@ -318,7 +308,7 @@ namespace SuperMart_Pro.View.Supplier
             // 
             AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(863, 820);
+            ClientSize = new Size(641, 738);
             Controls.Add(Cancelbutton);
             Controls.Add(Clearbutton);
             Controls.Add(Savebutton);
@@ -344,7 +334,6 @@ namespace SuperMart_Pro.View.Supplier
             Controls.Add(SupplierIDtextBox);
             Controls.Add(SupplierIDlabel);
             Controls.Add(SearchgroupBox);
-            Controls.Add(Headerpanel);
             Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
             Name = "UpdateSupplierGUI";
@@ -357,8 +346,6 @@ namespace SuperMart_Pro.View.Supplier
         }
 
         #endregion
-
-        private Panel Headerpanel;
         private GroupBox SearchgroupBox;
         private Button Searchbutton;
         private TextBox SearchtextBox;

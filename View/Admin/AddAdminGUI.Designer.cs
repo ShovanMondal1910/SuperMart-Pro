@@ -14,7 +14,6 @@ namespace SuperMart_Pro.View.Admin
 
         private void InitializeComponent()
         {
-            Headerpanel = new Panel();
             UserIDlabel = new Label();
             UserIDtextBox = new TextBox();
             FullNamelabel = new Label();
@@ -64,20 +63,11 @@ namespace SuperMart_Pro.View.Admin
             ((System.ComponentModel.ISupportInitialize)PhotopictureBox).BeginInit();
             SuspendLayout();
             // 
-            // Headerpanel
-            // 
-            Headerpanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            Headerpanel.BackColor = Color.Tomato;
-            Headerpanel.Location = new Point(0, 0);
-            Headerpanel.Name = "Headerpanel";
-            Headerpanel.Size = new Size(1231, 85);
-            Headerpanel.TabIndex = 0;
-            // 
             // UserIDlabel
             // 
             UserIDlabel.Anchor = AnchorStyles.None;
             UserIDlabel.AutoSize = true;
-            UserIDlabel.Location = new Point(135, 115);
+            UserIDlabel.Location = new Point(132, 37);
             UserIDlabel.Name = "UserIDlabel";
             UserIDlabel.Size = new Size(78, 21);
             UserIDlabel.TabIndex = 1;
@@ -86,7 +76,7 @@ namespace SuperMart_Pro.View.Admin
             // UserIDtextBox
             // 
             UserIDtextBox.Anchor = AnchorStyles.None;
-            UserIDtextBox.Location = new Point(229, 110);
+            UserIDtextBox.Location = new Point(226, 32);
             UserIDtextBox.Name = "UserIDtextBox";
             UserIDtextBox.Size = new Size(280, 29);
             UserIDtextBox.TabIndex = 2;
@@ -95,7 +85,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             FullNamelabel.Anchor = AnchorStyles.None;
             FullNamelabel.AutoSize = true;
-            FullNamelabel.Location = new Point(118, 171);
+            FullNamelabel.Location = new Point(115, 93);
             FullNamelabel.Name = "FullNamelabel";
             FullNamelabel.Size = new Size(95, 21);
             FullNamelabel.TabIndex = 3;
@@ -104,7 +94,7 @@ namespace SuperMart_Pro.View.Admin
             // FullNametextBox
             // 
             FullNametextBox.Anchor = AnchorStyles.None;
-            FullNametextBox.Location = new Point(229, 167);
+            FullNametextBox.Location = new Point(226, 89);
             FullNametextBox.Name = "FullNametextBox";
             FullNametextBox.Size = new Size(280, 29);
             FullNametextBox.TabIndex = 4;
@@ -113,7 +103,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             DateOfBirthlabel.Anchor = AnchorStyles.None;
             DateOfBirthlabel.AutoSize = true;
-            DateOfBirthlabel.Location = new Point(98, 231);
+            DateOfBirthlabel.Location = new Point(95, 153);
             DateOfBirthlabel.Name = "DateOfBirthlabel";
             DateOfBirthlabel.Size = new Size(115, 21);
             DateOfBirthlabel.TabIndex = 5;
@@ -123,7 +113,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             DateOfBirthdatePicker.Anchor = AnchorStyles.None;
             DateOfBirthdatePicker.Format = DateTimePickerFormat.Short;
-            DateOfBirthdatePicker.Location = new Point(229, 229);
+            DateOfBirthdatePicker.Location = new Point(226, 151);
             DateOfBirthdatePicker.Name = "DateOfBirthdatePicker";
             DateOfBirthdatePicker.Size = new Size(280, 29);
             DateOfBirthdatePicker.TabIndex = 6;
@@ -132,7 +122,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             Genderlabel.Anchor = AnchorStyles.None;
             Genderlabel.AutoSize = true;
-            Genderlabel.Location = new Point(139, 287);
+            Genderlabel.Location = new Point(136, 209);
             Genderlabel.Name = "Genderlabel";
             Genderlabel.Size = new Size(74, 21);
             Genderlabel.TabIndex = 7;
@@ -142,7 +132,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             Photolabel.Anchor = AnchorStyles.None;
             Photolabel.AutoSize = true;
-            Photolabel.Location = new Point(149, 413);
+            Photolabel.Location = new Point(146, 335);
             Photolabel.Name = "Photolabel";
             Photolabel.Size = new Size(64, 21);
             Photolabel.TabIndex = 9;
@@ -152,7 +142,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             PhotopictureBox.Anchor = AnchorStyles.None;
             PhotopictureBox.BorderStyle = BorderStyle.FixedSingle;
-            PhotopictureBox.Location = new Point(229, 338);
+            PhotopictureBox.Location = new Point(226, 260);
             PhotopictureBox.Name = "PhotopictureBox";
             PhotopictureBox.Size = new Size(156, 180);
             PhotopictureBox.SizeMode = PictureBoxSizeMode.Zoom;
@@ -162,7 +152,7 @@ namespace SuperMart_Pro.View.Admin
             // BrowsePhotobutton
             // 
             BrowsePhotobutton.Anchor = AnchorStyles.None;
-            BrowsePhotobutton.Location = new Point(414, 413);
+            BrowsePhotobutton.Location = new Point(411, 335);
             BrowsePhotobutton.Name = "BrowsePhotobutton";
             BrowsePhotobutton.Size = new Size(90, 30);
             BrowsePhotobutton.TabIndex = 11;
@@ -174,7 +164,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             PhoneNumberlabel.Anchor = AnchorStyles.None;
             PhoneNumberlabel.AutoSize = true;
-            PhoneNumberlabel.Location = new Point(82, 537);
+            PhoneNumberlabel.Location = new Point(79, 459);
             PhoneNumberlabel.Name = "PhoneNumberlabel";
             PhoneNumberlabel.Size = new Size(131, 21);
             PhoneNumberlabel.TabIndex = 12;
@@ -183,7 +173,7 @@ namespace SuperMart_Pro.View.Admin
             // PhoneNumbertextBox
             // 
             PhoneNumbertextBox.Anchor = AnchorStyles.None;
-            PhoneNumbertextBox.Location = new Point(229, 534);
+            PhoneNumbertextBox.Location = new Point(226, 456);
             PhoneNumbertextBox.Name = "PhoneNumbertextBox";
             PhoneNumbertextBox.Size = new Size(280, 29);
             PhoneNumbertextBox.TabIndex = 13;
@@ -192,7 +182,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             Emaillabel.Anchor = AnchorStyles.None;
             Emaillabel.AutoSize = true;
-            Emaillabel.Location = new Point(149, 591);
+            Emaillabel.Location = new Point(146, 513);
             Emaillabel.Name = "Emaillabel";
             Emaillabel.Size = new Size(60, 21);
             Emaillabel.TabIndex = 14;
@@ -201,7 +191,7 @@ namespace SuperMart_Pro.View.Admin
             // EmailtextBox
             // 
             EmailtextBox.Anchor = AnchorStyles.None;
-            EmailtextBox.Location = new Point(229, 591);
+            EmailtextBox.Location = new Point(226, 513);
             EmailtextBox.Name = "EmailtextBox";
             EmailtextBox.Size = new Size(280, 29);
             EmailtextBox.TabIndex = 15;
@@ -210,7 +200,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             Addresslabel.Anchor = AnchorStyles.None;
             Addresslabel.AutoSize = true;
-            Addresslabel.Location = new Point(120, 651);
+            Addresslabel.Location = new Point(117, 573);
             Addresslabel.Name = "Addresslabel";
             Addresslabel.Size = new Size(82, 21);
             Addresslabel.TabIndex = 16;
@@ -220,7 +210,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             Usernamelabel.Anchor = AnchorStyles.None;
             Usernamelabel.AutoSize = true;
-            Usernamelabel.Location = new Point(657, 118);
+            Usernamelabel.Location = new Point(654, 40);
             Usernamelabel.Name = "Usernamelabel";
             Usernamelabel.Size = new Size(93, 21);
             Usernamelabel.TabIndex = 18;
@@ -229,7 +219,7 @@ namespace SuperMart_Pro.View.Admin
             // UsernametextBox
             // 
             UsernametextBox.Anchor = AnchorStyles.None;
-            UsernametextBox.Location = new Point(777, 115);
+            UsernametextBox.Location = new Point(774, 37);
             UsernametextBox.Name = "UsernametextBox";
             UsernametextBox.Size = new Size(280, 29);
             UsernametextBox.TabIndex = 19;
@@ -238,7 +228,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             Passwordlabel.Anchor = AnchorStyles.None;
             Passwordlabel.AutoSize = true;
-            Passwordlabel.Location = new Point(657, 175);
+            Passwordlabel.Location = new Point(654, 97);
             Passwordlabel.Name = "Passwordlabel";
             Passwordlabel.Size = new Size(93, 21);
             Passwordlabel.TabIndex = 20;
@@ -247,7 +237,7 @@ namespace SuperMart_Pro.View.Admin
             // PasswordtextBox
             // 
             PasswordtextBox.Anchor = AnchorStyles.None;
-            PasswordtextBox.Location = new Point(777, 172);
+            PasswordtextBox.Location = new Point(774, 94);
             PasswordtextBox.Name = "PasswordtextBox";
             PasswordtextBox.PasswordChar = '*';
             PasswordtextBox.Size = new Size(280, 29);
@@ -257,7 +247,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             IsActivecheckBox.Anchor = AnchorStyles.None;
             IsActivecheckBox.AutoSize = true;
-            IsActivecheckBox.Location = new Point(777, 232);
+            IsActivecheckBox.Location = new Point(774, 154);
             IsActivecheckBox.Name = "IsActivecheckBox";
             IsActivecheckBox.Size = new Size(95, 25);
             IsActivecheckBox.TabIndex = 22;
@@ -268,7 +258,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             BranchIDlabel.Anchor = AnchorStyles.None;
             BranchIDlabel.AutoSize = true;
-            BranchIDlabel.Location = new Point(654, 282);
+            BranchIDlabel.Location = new Point(651, 204);
             BranchIDlabel.Name = "BranchIDlabel";
             BranchIDlabel.Size = new Size(96, 21);
             BranchIDlabel.TabIndex = 23;
@@ -277,7 +267,7 @@ namespace SuperMart_Pro.View.Admin
             // BranchIDtextBox
             // 
             BranchIDtextBox.Anchor = AnchorStyles.None;
-            BranchIDtextBox.Location = new Point(777, 279);
+            BranchIDtextBox.Location = new Point(774, 201);
             BranchIDtextBox.Name = "BranchIDtextBox";
             BranchIDtextBox.Size = new Size(280, 29);
             BranchIDtextBox.TabIndex = 24;
@@ -286,7 +276,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             BranchNamelabel.Anchor = AnchorStyles.None;
             BranchNamelabel.AutoSize = true;
-            BranchNamelabel.Location = new Point(630, 342);
+            BranchNamelabel.Location = new Point(627, 264);
             BranchNamelabel.Name = "BranchNamelabel";
             BranchNamelabel.Size = new Size(120, 21);
             BranchNamelabel.TabIndex = 25;
@@ -295,7 +285,7 @@ namespace SuperMart_Pro.View.Admin
             // BranchNametextBox
             // 
             BranchNametextBox.Anchor = AnchorStyles.None;
-            BranchNametextBox.Location = new Point(777, 338);
+            BranchNametextBox.Location = new Point(774, 260);
             BranchNametextBox.Name = "BranchNametextBox";
             BranchNametextBox.ReadOnly = true;
             BranchNametextBox.Size = new Size(280, 29);
@@ -305,7 +295,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             AdminIDlabel.Anchor = AnchorStyles.None;
             AdminIDlabel.AutoSize = true;
-            AdminIDlabel.Location = new Point(668, 629);
+            AdminIDlabel.Location = new Point(665, 551);
             AdminIDlabel.Name = "AdminIDlabel";
             AdminIDlabel.Size = new Size(93, 21);
             AdminIDlabel.TabIndex = 27;
@@ -314,7 +304,7 @@ namespace SuperMart_Pro.View.Admin
             // AdminIDtextBox
             // 
             AdminIDtextBox.Anchor = AnchorStyles.None;
-            AdminIDtextBox.Location = new Point(777, 621);
+            AdminIDtextBox.Location = new Point(774, 543);
             AdminIDtextBox.Name = "AdminIDtextBox";
             AdminIDtextBox.Size = new Size(280, 29);
             AdminIDtextBox.TabIndex = 28;
@@ -323,7 +313,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             AdminTypelabel.Anchor = AnchorStyles.None;
             AdminTypelabel.AutoSize = true;
-            AdminTypelabel.Location = new Point(653, 680);
+            AdminTypelabel.Location = new Point(650, 602);
             AdminTypelabel.Name = "AdminTypelabel";
             AdminTypelabel.Size = new Size(112, 21);
             AdminTypelabel.TabIndex = 29;
@@ -334,7 +324,7 @@ namespace SuperMart_Pro.View.Admin
             AdminTypecomboBox.Anchor = AnchorStyles.None;
             AdminTypecomboBox.FormattingEnabled = true;
             AdminTypecomboBox.Items.AddRange(new object[] { "Super Admin", "Branch Admin" });
-            AdminTypecomboBox.Location = new Point(777, 677);
+            AdminTypecomboBox.Location = new Point(774, 599);
             AdminTypecomboBox.Name = "AdminTypecomboBox";
             AdminTypecomboBox.Size = new Size(280, 29);
             AdminTypecomboBox.TabIndex = 30;
@@ -343,7 +333,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             CanManageUserscheckBox.Anchor = AnchorStyles.None;
             CanManageUserscheckBox.AutoSize = true;
-            CanManageUserscheckBox.Location = new Point(542, 735);
+            CanManageUserscheckBox.Location = new Point(539, 657);
             CanManageUserscheckBox.Name = "CanManageUserscheckBox";
             CanManageUserscheckBox.Size = new Size(170, 25);
             CanManageUserscheckBox.TabIndex = 31;
@@ -354,7 +344,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             CanManageBranchescheckBox.Anchor = AnchorStyles.None;
             CanManageBranchescheckBox.AutoSize = true;
-            CanManageBranchescheckBox.Location = new Point(738, 735);
+            CanManageBranchescheckBox.Location = new Point(735, 657);
             CanManageBranchescheckBox.Name = "CanManageBranchescheckBox";
             CanManageBranchescheckBox.Size = new Size(196, 25);
             CanManageBranchescheckBox.TabIndex = 32;
@@ -365,7 +355,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             CanViewReportscheckBox.Anchor = AnchorStyles.None;
             CanViewReportscheckBox.AutoSize = true;
-            CanViewReportscheckBox.Location = new Point(957, 735);
+            CanViewReportscheckBox.Location = new Point(954, 657);
             CanViewReportscheckBox.Name = "CanViewReportscheckBox";
             CanViewReportscheckBox.Size = new Size(166, 25);
             CanViewReportscheckBox.TabIndex = 33;
@@ -377,7 +367,7 @@ namespace SuperMart_Pro.View.Admin
             Savebutton.Anchor = AnchorStyles.None;
             Savebutton.BackColor = Color.OliveDrab;
             Savebutton.ForeColor = Color.White;
-            Savebutton.Location = new Point(389, 790);
+            Savebutton.Location = new Point(387, 713);
             Savebutton.Name = "Savebutton";
             Savebutton.Size = new Size(124, 41);
             Savebutton.TabIndex = 34;
@@ -389,7 +379,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             Clearbutton.Anchor = AnchorStyles.None;
             Clearbutton.BackColor = Color.Tan;
-            Clearbutton.Location = new Point(542, 790);
+            Clearbutton.Location = new Point(540, 713);
             Clearbutton.Name = "Clearbutton";
             Clearbutton.Size = new Size(124, 41);
             Clearbutton.TabIndex = 35;
@@ -402,7 +392,7 @@ namespace SuperMart_Pro.View.Admin
             Cancelbutton.Anchor = AnchorStyles.None;
             Cancelbutton.BackColor = Color.Red;
             Cancelbutton.ForeColor = Color.White;
-            Cancelbutton.Location = new Point(695, 790);
+            Cancelbutton.Location = new Point(693, 713);
             Cancelbutton.Name = "Cancelbutton";
             Cancelbutton.Size = new Size(124, 41);
             Cancelbutton.TabIndex = 36;
@@ -413,7 +403,7 @@ namespace SuperMart_Pro.View.Admin
             // BranchIDsearchbutton
             // 
             BranchIDsearchbutton.Anchor = AnchorStyles.None;
-            BranchIDsearchbutton.Location = new Point(1091, 279);
+            BranchIDsearchbutton.Location = new Point(1088, 201);
             BranchIDsearchbutton.Name = "BranchIDsearchbutton";
             BranchIDsearchbutton.Size = new Size(75, 29);
             BranchIDsearchbutton.TabIndex = 37;
@@ -425,7 +415,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             SecondSecurityAnswerlabel.Anchor = AnchorStyles.None;
             SecondSecurityAnswerlabel.AutoSize = true;
-            SecondSecurityAnswerlabel.Location = new Point(559, 572);
+            SecondSecurityAnswerlabel.Location = new Point(556, 494);
             SecondSecurityAnswerlabel.Name = "SecondSecurityAnswerlabel";
             SecondSecurityAnswerlabel.Size = new Size(203, 21);
             SecondSecurityAnswerlabel.TabIndex = 45;
@@ -434,7 +424,7 @@ namespace SuperMart_Pro.View.Admin
             // SecondSecurityAnswertextBox
             // 
             SecondSecurityAnswertextBox.Anchor = AnchorStyles.None;
-            SecondSecurityAnswertextBox.Location = new Point(777, 566);
+            SecondSecurityAnswertextBox.Location = new Point(774, 488);
             SecondSecurityAnswertextBox.Name = "SecondSecurityAnswertextBox";
             SecondSecurityAnswertextBox.Size = new Size(280, 29);
             SecondSecurityAnswertextBox.TabIndex = 44;
@@ -444,7 +434,7 @@ namespace SuperMart_Pro.View.Admin
             SecondSecurityQuestioncomboBox.Anchor = AnchorStyles.None;
             SecondSecurityQuestioncomboBox.FormattingEnabled = true;
             SecondSecurityQuestioncomboBox.Items.AddRange(new object[] { "What was the name of your first school?", "", "In which city or village were you born?", "", "What is the name of your childhood best friend?", "What was your first pet’s name?", "", "What is your favorite teacher’s name?", "", "What was the model of your first mobile phone?", "", "What is your mother’s middle name?", "", "What is the name of the street you grew up on?", "", "What is your favorite book or movie from childhood?", "", "What was your dream job as a child?" });
-            SecondSecurityQuestioncomboBox.Location = new Point(777, 511);
+            SecondSecurityQuestioncomboBox.Location = new Point(774, 433);
             SecondSecurityQuestioncomboBox.Name = "SecondSecurityQuestioncomboBox";
             SecondSecurityQuestioncomboBox.Size = new Size(389, 29);
             SecondSecurityQuestioncomboBox.TabIndex = 43;
@@ -453,7 +443,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             SecondSecurityQuestionlalabel.Anchor = AnchorStyles.None;
             SecondSecurityQuestionlalabel.AutoSize = true;
-            SecondSecurityQuestionlalabel.Location = new Point(547, 515);
+            SecondSecurityQuestionlalabel.Location = new Point(544, 437);
             SecondSecurityQuestionlalabel.Name = "SecondSecurityQuestionlalabel";
             SecondSecurityQuestionlalabel.Size = new Size(214, 21);
             SecondSecurityQuestionlalabel.TabIndex = 42;
@@ -463,7 +453,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             FirstSecurityAnswerlabel.Anchor = AnchorStyles.None;
             FirstSecurityAnswerlabel.AutoSize = true;
-            FirstSecurityAnswerlabel.Location = new Point(581, 458);
+            FirstSecurityAnswerlabel.Location = new Point(578, 380);
             FirstSecurityAnswerlabel.Name = "FirstSecurityAnswerlabel";
             FirstSecurityAnswerlabel.Size = new Size(180, 21);
             FirstSecurityAnswerlabel.TabIndex = 41;
@@ -472,7 +462,7 @@ namespace SuperMart_Pro.View.Admin
             // FirstSecurityAnswertextBox
             // 
             FirstSecurityAnswertextBox.Anchor = AnchorStyles.None;
-            FirstSecurityAnswertextBox.Location = new Point(777, 453);
+            FirstSecurityAnswertextBox.Location = new Point(774, 375);
             FirstSecurityAnswertextBox.Name = "FirstSecurityAnswertextBox";
             FirstSecurityAnswertextBox.Size = new Size(280, 29);
             FirstSecurityAnswertextBox.TabIndex = 40;
@@ -482,7 +472,7 @@ namespace SuperMart_Pro.View.Admin
             FirstSecurityQuestioncomboBox.Anchor = AnchorStyles.None;
             FirstSecurityQuestioncomboBox.FormattingEnabled = true;
             FirstSecurityQuestioncomboBox.Items.AddRange(new object[] { "What was the name of your first school?", "", "In which city or village were you born?", "", "What is the name of your childhood best friend?", "What was your first pet’s name?", "", "What is your favorite teacher’s name?", "", "What was the model of your first mobile phone?", "", "What is your mother’s middle name?", "", "What is the name of the street you grew up on?", "", "What is your favorite book or movie from childhood?", "", "What was your dream job as a child?" });
-            FirstSecurityQuestioncomboBox.Location = new Point(777, 395);
+            FirstSecurityQuestioncomboBox.Location = new Point(774, 317);
             FirstSecurityQuestioncomboBox.Name = "FirstSecurityQuestioncomboBox";
             FirstSecurityQuestioncomboBox.Size = new Size(389, 29);
             FirstSecurityQuestioncomboBox.TabIndex = 39;
@@ -491,7 +481,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             FirstSecurityQuestionlabel.Anchor = AnchorStyles.None;
             FirstSecurityQuestionlabel.AutoSize = true;
-            FirstSecurityQuestionlabel.Location = new Point(570, 400);
+            FirstSecurityQuestionlabel.Location = new Point(567, 322);
             FirstSecurityQuestionlabel.Name = "FirstSecurityQuestionlabel";
             FirstSecurityQuestionlabel.Size = new Size(191, 21);
             FirstSecurityQuestionlabel.TabIndex = 38;
@@ -501,7 +491,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             MaleradioButton.Anchor = AnchorStyles.None;
             MaleradioButton.AutoSize = true;
-            MaleradioButton.Location = new Point(229, 285);
+            MaleradioButton.Location = new Point(226, 207);
             MaleradioButton.Name = "MaleradioButton";
             MaleradioButton.Size = new Size(64, 25);
             MaleradioButton.TabIndex = 46;
@@ -513,7 +503,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             FemaleradioButton.Anchor = AnchorStyles.None;
             FemaleradioButton.AutoSize = true;
-            FemaleradioButton.Location = new Point(347, 287);
+            FemaleradioButton.Location = new Point(344, 209);
             FemaleradioButton.Name = "FemaleradioButton";
             FemaleradioButton.Size = new Size(81, 25);
             FemaleradioButton.TabIndex = 47;
@@ -524,7 +514,7 @@ namespace SuperMart_Pro.View.Admin
             // AddressrichTextBox
             // 
             AddressrichTextBox.Anchor = AnchorStyles.None;
-            AddressrichTextBox.Location = new Point(229, 648);
+            AddressrichTextBox.Location = new Point(226, 570);
             AddressrichTextBox.Name = "AddressrichTextBox";
             AddressrichTextBox.Size = new Size(275, 81);
             AddressrichTextBox.TabIndex = 48;
@@ -534,7 +524,7 @@ namespace SuperMart_Pro.View.Admin
             // 
             AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1231, 858);
+            ClientSize = new Size(1231, 776);
             Controls.Add(AddressrichTextBox);
             Controls.Add(FemaleradioButton);
             Controls.Add(MaleradioButton);
@@ -581,7 +571,6 @@ namespace SuperMart_Pro.View.Admin
             Controls.Add(FullNamelabel);
             Controls.Add(UserIDtextBox);
             Controls.Add(UserIDlabel);
-            Controls.Add(Headerpanel);
             Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
             Name = "AddAdminGUI";
@@ -592,8 +581,6 @@ namespace SuperMart_Pro.View.Admin
         }
 
         #endregion
-
-        private Panel Headerpanel;
         private Label UserIDlabel;
         private TextBox UserIDtextBox;
         private Label FullNamelabel;

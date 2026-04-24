@@ -14,7 +14,6 @@ namespace SuperMart_Pro.View.Product
 
         private void InitializeComponent()
         {
-            Headerpanel = new Panel();
             SearchgroupBox = new GroupBox();
             Searchbutton = new Button();
             SearchtextBox = new TextBox();
@@ -71,21 +70,12 @@ namespace SuperMart_Pro.View.Product
             ((System.ComponentModel.ISupportInitialize)PhotopictureBox).BeginInit();
             SuspendLayout();
             // 
-            // Headerpanel
-            // 
-            Headerpanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            Headerpanel.BackColor = Color.Tomato;
-            Headerpanel.Location = new Point(0, 0);
-            Headerpanel.Name = "Headerpanel";
-            Headerpanel.Size = new Size(1411, 85);
-            Headerpanel.TabIndex = 0;
-            // 
             // SearchgroupBox
             // 
             SearchgroupBox.Anchor = AnchorStyles.None;
             SearchgroupBox.Controls.Add(Searchbutton);
             SearchgroupBox.Controls.Add(SearchtextBox);
-            SearchgroupBox.Location = new Point(480, 103);
+            SearchgroupBox.Location = new Point(356, 13);
             SearchgroupBox.Name = "SearchgroupBox";
             SearchgroupBox.Size = new Size(441, 80);
             SearchgroupBox.TabIndex = 1;
@@ -113,7 +103,7 @@ namespace SuperMart_Pro.View.Product
             // 
             ProductIDlabel.Anchor = AnchorStyles.None;
             ProductIDlabel.AutoSize = true;
-            ProductIDlabel.Location = new Point(223, 210);
+            ProductIDlabel.Location = new Point(99, 120);
             ProductIDlabel.Name = "ProductIDlabel";
             ProductIDlabel.Size = new Size(103, 21);
             ProductIDlabel.TabIndex = 2;
@@ -122,7 +112,7 @@ namespace SuperMart_Pro.View.Product
             // ProductIDtextBox
             // 
             ProductIDtextBox.Anchor = AnchorStyles.None;
-            ProductIDtextBox.Location = new Point(390, 207);
+            ProductIDtextBox.Location = new Point(266, 117);
             ProductIDtextBox.Name = "ProductIDtextBox";
             ProductIDtextBox.ReadOnly = true;
             ProductIDtextBox.Size = new Size(290, 29);
@@ -132,7 +122,7 @@ namespace SuperMart_Pro.View.Product
             // 
             ProductNamelabel.Anchor = AnchorStyles.None;
             ProductNamelabel.AutoSize = true;
-            ProductNamelabel.Location = new Point(199, 255);
+            ProductNamelabel.Location = new Point(75, 165);
             ProductNamelabel.Name = "ProductNamelabel";
             ProductNamelabel.Size = new Size(127, 21);
             ProductNamelabel.TabIndex = 4;
@@ -141,7 +131,7 @@ namespace SuperMart_Pro.View.Product
             // ProductNametextBox
             // 
             ProductNametextBox.Anchor = AnchorStyles.None;
-            ProductNametextBox.Location = new Point(390, 252);
+            ProductNametextBox.Location = new Point(266, 162);
             ProductNametextBox.Name = "ProductNametextBox";
             ProductNametextBox.Size = new Size(290, 29);
             ProductNametextBox.TabIndex = 5;
@@ -150,7 +140,7 @@ namespace SuperMart_Pro.View.Product
             // 
             Brandlabel.Anchor = AnchorStyles.None;
             Brandlabel.AutoSize = true;
-            Brandlabel.Location = new Point(262, 300);
+            Brandlabel.Location = new Point(138, 210);
             Brandlabel.Name = "Brandlabel";
             Brandlabel.Size = new Size(64, 21);
             Brandlabel.TabIndex = 6;
@@ -159,7 +149,7 @@ namespace SuperMart_Pro.View.Product
             // BrandtextBox
             // 
             BrandtextBox.Anchor = AnchorStyles.None;
-            BrandtextBox.Location = new Point(390, 297);
+            BrandtextBox.Location = new Point(266, 207);
             BrandtextBox.Name = "BrandtextBox";
             BrandtextBox.Size = new Size(290, 29);
             BrandtextBox.TabIndex = 7;
@@ -168,7 +158,7 @@ namespace SuperMart_Pro.View.Product
             // 
             Photolabel.Anchor = AnchorStyles.None;
             Photolabel.AutoSize = true;
-            Photolabel.Location = new Point(262, 410);
+            Photolabel.Location = new Point(138, 320);
             Photolabel.Name = "Photolabel";
             Photolabel.Size = new Size(64, 21);
             Photolabel.TabIndex = 8;
@@ -178,7 +168,7 @@ namespace SuperMart_Pro.View.Product
             // 
             PhotopictureBox.Anchor = AnchorStyles.None;
             PhotopictureBox.BorderStyle = BorderStyle.FixedSingle;
-            PhotopictureBox.Location = new Point(390, 343);
+            PhotopictureBox.Location = new Point(266, 253);
             PhotopictureBox.Name = "PhotopictureBox";
             PhotopictureBox.Size = new Size(158, 180);
             PhotopictureBox.SizeMode = PictureBoxSizeMode.Zoom;
@@ -188,7 +178,7 @@ namespace SuperMart_Pro.View.Product
             // BrowsePhotobutton
             // 
             BrowsePhotobutton.Anchor = AnchorStyles.None;
-            BrowsePhotobutton.Location = new Point(578, 410);
+            BrowsePhotobutton.Location = new Point(454, 320);
             BrowsePhotobutton.Name = "BrowsePhotobutton";
             BrowsePhotobutton.Size = new Size(90, 30);
             BrowsePhotobutton.TabIndex = 10;
@@ -200,7 +190,7 @@ namespace SuperMart_Pro.View.Product
             // 
             ProductTypelabel.Anchor = AnchorStyles.None;
             ProductTypelabel.AutoSize = true;
-            ProductTypelabel.Location = new Point(204, 544);
+            ProductTypelabel.Location = new Point(80, 454);
             ProductTypelabel.Name = "ProductTypelabel";
             ProductTypelabel.Size = new Size(122, 21);
             ProductTypelabel.TabIndex = 11;
@@ -209,7 +199,7 @@ namespace SuperMart_Pro.View.Product
             // ProductTypetextBox
             // 
             ProductTypetextBox.Anchor = AnchorStyles.None;
-            ProductTypetextBox.Location = new Point(390, 541);
+            ProductTypetextBox.Location = new Point(266, 451);
             ProductTypetextBox.Name = "ProductTypetextBox";
             ProductTypetextBox.Size = new Size(290, 29);
             ProductTypetextBox.TabIndex = 12;
@@ -218,7 +208,7 @@ namespace SuperMart_Pro.View.Product
             // 
             ProductCategorylabel.Anchor = AnchorStyles.None;
             ProductCategorylabel.AutoSize = true;
-            ProductCategorylabel.Location = new Point(174, 589);
+            ProductCategorylabel.Location = new Point(50, 499);
             ProductCategorylabel.Name = "ProductCategorylabel";
             ProductCategorylabel.Size = new Size(152, 21);
             ProductCategorylabel.TabIndex = 13;
@@ -227,7 +217,7 @@ namespace SuperMart_Pro.View.Product
             // ProductCategorytextBox
             // 
             ProductCategorytextBox.Anchor = AnchorStyles.None;
-            ProductCategorytextBox.Location = new Point(390, 586);
+            ProductCategorytextBox.Location = new Point(266, 496);
             ProductCategorytextBox.Name = "ProductCategorytextBox";
             ProductCategorytextBox.Size = new Size(290, 29);
             ProductCategorytextBox.TabIndex = 14;
@@ -236,7 +226,7 @@ namespace SuperMart_Pro.View.Product
             // 
             Barcodelabel.Anchor = AnchorStyles.None;
             Barcodelabel.AutoSize = true;
-            Barcodelabel.Location = new Point(244, 634);
+            Barcodelabel.Location = new Point(120, 544);
             Barcodelabel.Name = "Barcodelabel";
             Barcodelabel.Size = new Size(82, 21);
             Barcodelabel.TabIndex = 15;
@@ -245,7 +235,7 @@ namespace SuperMart_Pro.View.Product
             // BarcodetextBox
             // 
             BarcodetextBox.Anchor = AnchorStyles.None;
-            BarcodetextBox.Location = new Point(390, 631);
+            BarcodetextBox.Location = new Point(266, 541);
             BarcodetextBox.Name = "BarcodetextBox";
             BarcodetextBox.Size = new Size(290, 29);
             BarcodetextBox.TabIndex = 16;
@@ -254,7 +244,7 @@ namespace SuperMart_Pro.View.Product
             // 
             SKUlabel.Anchor = AnchorStyles.None;
             SKUlabel.AutoSize = true;
-            SKUlabel.Location = new Point(270, 679);
+            SKUlabel.Location = new Point(146, 589);
             SKUlabel.Name = "SKUlabel";
             SKUlabel.Size = new Size(56, 21);
             SKUlabel.TabIndex = 17;
@@ -263,7 +253,7 @@ namespace SuperMart_Pro.View.Product
             // SKUtextBox
             // 
             SKUtextBox.Anchor = AnchorStyles.None;
-            SKUtextBox.Location = new Point(390, 676);
+            SKUtextBox.Location = new Point(266, 586);
             SKUtextBox.Name = "SKUtextBox";
             SKUtextBox.Size = new Size(290, 29);
             SKUtextBox.TabIndex = 18;
@@ -272,7 +262,7 @@ namespace SuperMart_Pro.View.Product
             // 
             Unitlabel.Anchor = AnchorStyles.None;
             Unitlabel.AutoSize = true;
-            Unitlabel.Location = new Point(276, 724);
+            Unitlabel.Location = new Point(152, 634);
             Unitlabel.Name = "Unitlabel";
             Unitlabel.Size = new Size(50, 21);
             Unitlabel.TabIndex = 19;
@@ -281,7 +271,7 @@ namespace SuperMart_Pro.View.Product
             // UnittextBox
             // 
             UnittextBox.Anchor = AnchorStyles.None;
-            UnittextBox.Location = new Point(390, 721);
+            UnittextBox.Location = new Point(266, 631);
             UnittextBox.Name = "UnittextBox";
             UnittextBox.Size = new Size(290, 29);
             UnittextBox.TabIndex = 20;
@@ -290,7 +280,7 @@ namespace SuperMart_Pro.View.Product
             // 
             ExpiryDatelabel.Anchor = AnchorStyles.None;
             ExpiryDatelabel.AutoSize = true;
-            ExpiryDatelabel.Location = new Point(219, 769);
+            ExpiryDatelabel.Location = new Point(95, 679);
             ExpiryDatelabel.Name = "ExpiryDatelabel";
             ExpiryDatelabel.Size = new Size(107, 21);
             ExpiryDatelabel.TabIndex = 21;
@@ -300,7 +290,7 @@ namespace SuperMart_Pro.View.Product
             // 
             ExpiryDatedatePicker.Anchor = AnchorStyles.None;
             ExpiryDatedatePicker.Format = DateTimePickerFormat.Short;
-            ExpiryDatedatePicker.Location = new Point(390, 766);
+            ExpiryDatedatePicker.Location = new Point(266, 676);
             ExpiryDatedatePicker.Name = "ExpiryDatedatePicker";
             ExpiryDatedatePicker.Size = new Size(290, 29);
             ExpiryDatedatePicker.TabIndex = 22;
@@ -309,7 +299,7 @@ namespace SuperMart_Pro.View.Product
             // 
             StockQuantitylabel.Anchor = AnchorStyles.None;
             StockQuantitylabel.AutoSize = true;
-            StockQuantitylabel.Location = new Point(195, 814);
+            StockQuantitylabel.Location = new Point(71, 724);
             StockQuantitylabel.Name = "StockQuantitylabel";
             StockQuantitylabel.Size = new Size(131, 21);
             StockQuantitylabel.TabIndex = 23;
@@ -318,7 +308,7 @@ namespace SuperMart_Pro.View.Product
             // StockQuantitytextBox
             // 
             StockQuantitytextBox.Anchor = AnchorStyles.None;
-            StockQuantitytextBox.Location = new Point(390, 811);
+            StockQuantitytextBox.Location = new Point(266, 721);
             StockQuantitytextBox.Name = "StockQuantitytextBox";
             StockQuantitytextBox.Size = new Size(290, 29);
             StockQuantitytextBox.TabIndex = 24;
@@ -327,7 +317,7 @@ namespace SuperMart_Pro.View.Product
             // 
             Weightlabel.Anchor = AnchorStyles.None;
             Weightlabel.AutoSize = true;
-            Weightlabel.Location = new Point(816, 213);
+            Weightlabel.Location = new Point(692, 123);
             Weightlabel.Name = "Weightlabel";
             Weightlabel.Size = new Size(70, 21);
             Weightlabel.TabIndex = 25;
@@ -336,7 +326,7 @@ namespace SuperMart_Pro.View.Product
             // WeighttextBox
             // 
             WeighttextBox.Anchor = AnchorStyles.None;
-            WeighttextBox.Location = new Point(956, 210);
+            WeighttextBox.Location = new Point(832, 120);
             WeighttextBox.Name = "WeighttextBox";
             WeighttextBox.Size = new Size(290, 29);
             WeighttextBox.TabIndex = 26;
@@ -345,7 +335,7 @@ namespace SuperMart_Pro.View.Product
             // 
             TotalSaleQuantitylabel.Anchor = AnchorStyles.None;
             TotalSaleQuantitylabel.AutoSize = true;
-            TotalSaleQuantitylabel.Location = new Point(725, 258);
+            TotalSaleQuantitylabel.Location = new Point(601, 168);
             TotalSaleQuantitylabel.Name = "TotalSaleQuantitylabel";
             TotalSaleQuantitylabel.Size = new Size(161, 21);
             TotalSaleQuantitylabel.TabIndex = 27;
@@ -354,7 +344,7 @@ namespace SuperMart_Pro.View.Product
             // TotalSaleQuantitytextBox
             // 
             TotalSaleQuantitytextBox.Anchor = AnchorStyles.None;
-            TotalSaleQuantitytextBox.Location = new Point(956, 255);
+            TotalSaleQuantitytextBox.Location = new Point(832, 165);
             TotalSaleQuantitytextBox.Name = "TotalSaleQuantitytextBox";
             TotalSaleQuantitytextBox.Size = new Size(290, 29);
             TotalSaleQuantitytextBox.TabIndex = 28;
@@ -363,7 +353,7 @@ namespace SuperMart_Pro.View.Product
             // 
             ReorderLevellabel.Anchor = AnchorStyles.None;
             ReorderLevellabel.AutoSize = true;
-            ReorderLevellabel.Location = new Point(761, 303);
+            ReorderLevellabel.Location = new Point(637, 213);
             ReorderLevellabel.Name = "ReorderLevellabel";
             ReorderLevellabel.Size = new Size(125, 21);
             ReorderLevellabel.TabIndex = 29;
@@ -372,7 +362,7 @@ namespace SuperMart_Pro.View.Product
             // ReorderLeveltextBox
             // 
             ReorderLeveltextBox.Anchor = AnchorStyles.None;
-            ReorderLeveltextBox.Location = new Point(956, 300);
+            ReorderLeveltextBox.Location = new Point(832, 210);
             ReorderLeveltextBox.Name = "ReorderLeveltextBox";
             ReorderLeveltextBox.Size = new Size(290, 29);
             ReorderLeveltextBox.TabIndex = 30;
@@ -381,7 +371,7 @@ namespace SuperMart_Pro.View.Product
             // 
             MinStockLevellabel.Anchor = AnchorStyles.None;
             MinStockLevellabel.AutoSize = true;
-            MinStockLevellabel.Location = new Point(744, 348);
+            MinStockLevellabel.Location = new Point(620, 258);
             MinStockLevellabel.Name = "MinStockLevellabel";
             MinStockLevellabel.Size = new Size(142, 21);
             MinStockLevellabel.TabIndex = 31;
@@ -390,7 +380,7 @@ namespace SuperMart_Pro.View.Product
             // MinStockLeveltextBox
             // 
             MinStockLeveltextBox.Anchor = AnchorStyles.None;
-            MinStockLeveltextBox.Location = new Point(956, 345);
+            MinStockLeveltextBox.Location = new Point(832, 255);
             MinStockLeveltextBox.Name = "MinStockLeveltextBox";
             MinStockLeveltextBox.Size = new Size(290, 29);
             MinStockLeveltextBox.TabIndex = 32;
@@ -399,7 +389,7 @@ namespace SuperMart_Pro.View.Product
             // 
             IsExpirablecheckBox.Anchor = AnchorStyles.None;
             IsExpirablecheckBox.AutoSize = true;
-            IsExpirablecheckBox.Location = new Point(956, 393);
+            IsExpirablecheckBox.Location = new Point(832, 303);
             IsExpirablecheckBox.Name = "IsExpirablecheckBox";
             IsExpirablecheckBox.Size = new Size(118, 25);
             IsExpirablecheckBox.TabIndex = 33;
@@ -410,7 +400,7 @@ namespace SuperMart_Pro.View.Product
             // 
             SupplierIDlabel.Anchor = AnchorStyles.None;
             SupplierIDlabel.AutoSize = true;
-            SupplierIDlabel.Location = new Point(781, 437);
+            SupplierIDlabel.Location = new Point(657, 347);
             SupplierIDlabel.Name = "SupplierIDlabel";
             SupplierIDlabel.Size = new Size(105, 21);
             SupplierIDlabel.TabIndex = 34;
@@ -419,7 +409,7 @@ namespace SuperMart_Pro.View.Product
             // SupplierIDtextBox
             // 
             SupplierIDtextBox.Anchor = AnchorStyles.None;
-            SupplierIDtextBox.Location = new Point(956, 434);
+            SupplierIDtextBox.Location = new Point(832, 344);
             SupplierIDtextBox.Name = "SupplierIDtextBox";
             SupplierIDtextBox.Size = new Size(290, 29);
             SupplierIDtextBox.TabIndex = 35;
@@ -428,7 +418,7 @@ namespace SuperMart_Pro.View.Product
             // 
             BuyingPricelabel.Anchor = AnchorStyles.None;
             BuyingPricelabel.AutoSize = true;
-            BuyingPricelabel.Location = new Point(772, 482);
+            BuyingPricelabel.Location = new Point(648, 392);
             BuyingPricelabel.Name = "BuyingPricelabel";
             BuyingPricelabel.Size = new Size(114, 21);
             BuyingPricelabel.TabIndex = 36;
@@ -437,7 +427,7 @@ namespace SuperMart_Pro.View.Product
             // BuyingPricetextBox
             // 
             BuyingPricetextBox.Anchor = AnchorStyles.None;
-            BuyingPricetextBox.Location = new Point(956, 479);
+            BuyingPricetextBox.Location = new Point(832, 389);
             BuyingPricetextBox.Name = "BuyingPricetextBox";
             BuyingPricetextBox.Size = new Size(290, 29);
             BuyingPricetextBox.TabIndex = 37;
@@ -446,7 +436,7 @@ namespace SuperMart_Pro.View.Product
             // 
             SellingPricelabel.Anchor = AnchorStyles.None;
             SellingPricelabel.AutoSize = true;
-            SellingPricelabel.Location = new Point(775, 527);
+            SellingPricelabel.Location = new Point(651, 437);
             SellingPricelabel.Name = "SellingPricelabel";
             SellingPricelabel.Size = new Size(111, 21);
             SellingPricelabel.TabIndex = 38;
@@ -455,7 +445,7 @@ namespace SuperMart_Pro.View.Product
             // SellingPricetextBox
             // 
             SellingPricetextBox.Anchor = AnchorStyles.None;
-            SellingPricetextBox.Location = new Point(956, 524);
+            SellingPricetextBox.Location = new Point(832, 434);
             SellingPricetextBox.Name = "SellingPricetextBox";
             SellingPricetextBox.Size = new Size(290, 29);
             SellingPricetextBox.TabIndex = 39;
@@ -464,7 +454,7 @@ namespace SuperMart_Pro.View.Product
             // 
             Discountlabel.Anchor = AnchorStyles.None;
             Discountlabel.AutoSize = true;
-            Discountlabel.Location = new Point(800, 572);
+            Discountlabel.Location = new Point(676, 482);
             Discountlabel.Name = "Discountlabel";
             Discountlabel.Size = new Size(86, 21);
             Discountlabel.TabIndex = 40;
@@ -473,7 +463,7 @@ namespace SuperMart_Pro.View.Product
             // DiscounttextBox
             // 
             DiscounttextBox.Anchor = AnchorStyles.None;
-            DiscounttextBox.Location = new Point(956, 569);
+            DiscounttextBox.Location = new Point(832, 479);
             DiscounttextBox.Name = "DiscounttextBox";
             DiscounttextBox.Size = new Size(290, 29);
             DiscounttextBox.TabIndex = 41;
@@ -482,7 +472,7 @@ namespace SuperMart_Pro.View.Product
             // 
             Taxlabel.Anchor = AnchorStyles.None;
             Taxlabel.AutoSize = true;
-            Taxlabel.Location = new Point(839, 617);
+            Taxlabel.Location = new Point(715, 527);
             Taxlabel.Name = "Taxlabel";
             Taxlabel.Size = new Size(47, 21);
             Taxlabel.TabIndex = 42;
@@ -491,7 +481,7 @@ namespace SuperMart_Pro.View.Product
             // TaxtextBox
             // 
             TaxtextBox.Anchor = AnchorStyles.None;
-            TaxtextBox.Location = new Point(956, 614);
+            TaxtextBox.Location = new Point(832, 524);
             TaxtextBox.Name = "TaxtextBox";
             TaxtextBox.Size = new Size(290, 29);
             TaxtextBox.TabIndex = 43;
@@ -500,7 +490,7 @@ namespace SuperMart_Pro.View.Product
             // 
             MRPlabel.Anchor = AnchorStyles.None;
             MRPlabel.AutoSize = true;
-            MRPlabel.Location = new Point(828, 662);
+            MRPlabel.Location = new Point(704, 572);
             MRPlabel.Name = "MRPlabel";
             MRPlabel.Size = new Size(58, 21);
             MRPlabel.TabIndex = 44;
@@ -509,7 +499,7 @@ namespace SuperMart_Pro.View.Product
             // MRPtextBox
             // 
             MRPtextBox.Anchor = AnchorStyles.None;
-            MRPtextBox.Location = new Point(956, 659);
+            MRPtextBox.Location = new Point(832, 569);
             MRPtextBox.Name = "MRPtextBox";
             MRPtextBox.Size = new Size(290, 29);
             MRPtextBox.TabIndex = 45;
@@ -518,7 +508,7 @@ namespace SuperMart_Pro.View.Product
             // 
             IsActivecheckBox.Anchor = AnchorStyles.None;
             IsActivecheckBox.AutoSize = true;
-            IsActivecheckBox.Location = new Point(956, 707);
+            IsActivecheckBox.Location = new Point(832, 617);
             IsActivecheckBox.Name = "IsActivecheckBox";
             IsActivecheckBox.Size = new Size(95, 25);
             IsActivecheckBox.TabIndex = 46;
@@ -529,7 +519,7 @@ namespace SuperMart_Pro.View.Product
             // 
             ReturnablecheckBox.Anchor = AnchorStyles.None;
             ReturnablecheckBox.AutoSize = true;
-            ReturnablecheckBox.Location = new Point(956, 752);
+            ReturnablecheckBox.Location = new Point(832, 662);
             ReturnablecheckBox.Name = "ReturnablecheckBox";
             ReturnablecheckBox.Size = new Size(109, 25);
             ReturnablecheckBox.TabIndex = 47;
@@ -541,7 +531,7 @@ namespace SuperMart_Pro.View.Product
             Savebutton.Anchor = AnchorStyles.None;
             Savebutton.BackColor = Color.OliveDrab;
             Savebutton.ForeColor = Color.White;
-            Savebutton.Location = new Point(816, 827);
+            Savebutton.Location = new Point(692, 737);
             Savebutton.Name = "Savebutton";
             Savebutton.Size = new Size(124, 41);
             Savebutton.TabIndex = 48;
@@ -553,7 +543,7 @@ namespace SuperMart_Pro.View.Product
             // 
             Clearbutton.Anchor = AnchorStyles.None;
             Clearbutton.BackColor = Color.Tan;
-            Clearbutton.Location = new Point(969, 827);
+            Clearbutton.Location = new Point(845, 737);
             Clearbutton.Name = "Clearbutton";
             Clearbutton.Size = new Size(124, 41);
             Clearbutton.TabIndex = 49;
@@ -566,7 +556,7 @@ namespace SuperMart_Pro.View.Product
             Cancelbutton.Anchor = AnchorStyles.None;
             Cancelbutton.BackColor = Color.Red;
             Cancelbutton.ForeColor = Color.White;
-            Cancelbutton.Location = new Point(1122, 827);
+            Cancelbutton.Location = new Point(998, 737);
             Cancelbutton.Name = "Cancelbutton";
             Cancelbutton.Size = new Size(124, 41);
             Cancelbutton.TabIndex = 50;
@@ -579,7 +569,7 @@ namespace SuperMart_Pro.View.Product
             AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            ClientSize = new Size(1412, 916);
+            ClientSize = new Size(1215, 799);
             Controls.Add(Cancelbutton);
             Controls.Add(Clearbutton);
             Controls.Add(Savebutton);
@@ -630,7 +620,6 @@ namespace SuperMart_Pro.View.Product
             Controls.Add(ProductIDtextBox);
             Controls.Add(ProductIDlabel);
             Controls.Add(SearchgroupBox);
-            Controls.Add(Headerpanel);
             Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
             Name = "UpdateProductGUI";
@@ -644,8 +633,6 @@ namespace SuperMart_Pro.View.Product
         }
 
         #endregion
-
-        private Panel Headerpanel;
         private GroupBox SearchgroupBox;
         private Button Searchbutton;
         private TextBox SearchtextBox;
