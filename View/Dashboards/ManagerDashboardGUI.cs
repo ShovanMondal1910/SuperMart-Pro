@@ -1,5 +1,8 @@
+using SuperMart_Pro.View.Branch;
 using SuperMart_Pro.View.Cashier;
 using SuperMart_Pro.View.Customer;
+using SuperMart_Pro.View.Product;
+using SuperMart_Pro.View.Supplier;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -34,11 +37,17 @@ namespace SuperMart_Pro.View.Dashboards
             // ── category toggles ─────────────────────────────────────────────
             WireCat(btnCatCashiers,  flowCashiers,  "Cashiers");
             WireCat(btnCatCustomers, flowCustomers, "Customers");
+            WireCat(btnCatBranches,  flowBranches,  "Branches");
+            WireCat(btnCatProducts,  flowProducts,  "Products");
+            WireCat(btnCatSuppliers, flowSuppliers, "Suppliers");
 
             // ── sub-button hover colours ──────────────────────────────────────
             foreach (var btn in new[] {
                 btnAddCashier,   btnViewCashiers,  btnUpdateCashier,  btnDeleteCashier,
                 btnAddCustomer,  btnViewCustomers, btnUpdateCustomer, btnDeleteCustomer,
+                btnViewBranches, btnUpdateBranch,
+                btnAddProduct,   btnViewProducts,  btnUpdateProduct,  btnDeleteProduct,
+                btnAddSupplier,  btnViewSuppliers, btnUpdateSupplier, btnDeleteSupplier,
             })
             {
                 btn.MouseEnter += (_, _) => { if (btn != _activeSubBtn) btn.BackColor = SubBtnHover; };
@@ -46,7 +55,7 @@ namespace SuperMart_Pro.View.Dashboards
             }
 
             // ── category hover colours ────────────────────────────────────────
-            foreach (var cat in new[] { btnCatCashiers, btnCatCustomers })
+            foreach (var cat in new[] { btnCatCashiers, btnCatCustomers, btnCatBranches, btnCatProducts, btnCatSuppliers })
             {
                 cat.MouseEnter += (_, _) => cat.BackColor = CategoryHover;
                 cat.MouseLeave += (_, _) => cat.BackColor = CategoryBg;
@@ -63,6 +72,22 @@ namespace SuperMart_Pro.View.Dashboards
             btnViewCustomers.Click  += (_, _) => LoadForm(btnViewCustomers,  new ViewAllCustomerGUI());
             btnUpdateCustomer.Click += (_, _) => LoadForm(btnUpdateCustomer, new UpdateCustomerGUI());
             btnDeleteCustomer.Click += (_, _) => LoadForm(btnDeleteCustomer, new DeleteCustomerGUI());
+
+            // ── Branch operations ─────────────────────────────────────────────
+            btnViewBranches.Click  += (_, _) => LoadForm(btnViewBranches,  new ViewAllBranchGUI());
+            btnUpdateBranch.Click  += (_, _) => LoadForm(btnUpdateBranch,  new UpdateBranchGUI());
+
+            // ── Product operations ────────────────────────────────────────────
+            btnAddProduct.Click    += (_, _) => LoadForm(btnAddProduct,    new AddProductGUI());
+            btnViewProducts.Click  += (_, _) => LoadForm(btnViewProducts,  new ViewAllProductGUI());
+            btnUpdateProduct.Click += (_, _) => LoadForm(btnUpdateProduct, new UpdateProductGUI());
+            btnDeleteProduct.Click += (_, _) => LoadForm(btnDeleteProduct, new DeleteProductGUI());
+
+            // ── Supplier operations ───────────────────────────────────────────
+            btnAddSupplier.Click    += (_, _) => LoadForm(btnAddSupplier,    new AddSupplierGUI());
+            btnViewSuppliers.Click  += (_, _) => LoadForm(btnViewSuppliers,  new ViewAllSupplierGUI());
+            btnUpdateSupplier.Click += (_, _) => LoadForm(btnUpdateSupplier, new UpdateSupplierGUI());
+            btnDeleteSupplier.Click += (_, _) => LoadForm(btnDeleteSupplier, new DeleteSupplierGUI());
 
             // ── Logout ────────────────────────────────────────────────────────
             btnLogout.Click += (_, _) =>

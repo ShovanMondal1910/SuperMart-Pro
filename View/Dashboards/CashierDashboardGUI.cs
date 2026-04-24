@@ -1,4 +1,8 @@
-﻿using SuperMart_Pro.View.Customer;
+﻿using SuperMart_Pro.View.Cashier;
+using SuperMart_Pro.View.Customer;
+using SuperMart_Pro.View.Manager;
+using SuperMart_Pro.View.Product;
+using SuperMart_Pro.View.Supplier;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -27,24 +31,44 @@ namespace SuperMart_Pro.View.Dashboards
 
         private void WireEvents()
         {
-            // ── category toggle ───────────────────────────────────────────────
-            btnCatCustomers.Click += (_, _) =>
-            {
-                flowCustomers.Visible = !flowCustomers.Visible;
-                btnCatCustomers.Text  = $"  {(flowCustomers.Visible ? "v" : ">")} Customers";
-            };
+            // ── category toggles ─────────────────────────────────────────────
+            WireCat(btnCatProducts,  flowProducts,  "Products");
+            WireCat(btnCatCashiers,  flowCashiers,  "Cashiers");
+            WireCat(btnCatSuppliers, flowSuppliers, "Suppliers");
+            WireCat(btnCatManagers,  flowManagers,  "Managers");
+            WireCat(btnCatCustomers, flowCustomers, "Customers");
 
             // ── sub-button hover colours ──────────────────────────────────────
             foreach (var btn in new[] {
-                btnAddCustomer, btnViewCustomers, btnUpdateCustomer, btnDeleteCustomer })
+                btnViewProducts,
+                btnViewCashiers,
+                btnViewSuppliers,
+                btnViewManagers,
+                btnAddCustomer, btnViewCustomers, btnUpdateCustomer, btnDeleteCustomer,
+            })
             {
                 btn.MouseEnter += (_, _) => { if (btn != _activeSubBtn) btn.BackColor = SubBtnHover; };
                 btn.MouseLeave += (_, _) => { if (btn != _activeSubBtn) btn.BackColor = SubBtnBg; };
             }
 
-            // ── category hover ────────────────────────────────────────────────
-            btnCatCustomers.MouseEnter += (_, _) => btnCatCustomers.BackColor = CategoryHover;
-            btnCatCustomers.MouseLeave += (_, _) => btnCatCustomers.BackColor = CategoryBg;
+            // ── category hover colours ────────────────────────────────────────
+            foreach (var cat in new[] { btnCatProducts, btnCatCashiers, btnCatSuppliers, btnCatManagers, btnCatCustomers })
+            {
+                cat.MouseEnter += (_, _) => cat.BackColor = CategoryHover;
+                cat.MouseLeave += (_, _) => cat.BackColor = CategoryBg;
+            }
+
+            // ── Product operations ────────────────────────────────────────────
+            btnViewProducts.Click  += (_, _) => LoadForm(btnViewProducts,  new ViewAllProductGUI());
+
+            // ── Cashier operations ────────────────────────────────────────────
+            btnViewCashiers.Click  += (_, _) => LoadForm(btnViewCashiers,  new ViewAllCashierGUI());
+
+            // ── Supplier operations ───────────────────────────────────────────
+            btnViewSuppliers.Click += (_, _) => LoadForm(btnViewSuppliers, new ViewAllSupplierGUI());
+
+            // ── Manager operations ────────────────────────────────────────────
+            btnViewManagers.Click  += (_, _) => LoadForm(btnViewManagers,  new ViewAllManagerGUI());
 
             // ── Customer operations ───────────────────────────────────────────
             btnAddCustomer.Click    += (_, _) => LoadForm(btnAddCustomer,    new AddCustomerGUI());
@@ -65,6 +89,15 @@ namespace SuperMart_Pro.View.Dashboards
                 lblRole.Location = new Point(
                     pnlHeader.Width - lblRole.Width - 16,
                     (pnlHeader.Height - lblRole.Height) / 2);
+        }
+
+        private static void WireCat(Button cat, FlowLayoutPanel sub, string title)
+        {
+            cat.Click += (_, _) =>
+            {
+                sub.Visible = !sub.Visible;
+                cat.Text    = $"  {(sub.Visible ? "v" : ">")} {title}";
+            };
         }
 
         private void LoadForm(Button sender, Form form)

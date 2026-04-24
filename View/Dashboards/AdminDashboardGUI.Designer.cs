@@ -35,24 +35,12 @@
             btnViewCashiers = new Button();
             btnUpdateCashier = new Button();
             btnDeleteCashier = new Button();
-            btnCatCustomers = new Button();
-            flowCustomers = new FlowLayoutPanel();
-            btnAddCustomer = new Button();
-            btnViewCustomers = new Button();
-            btnUpdateCustomer = new Button();
-            btnDeleteCustomer = new Button();
             btnCatBranches = new Button();
             flowBranches = new FlowLayoutPanel();
             btnAddBranch = new Button();
             btnViewBranches = new Button();
             btnUpdateBranch = new Button();
             btnDeleteBranch = new Button();
-            btnCatProducts = new Button();
-            flowProducts = new FlowLayoutPanel();
-            btnAddProduct = new Button();
-            btnViewProducts = new Button();
-            btnUpdateProduct = new Button();
-            btnDeleteProduct = new Button();
             btnCatSuppliers = new Button();
             flowSuppliers = new FlowLayoutPanel();
             btnAddSupplier = new Button();
@@ -70,9 +58,7 @@
             flowAdmins.SuspendLayout();
             flowManagers.SuspendLayout();
             flowCashiers.SuspendLayout();
-            flowCustomers.SuspendLayout();
             flowBranches.SuspendLayout();
-            flowProducts.SuspendLayout();
             flowSuppliers.SuspendLayout();
             contentPanel.SuspendLayout();
             SuspendLayout();
@@ -153,12 +139,8 @@
             flowSidebar.Controls.Add(flowManagers);
             flowSidebar.Controls.Add(btnCatCashiers);
             flowSidebar.Controls.Add(flowCashiers);
-            flowSidebar.Controls.Add(btnCatCustomers);
-            flowSidebar.Controls.Add(flowCustomers);
             flowSidebar.Controls.Add(btnCatBranches);
             flowSidebar.Controls.Add(flowBranches);
-            flowSidebar.Controls.Add(btnCatProducts);
-            flowSidebar.Controls.Add(flowProducts);
             flowSidebar.Controls.Add(btnCatSuppliers);
             flowSidebar.Controls.Add(flowSuppliers);
             flowSidebar.Controls.Add(pnlSidebarSpacer);
@@ -479,108 +461,6 @@
             btnDeleteCashier.TextAlign = ContentAlignment.MiddleLeft;
             btnDeleteCashier.UseVisualStyleBackColor = false;
             // 
-            // btnCatCustomers
-            // 
-            btnCatCustomers.BackColor = Color.FromArgb(38, 50, 72);
-            btnCatCustomers.Cursor = Cursors.Hand;
-            btnCatCustomers.FlatAppearance.BorderSize = 0;
-            btnCatCustomers.FlatStyle = FlatStyle.Flat;
-            btnCatCustomers.Font = new Font("Times New Roman", 11F, FontStyle.Bold);
-            btnCatCustomers.ForeColor = Color.White;
-            btnCatCustomers.Location = new Point(0, 598);
-            btnCatCustomers.Margin = new Padding(0, 2, 0, 0);
-            btnCatCustomers.Name = "btnCatCustomers";
-            btnCatCustomers.Size = new Size(240, 42);
-            btnCatCustomers.TabIndex = 6;
-            btnCatCustomers.Text = "  > Customers";
-            btnCatCustomers.TextAlign = ContentAlignment.MiddleLeft;
-            btnCatCustomers.UseVisualStyleBackColor = false;
-            // 
-            // flowCustomers
-            // 
-            flowCustomers.AutoSize = true;
-            flowCustomers.BackColor = Color.FromArgb(22, 30, 46);
-            flowCustomers.Controls.Add(btnAddCustomer);
-            flowCustomers.Controls.Add(btnViewCustomers);
-            flowCustomers.Controls.Add(btnUpdateCustomer);
-            flowCustomers.Controls.Add(btnDeleteCustomer);
-            flowCustomers.FlowDirection = FlowDirection.TopDown;
-            flowCustomers.Location = new Point(0, 640);
-            flowCustomers.Margin = new Padding(0);
-            flowCustomers.Name = "flowCustomers";
-            flowCustomers.Size = new Size(240, 152);
-            flowCustomers.TabIndex = 7;
-            flowCustomers.Visible = false;
-            flowCustomers.WrapContents = false;
-            // 
-            // btnAddCustomer
-            // 
-            btnAddCustomer.BackColor = Color.FromArgb(22, 30, 46);
-            btnAddCustomer.Cursor = Cursors.Hand;
-            btnAddCustomer.FlatAppearance.BorderSize = 0;
-            btnAddCustomer.FlatStyle = FlatStyle.Flat;
-            btnAddCustomer.Font = new Font("Times New Roman", 10.5F);
-            btnAddCustomer.ForeColor = Color.FromArgb(160, 175, 200);
-            btnAddCustomer.Location = new Point(0, 0);
-            btnAddCustomer.Margin = new Padding(0);
-            btnAddCustomer.Name = "btnAddCustomer";
-            btnAddCustomer.Size = new Size(240, 38);
-            btnAddCustomer.TabIndex = 0;
-            btnAddCustomer.Text = "    Add Customer";
-            btnAddCustomer.TextAlign = ContentAlignment.MiddleLeft;
-            btnAddCustomer.UseVisualStyleBackColor = false;
-            // 
-            // btnViewCustomers
-            // 
-            btnViewCustomers.BackColor = Color.FromArgb(22, 30, 46);
-            btnViewCustomers.Cursor = Cursors.Hand;
-            btnViewCustomers.FlatAppearance.BorderSize = 0;
-            btnViewCustomers.FlatStyle = FlatStyle.Flat;
-            btnViewCustomers.Font = new Font("Times New Roman", 10.5F);
-            btnViewCustomers.ForeColor = Color.FromArgb(160, 175, 200);
-            btnViewCustomers.Location = new Point(0, 38);
-            btnViewCustomers.Margin = new Padding(0);
-            btnViewCustomers.Name = "btnViewCustomers";
-            btnViewCustomers.Size = new Size(240, 38);
-            btnViewCustomers.TabIndex = 1;
-            btnViewCustomers.Text = "    View All Customers";
-            btnViewCustomers.TextAlign = ContentAlignment.MiddleLeft;
-            btnViewCustomers.UseVisualStyleBackColor = false;
-            // 
-            // btnUpdateCustomer
-            // 
-            btnUpdateCustomer.BackColor = Color.FromArgb(22, 30, 46);
-            btnUpdateCustomer.Cursor = Cursors.Hand;
-            btnUpdateCustomer.FlatAppearance.BorderSize = 0;
-            btnUpdateCustomer.FlatStyle = FlatStyle.Flat;
-            btnUpdateCustomer.Font = new Font("Times New Roman", 10.5F);
-            btnUpdateCustomer.ForeColor = Color.FromArgb(160, 175, 200);
-            btnUpdateCustomer.Location = new Point(0, 76);
-            btnUpdateCustomer.Margin = new Padding(0);
-            btnUpdateCustomer.Name = "btnUpdateCustomer";
-            btnUpdateCustomer.Size = new Size(240, 38);
-            btnUpdateCustomer.TabIndex = 2;
-            btnUpdateCustomer.Text = "    Update Customer";
-            btnUpdateCustomer.TextAlign = ContentAlignment.MiddleLeft;
-            btnUpdateCustomer.UseVisualStyleBackColor = false;
-            // 
-            // btnDeleteCustomer
-            // 
-            btnDeleteCustomer.BackColor = Color.FromArgb(22, 30, 46);
-            btnDeleteCustomer.Cursor = Cursors.Hand;
-            btnDeleteCustomer.FlatAppearance.BorderSize = 0;
-            btnDeleteCustomer.FlatStyle = FlatStyle.Flat;
-            btnDeleteCustomer.Font = new Font("Times New Roman", 10.5F);
-            btnDeleteCustomer.ForeColor = Color.FromArgb(160, 175, 200);
-            btnDeleteCustomer.Location = new Point(0, 114);
-            btnDeleteCustomer.Margin = new Padding(0);
-            btnDeleteCustomer.Name = "btnDeleteCustomer";
-            btnDeleteCustomer.Size = new Size(240, 38);
-            btnDeleteCustomer.TabIndex = 3;
-            btnDeleteCustomer.Text = "    Delete Customer";
-            btnDeleteCustomer.TextAlign = ContentAlignment.MiddleLeft;
-            btnDeleteCustomer.UseVisualStyleBackColor = false;
-            // 
             // btnCatBranches
             // 
             btnCatBranches.BackColor = Color.FromArgb(38, 50, 72);
@@ -682,108 +562,6 @@
             btnDeleteBranch.Text = "    Delete Branch";
             btnDeleteBranch.TextAlign = ContentAlignment.MiddleLeft;
             btnDeleteBranch.UseVisualStyleBackColor = false;
-            // 
-            // btnCatProducts
-            // 
-            btnCatProducts.BackColor = Color.FromArgb(38, 50, 72);
-            btnCatProducts.Cursor = Cursors.Hand;
-            btnCatProducts.FlatAppearance.BorderSize = 0;
-            btnCatProducts.FlatStyle = FlatStyle.Flat;
-            btnCatProducts.Font = new Font("Times New Roman", 11F, FontStyle.Bold);
-            btnCatProducts.ForeColor = Color.White;
-            btnCatProducts.Location = new Point(0, 990);
-            btnCatProducts.Margin = new Padding(0, 2, 0, 0);
-            btnCatProducts.Name = "btnCatProducts";
-            btnCatProducts.Size = new Size(240, 42);
-            btnCatProducts.TabIndex = 10;
-            btnCatProducts.Text = "  > Products";
-            btnCatProducts.TextAlign = ContentAlignment.MiddleLeft;
-            btnCatProducts.UseVisualStyleBackColor = false;
-            // 
-            // flowProducts
-            // 
-            flowProducts.AutoSize = true;
-            flowProducts.BackColor = Color.FromArgb(22, 30, 46);
-            flowProducts.Controls.Add(btnAddProduct);
-            flowProducts.Controls.Add(btnViewProducts);
-            flowProducts.Controls.Add(btnUpdateProduct);
-            flowProducts.Controls.Add(btnDeleteProduct);
-            flowProducts.FlowDirection = FlowDirection.TopDown;
-            flowProducts.Location = new Point(0, 1032);
-            flowProducts.Margin = new Padding(0);
-            flowProducts.Name = "flowProducts";
-            flowProducts.Size = new Size(240, 152);
-            flowProducts.TabIndex = 11;
-            flowProducts.Visible = false;
-            flowProducts.WrapContents = false;
-            // 
-            // btnAddProduct
-            // 
-            btnAddProduct.BackColor = Color.FromArgb(22, 30, 46);
-            btnAddProduct.Cursor = Cursors.Hand;
-            btnAddProduct.FlatAppearance.BorderSize = 0;
-            btnAddProduct.FlatStyle = FlatStyle.Flat;
-            btnAddProduct.Font = new Font("Times New Roman", 10.5F);
-            btnAddProduct.ForeColor = Color.FromArgb(160, 175, 200);
-            btnAddProduct.Location = new Point(0, 0);
-            btnAddProduct.Margin = new Padding(0);
-            btnAddProduct.Name = "btnAddProduct";
-            btnAddProduct.Size = new Size(240, 38);
-            btnAddProduct.TabIndex = 0;
-            btnAddProduct.Text = "    Add Product";
-            btnAddProduct.TextAlign = ContentAlignment.MiddleLeft;
-            btnAddProduct.UseVisualStyleBackColor = false;
-            // 
-            // btnViewProducts
-            // 
-            btnViewProducts.BackColor = Color.FromArgb(22, 30, 46);
-            btnViewProducts.Cursor = Cursors.Hand;
-            btnViewProducts.FlatAppearance.BorderSize = 0;
-            btnViewProducts.FlatStyle = FlatStyle.Flat;
-            btnViewProducts.Font = new Font("Times New Roman", 10.5F);
-            btnViewProducts.ForeColor = Color.FromArgb(160, 175, 200);
-            btnViewProducts.Location = new Point(0, 38);
-            btnViewProducts.Margin = new Padding(0);
-            btnViewProducts.Name = "btnViewProducts";
-            btnViewProducts.Size = new Size(240, 38);
-            btnViewProducts.TabIndex = 1;
-            btnViewProducts.Text = "    View All Products";
-            btnViewProducts.TextAlign = ContentAlignment.MiddleLeft;
-            btnViewProducts.UseVisualStyleBackColor = false;
-            // 
-            // btnUpdateProduct
-            // 
-            btnUpdateProduct.BackColor = Color.FromArgb(22, 30, 46);
-            btnUpdateProduct.Cursor = Cursors.Hand;
-            btnUpdateProduct.FlatAppearance.BorderSize = 0;
-            btnUpdateProduct.FlatStyle = FlatStyle.Flat;
-            btnUpdateProduct.Font = new Font("Times New Roman", 10.5F);
-            btnUpdateProduct.ForeColor = Color.FromArgb(160, 175, 200);
-            btnUpdateProduct.Location = new Point(0, 76);
-            btnUpdateProduct.Margin = new Padding(0);
-            btnUpdateProduct.Name = "btnUpdateProduct";
-            btnUpdateProduct.Size = new Size(240, 38);
-            btnUpdateProduct.TabIndex = 2;
-            btnUpdateProduct.Text = "    Update Product";
-            btnUpdateProduct.TextAlign = ContentAlignment.MiddleLeft;
-            btnUpdateProduct.UseVisualStyleBackColor = false;
-            // 
-            // btnDeleteProduct
-            // 
-            btnDeleteProduct.BackColor = Color.FromArgb(22, 30, 46);
-            btnDeleteProduct.Cursor = Cursors.Hand;
-            btnDeleteProduct.FlatAppearance.BorderSize = 0;
-            btnDeleteProduct.FlatStyle = FlatStyle.Flat;
-            btnDeleteProduct.Font = new Font("Times New Roman", 10.5F);
-            btnDeleteProduct.ForeColor = Color.FromArgb(160, 175, 200);
-            btnDeleteProduct.Location = new Point(0, 114);
-            btnDeleteProduct.Margin = new Padding(0);
-            btnDeleteProduct.Name = "btnDeleteProduct";
-            btnDeleteProduct.Size = new Size(240, 38);
-            btnDeleteProduct.TabIndex = 3;
-            btnDeleteProduct.Text = "    Delete Product";
-            btnDeleteProduct.TextAlign = ContentAlignment.MiddleLeft;
-            btnDeleteProduct.UseVisualStyleBackColor = false;
             // 
             // btnCatSuppliers
             // 
@@ -956,9 +734,7 @@
             flowAdmins.ResumeLayout(false);
             flowManagers.ResumeLayout(false);
             flowCashiers.ResumeLayout(false);
-            flowCustomers.ResumeLayout(false);
             flowBranches.ResumeLayout(false);
-            flowProducts.ResumeLayout(false);
             flowSuppliers.ResumeLayout(false);
             contentPanel.ResumeLayout(false);
             ResumeLayout(false);
@@ -988,24 +764,12 @@
         private System.Windows.Forms.Button btnViewCashiers;
         private System.Windows.Forms.Button btnUpdateCashier;
         private System.Windows.Forms.Button btnDeleteCashier;
-        private System.Windows.Forms.Button btnCatCustomers;
-        private System.Windows.Forms.FlowLayoutPanel flowCustomers;
-        private System.Windows.Forms.Button btnAddCustomer;
-        private System.Windows.Forms.Button btnViewCustomers;
-        private System.Windows.Forms.Button btnUpdateCustomer;
-        private System.Windows.Forms.Button btnDeleteCustomer;
         private System.Windows.Forms.Button btnCatBranches;
         private System.Windows.Forms.FlowLayoutPanel flowBranches;
         private System.Windows.Forms.Button btnAddBranch;
         private System.Windows.Forms.Button btnViewBranches;
         private System.Windows.Forms.Button btnUpdateBranch;
         private System.Windows.Forms.Button btnDeleteBranch;
-        private System.Windows.Forms.Button btnCatProducts;
-        private System.Windows.Forms.FlowLayoutPanel flowProducts;
-        private System.Windows.Forms.Button btnAddProduct;
-        private System.Windows.Forms.Button btnViewProducts;
-        private System.Windows.Forms.Button btnUpdateProduct;
-        private System.Windows.Forms.Button btnDeleteProduct;
         private System.Windows.Forms.Button btnCatSuppliers;
         private System.Windows.Forms.FlowLayoutPanel flowSuppliers;
         private System.Windows.Forms.Button btnAddSupplier;

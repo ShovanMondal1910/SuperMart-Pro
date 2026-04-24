@@ -1,9 +1,7 @@
 ﻿using SuperMart_Pro.View.Admin;
 using SuperMart_Pro.View.Branch;
 using SuperMart_Pro.View.Cashier;
-using SuperMart_Pro.View.Customer;
 using SuperMart_Pro.View.Manager;
-using SuperMart_Pro.View.Product;
 using SuperMart_Pro.View.Supplier;
 using System;
 using System.Drawing;
@@ -40,9 +38,7 @@ namespace SuperMart_Pro.View.Dashboards
             WireCat(btnCatAdmins,    flowAdmins,    "👤 Admins");
             WireCat(btnCatManagers,  flowManagers,  "🧑‍💼 Managers");
             WireCat(btnCatCashiers,  flowCashiers,  "💳 Cashiers");
-            WireCat(btnCatCustomers, flowCustomers, "🛍️ Customers");
             WireCat(btnCatBranches,  flowBranches,  "🏢 Branches");
-            WireCat(btnCatProducts,  flowProducts,  "📦 Products");
             WireCat(btnCatSuppliers, flowSuppliers, "🚚 Suppliers");
 
             // ── sub-button hover colours ──────────────────────────────────────
@@ -50,9 +46,7 @@ namespace SuperMart_Pro.View.Dashboards
                 btnAddAdmin,    btnViewAdmins,   btnUpdateAdmin,   btnDeleteAdmin,
                 btnAddManager,  btnViewManagers, btnUpdateManager, btnDeleteManager,
                 btnAddCashier,  btnViewCashiers, btnUpdateCashier, btnDeleteCashier,
-                btnAddCustomer, btnViewCustomers,btnUpdateCustomer,btnDeleteCustomer,
                 btnAddBranch,   btnViewBranches, btnUpdateBranch,  btnDeleteBranch,
-                btnAddProduct,  btnViewProducts, btnUpdateProduct, btnDeleteProduct,
                 btnAddSupplier, btnViewSuppliers,btnUpdateSupplier,btnDeleteSupplier,
             })
             {
@@ -62,8 +56,8 @@ namespace SuperMart_Pro.View.Dashboards
 
             // ── category hover colours ────────────────────────────────────────
             foreach (var cat in new[] {
-                btnCatAdmins, btnCatManagers, btnCatCashiers, btnCatCustomers,
-                btnCatBranches, btnCatProducts, btnCatSuppliers })
+                btnCatAdmins, btnCatManagers, btnCatCashiers,
+                btnCatBranches, btnCatSuppliers })
             {
                 cat.MouseEnter += (_, _) => cat.BackColor = CategoryHover;
                 cat.MouseLeave += (_, _) => cat.BackColor = CategoryBg;
@@ -87,23 +81,11 @@ namespace SuperMart_Pro.View.Dashboards
             btnUpdateCashier.Click += (_, _) => LoadForm(btnUpdateCashier, new UpdateCashierGUI());
             btnDeleteCashier.Click += (_, _) => LoadForm(btnDeleteCashier, new DeleteCashierGUI());
 
-            // ── Customer operations ───────────────────────────────────────────
-            btnAddCustomer.Click    += (_, _) => LoadForm(btnAddCustomer,    new AddCustomerGUI());
-            btnViewCustomers.Click  += (_, _) => LoadForm(btnViewCustomers,  new ViewAllCustomerGUI());
-            btnUpdateCustomer.Click += (_, _) => LoadForm(btnUpdateCustomer, new UpdateCustomerGUI());
-            btnDeleteCustomer.Click += (_, _) => LoadForm(btnDeleteCustomer, new DeleteCustomerGUI());
-
             // ── Branch operations ─────────────────────────────────────────────
             btnAddBranch.Click    += (_, _) => LoadForm(btnAddBranch,    new AddBranchGUI());
             btnViewBranches.Click += (_, _) => LoadForm(btnViewBranches, new ViewAllBranchGUI());
             btnUpdateBranch.Click += (_, _) => LoadForm(btnUpdateBranch, new UpdateBranchGUI());
             btnDeleteBranch.Click += (_, _) => LoadForm(btnDeleteBranch, new DeleteBranchGUI());
-
-            // ── Product operations ────────────────────────────────────────────
-            btnAddProduct.Click    += (_, _) => LoadForm(btnAddProduct,    new AddProductGUI());
-            btnViewProducts.Click  += (_, _) => LoadForm(btnViewProducts,  new ViewAllProductGUI());
-            btnUpdateProduct.Click += (_, _) => LoadForm(btnUpdateProduct, new UpdateProductGUI());
-            btnDeleteProduct.Click += (_, _) => LoadForm(btnDeleteProduct, new DeleteProductGUI());
 
             // ── Supplier operations ───────────────────────────────────────────
             btnAddSupplier.Click    += (_, _) => LoadForm(btnAddSupplier,    new AddSupplierGUI());
