@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            UserNamelabel = new Label();
+            UserNametextBox = new TextBox();
             FirstSecurityQuestionlabel = new Label();
             FirstSecurityQuestioncomboBox = new ComboBox();
             FirstSecurityAnswertextBox = new TextBox();
@@ -54,6 +56,24 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(964, 82);
             panel1.TabIndex = 0;
+            // 
+            // UserNamelabel
+            // 
+            UserNamelabel.Anchor = AnchorStyles.None;
+            UserNamelabel.AutoSize = true;
+            UserNamelabel.Location = new Point(155, 100);
+            UserNamelabel.Name = "UserNamelabel";
+            UserNamelabel.Size = new Size(102, 21);
+            UserNamelabel.TabIndex = 16;
+            UserNamelabel.Text = "Username :";
+            // 
+            // UserNametextBox
+            // 
+            UserNametextBox.Anchor = AnchorStyles.None;
+            UserNametextBox.Location = new Point(330, 97);
+            UserNametextBox.Name = "UserNametextBox";
+            UserNametextBox.Size = new Size(440, 29);
+            UserNametextBox.TabIndex = 17;
             // 
             // FirstSecurityQuestionlabel
             // 
@@ -219,11 +239,14 @@
             Controls.Add(FirstSecurityAnswertextBox);
             Controls.Add(FirstSecurityQuestioncomboBox);
             Controls.Add(FirstSecurityQuestionlabel);
+            Controls.Add(UserNametextBox);
+            Controls.Add(UserNamelabel);
             Controls.Add(panel1);
             Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
             Name = "ForgetPasswordGUI";
             Text = "ForgetPasswordGUI";
+            Load += ForgetPasswordGUI_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -231,6 +254,8 @@
         #endregion
 
         private Panel panel1;
+        private Label UserNamelabel;
+        private TextBox UserNametextBox;
         private Label FirstSecurityQuestionlabel;
         private ComboBox FirstSecurityQuestioncomboBox;
         private TextBox FirstSecurityAnswertextBox;

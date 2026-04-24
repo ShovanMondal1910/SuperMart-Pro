@@ -51,6 +51,7 @@
             ShowPasswordcheckBox.TabIndex = 0;
             ShowPasswordcheckBox.Text = "Show";
             ShowPasswordcheckBox.UseVisualStyleBackColor = true;
+            ShowPasswordcheckBox.CheckedChanged += ShowPasswordcheckBox_CheckedChanged;
             // 
             // UserNamelabel
             // 
@@ -160,6 +161,7 @@
             Margin = new Padding(4);
             Name = "LoginGUI";
             Text = "LoginGUI";
+            Load += LoginGUI_Load;
             LogingroupBox.ResumeLayout(false);
             LogingroupBox.PerformLayout();
             ResumeLayout(false);
