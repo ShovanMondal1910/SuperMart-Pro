@@ -1,11 +1,12 @@
-﻿using SuperMart_Pro.View.Customer;
+using SuperMart_Pro.View.Cashier;
+using SuperMart_Pro.View.Customer;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
 
 namespace SuperMart_Pro.View.Dashboards
 {
-    public partial class CashierDashboardGUI : Form
+    public partial class ManagerDashboardGUI : Form
     {
         private static readonly Color SubBtnBg      = Color.FromArgb(22,  30,  46);
         private static readonly Color SubBtnHover   = Color.FromArgb(0,  120, 215);
@@ -19,32 +20,43 @@ namespace SuperMart_Pro.View.Dashboards
         private Button? _activeSubBtn;
         private Form?   _hostedForm;
 
-        public CashierDashboardGUI()
+        public ManagerDashboardGUI()
         {
             InitializeComponent();
             WireEvents();
         }
 
+        // ─────────────────────────────────────────────────────────────────────
+        //  EVENT WIRING
+        // ─────────────────────────────────────────────────────────────────────
         private void WireEvents()
         {
-            // ── category toggle ───────────────────────────────────────────────
-            btnCatCustomers.Click += (_, _) =>
-            {
-                flowCustomers.Visible = !flowCustomers.Visible;
-                btnCatCustomers.Text  = $"  {(flowCustomers.Visible ? "v" : ">")} Customers";
-            };
+            // ── category toggles ─────────────────────────────────────────────
+            WireCat(btnCatCashiers,  flowCashiers,  "Cashiers");
+            WireCat(btnCatCustomers, flowCustomers, "Customers");
 
             // ── sub-button hover colours ──────────────────────────────────────
             foreach (var btn in new[] {
-                btnAddCustomer, btnViewCustomers, btnUpdateCustomer, btnDeleteCustomer })
+                btnAddCashier,   btnViewCashiers,  btnUpdateCashier,  btnDeleteCashier,
+                btnAddCustomer,  btnViewCustomers, btnUpdateCustomer, btnDeleteCustomer,
+            })
             {
                 btn.MouseEnter += (_, _) => { if (btn != _activeSubBtn) btn.BackColor = SubBtnHover; };
                 btn.MouseLeave += (_, _) => { if (btn != _activeSubBtn) btn.BackColor = SubBtnBg; };
             }
 
-            // ── category hover ────────────────────────────────────────────────
-            btnCatCustomers.MouseEnter += (_, _) => btnCatCustomers.BackColor = CategoryHover;
-            btnCatCustomers.MouseLeave += (_, _) => btnCatCustomers.BackColor = CategoryBg;
+            // ── category hover colours ────────────────────────────────────────
+            foreach (var cat in new[] { btnCatCashiers, btnCatCustomers })
+            {
+                cat.MouseEnter += (_, _) => cat.BackColor = CategoryHover;
+                cat.MouseLeave += (_, _) => cat.BackColor = CategoryBg;
+            }
+
+            // ── Cashier operations ────────────────────────────────────────────
+            btnAddCashier.Click    += (_, _) => LoadForm(btnAddCashier,    new AddCashierGUI());
+            btnViewCashiers.Click  += (_, _) => LoadForm(btnViewCashiers,  new ViewAllCashierGUI());
+            btnUpdateCashier.Click += (_, _) => LoadForm(btnUpdateCashier, new UpdateCashierGUI());
+            btnDeleteCashier.Click += (_, _) => LoadForm(btnDeleteCashier, new DeleteCashierGUI());
 
             // ── Customer operations ───────────────────────────────────────────
             btnAddCustomer.Click    += (_, _) => LoadForm(btnAddCustomer,    new AddCustomerGUI());
@@ -60,11 +72,24 @@ namespace SuperMart_Pro.View.Dashboards
                     Application.Restart();
             };
 
-            // ── header role label right-align on resize ───────────────────────
+            // ── header role label — keep right-aligned on resize ──────────────
             pnlHeader.Resize += (_, _) =>
                 lblRole.Location = new Point(
                     pnlHeader.Width - lblRole.Width - 16,
                     (pnlHeader.Height - lblRole.Height) / 2);
+        }
+
+        // ─────────────────────────────────────────────────────────────────────
+        //  HELPERS
+        // ─────────────────────────────────────────────────────────────────────
+
+        private static void WireCat(Button cat, FlowLayoutPanel sub, string title)
+        {
+            cat.Click += (_, _) =>
+            {
+                sub.Visible = !sub.Visible;
+                cat.Text    = $"  {(sub.Visible ? "v" : ">")} {title}";
+            };
         }
 
         private void LoadForm(Button sender, Form form)

@@ -1,6 +1,6 @@
 ﻿namespace SuperMart_Pro.View.Dashboards
 {
-    partial class CashierDashboardGUI
+    partial class ManagerDashboardGUI
     {
         private System.ComponentModel.IContainer components = null;
         protected override void Dispose(bool disposing)
@@ -18,6 +18,12 @@
             this.lblRole = new System.Windows.Forms.Label();
             this.pnlSidebar = new System.Windows.Forms.Panel();
             this.flowSidebar = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnCatCashiers = new System.Windows.Forms.Button();
+            this.flowCashiers = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnAddCashier = new System.Windows.Forms.Button();
+            this.btnViewCashiers = new System.Windows.Forms.Button();
+            this.btnUpdateCashier = new System.Windows.Forms.Button();
+            this.btnDeleteCashier = new System.Windows.Forms.Button();
             this.btnCatCustomers = new System.Windows.Forms.Button();
             this.flowCustomers = new System.Windows.Forms.FlowLayoutPanel();
             this.btnAddCustomer = new System.Windows.Forms.Button();
@@ -72,7 +78,7 @@
             this.lblRole.Location = new System.Drawing.Point(1250,20);
             this.lblRole.Name = "lblRole";
             this.lblRole.TabIndex = 1;
-            this.lblRole.Text = "Cashier Dashboard";
+            this.lblRole.Text = "Manager Dashboard";
             // pnlSidebar
             this.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(28,37,54);
             this.pnlSidebar.Controls.Add(this.flowSidebar);
@@ -84,6 +90,8 @@
             // flowSidebar
             this.flowSidebar.AutoScroll = true;
             this.flowSidebar.BackColor = System.Drawing.Color.FromArgb(28,37,54);
+            this.flowSidebar.Controls.Add(this.btnCatCashiers);
+            this.flowSidebar.Controls.Add(this.flowCashiers);
             this.flowSidebar.Controls.Add(this.btnCatCustomers);
             this.flowSidebar.Controls.Add(this.flowCustomers);
             this.flowSidebar.Controls.Add(this.pnlSidebarSpacer);
@@ -96,6 +104,86 @@
             this.flowSidebar.Size = new System.Drawing.Size(240,800);
             this.flowSidebar.TabIndex = 0;
             this.flowSidebar.WrapContents = false;
+            // btnCatCashiers
+            this.btnCatCashiers.BackColor = System.Drawing.Color.FromArgb(38,50,72);
+            this.btnCatCashiers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCatCashiers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCatCashiers.FlatAppearance.BorderSize = 0;
+            this.btnCatCashiers.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.btnCatCashiers.ForeColor = System.Drawing.Color.White;
+            this.btnCatCashiers.Margin = new System.Windows.Forms.Padding(0,2,0,0);
+            this.btnCatCashiers.Name = "btnCatCashiers";
+            this.btnCatCashiers.Size = new System.Drawing.Size(240,42);
+            this.btnCatCashiers.TabIndex = 0;
+            this.btnCatCashiers.Text = "  > Cashiers";
+            this.btnCatCashiers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // flowCashiers
+            this.flowCashiers.AutoSize = true;
+            this.flowCashiers.BackColor = System.Drawing.Color.FromArgb(22,30,46);
+            this.flowCashiers.Controls.Add(this.btnAddCashier);
+            this.flowCashiers.Controls.Add(this.btnViewCashiers);
+            this.flowCashiers.Controls.Add(this.btnUpdateCashier);
+            this.flowCashiers.Controls.Add(this.btnDeleteCashier);
+            this.flowCashiers.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowCashiers.Margin = new System.Windows.Forms.Padding(0);
+            this.flowCashiers.Name = "flowCashiers";
+            this.flowCashiers.Padding = new System.Windows.Forms.Padding(0);
+            this.flowCashiers.Size = new System.Drawing.Size(240,152);
+            this.flowCashiers.TabIndex = 1;
+            this.flowCashiers.Visible = false;
+            this.flowCashiers.WrapContents = false;
+            // btnAddCashier
+            this.btnAddCashier.BackColor = System.Drawing.Color.FromArgb(22,30,46);
+            this.btnAddCashier.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddCashier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddCashier.FlatAppearance.BorderSize = 0;
+            this.btnAddCashier.Font = new System.Drawing.Font("Times New Roman", 10.5F);
+            this.btnAddCashier.ForeColor = System.Drawing.Color.FromArgb(160,175,200);
+            this.btnAddCashier.Margin = new System.Windows.Forms.Padding(0);
+            this.btnAddCashier.Name = "btnAddCashier";
+            this.btnAddCashier.Size = new System.Drawing.Size(240,38);
+            this.btnAddCashier.TabIndex = 0;
+            this.btnAddCashier.Text = "    Add Cashier";
+            this.btnAddCashier.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // btnViewCashiers
+            this.btnViewCashiers.BackColor = System.Drawing.Color.FromArgb(22,30,46);
+            this.btnViewCashiers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnViewCashiers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewCashiers.FlatAppearance.BorderSize = 0;
+            this.btnViewCashiers.Font = new System.Drawing.Font("Times New Roman", 10.5F);
+            this.btnViewCashiers.ForeColor = System.Drawing.Color.FromArgb(160,175,200);
+            this.btnViewCashiers.Margin = new System.Windows.Forms.Padding(0);
+            this.btnViewCashiers.Name = "btnViewCashiers";
+            this.btnViewCashiers.Size = new System.Drawing.Size(240,38);
+            this.btnViewCashiers.TabIndex = 1;
+            this.btnViewCashiers.Text = "    View All Cashiers";
+            this.btnViewCashiers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // btnUpdateCashier
+            this.btnUpdateCashier.BackColor = System.Drawing.Color.FromArgb(22,30,46);
+            this.btnUpdateCashier.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdateCashier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateCashier.FlatAppearance.BorderSize = 0;
+            this.btnUpdateCashier.Font = new System.Drawing.Font("Times New Roman", 10.5F);
+            this.btnUpdateCashier.ForeColor = System.Drawing.Color.FromArgb(160,175,200);
+            this.btnUpdateCashier.Margin = new System.Windows.Forms.Padding(0);
+            this.btnUpdateCashier.Name = "btnUpdateCashier";
+            this.btnUpdateCashier.Size = new System.Drawing.Size(240,38);
+            this.btnUpdateCashier.TabIndex = 2;
+            this.btnUpdateCashier.Text = "    Update Cashier";
+            this.btnUpdateCashier.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // btnDeleteCashier
+            this.btnDeleteCashier.BackColor = System.Drawing.Color.FromArgb(22,30,46);
+            this.btnDeleteCashier.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeleteCashier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteCashier.FlatAppearance.BorderSize = 0;
+            this.btnDeleteCashier.Font = new System.Drawing.Font("Times New Roman", 10.5F);
+            this.btnDeleteCashier.ForeColor = System.Drawing.Color.FromArgb(160,175,200);
+            this.btnDeleteCashier.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDeleteCashier.Name = "btnDeleteCashier";
+            this.btnDeleteCashier.Size = new System.Drawing.Size(240,38);
+            this.btnDeleteCashier.TabIndex = 3;
+            this.btnDeleteCashier.Text = "    Delete Cashier";
+            this.btnDeleteCashier.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // btnCatCustomers
             this.btnCatCustomers.BackColor = System.Drawing.Color.FromArgb(38,50,72);
             this.btnCatCustomers.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -106,7 +194,7 @@
             this.btnCatCustomers.Margin = new System.Windows.Forms.Padding(0,2,0,0);
             this.btnCatCustomers.Name = "btnCatCustomers";
             this.btnCatCustomers.Size = new System.Drawing.Size(240,42);
-            this.btnCatCustomers.TabIndex = 0;
+            this.btnCatCustomers.TabIndex = 2;
             this.btnCatCustomers.Text = "  > Customers";
             this.btnCatCustomers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // flowCustomers
@@ -121,7 +209,7 @@
             this.flowCustomers.Name = "flowCustomers";
             this.flowCustomers.Padding = new System.Windows.Forms.Padding(0);
             this.flowCustomers.Size = new System.Drawing.Size(240,152);
-            this.flowCustomers.TabIndex = 1;
+            this.flowCustomers.TabIndex = 3;
             this.flowCustomers.Visible = false;
             this.flowCustomers.WrapContents = false;
             // btnAddCustomer
@@ -180,7 +268,7 @@
             this.pnlSidebarSpacer.BackColor = System.Drawing.Color.FromArgb(28,37,54);
             this.pnlSidebarSpacer.Name = "pnlSidebarSpacer";
             this.pnlSidebarSpacer.Size = new System.Drawing.Size(240,20);
-            this.pnlSidebarSpacer.TabIndex = 2;
+            this.pnlSidebarSpacer.TabIndex = 4;
             // btnLogout
             this.btnLogout.BackColor = System.Drawing.Color.FromArgb(180,30,30);
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -191,7 +279,7 @@
             this.btnLogout.Margin = new System.Windows.Forms.Padding(0,4,0,0);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(240,44);
-            this.btnLogout.TabIndex = 3;
+            this.btnLogout.TabIndex = 5;
             this.btnLogout.Text = "  Logout";
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // contentPanel
@@ -209,9 +297,9 @@
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(1160,800);
             this.lblWelcome.TabIndex = 0;
-            this.lblWelcome.Text = "Welcome, Cashier\r\n\r\nSelect an operation from the left panel to get started.";
+            this.lblWelcome.Text = "Welcome, Manager\r\n\r\nSelect an operation from the left panel to get started.";
             this.lblWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // CashierDashboardGUI
+            // ManagerDashboardGUI
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(240,243,248);
@@ -219,8 +307,8 @@
             this.Controls.Add(this.rootTable);
             this.Font = new System.Drawing.Font("Times New Roman", 11F);
             this.MinimumSize = new System.Drawing.Size(1100,680);
-            this.Name = "CashierDashboardGUI";
-            this.Text = "SuperMart Pro - Cashier Dashboard";
+            this.Name = "ManagerDashboardGUI";
+            this.Text = "SuperMart Pro - Manager Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
         }
@@ -231,6 +319,12 @@
         private System.Windows.Forms.Label lblRole;
         private System.Windows.Forms.Panel pnlSidebar;
         private System.Windows.Forms.FlowLayoutPanel flowSidebar;
+        private System.Windows.Forms.Button btnCatCashiers;
+        private System.Windows.Forms.FlowLayoutPanel flowCashiers;
+        private System.Windows.Forms.Button btnAddCashier;
+        private System.Windows.Forms.Button btnViewCashiers;
+        private System.Windows.Forms.Button btnUpdateCashier;
+        private System.Windows.Forms.Button btnDeleteCashier;
         private System.Windows.Forms.Button btnCatCustomers;
         private System.Windows.Forms.FlowLayoutPanel flowCustomers;
         private System.Windows.Forms.Button btnAddCustomer;

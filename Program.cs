@@ -4,6 +4,7 @@ using SuperMart_Pro.View.Manager;
 using SuperMart_Pro.View.Cashier;
 using SuperMart_Pro.View.Branch;
 using SuperMart_Pro.View.Customer;
+using SuperMart_Pro.View.Dashboards;
 
 namespace SuperMart_Pro
 {
@@ -18,7 +19,7 @@ namespace SuperMart_Pro
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new ViewAllAdminGUI());
+            Application.Run(new LoginGUI());
         }
     }
 }

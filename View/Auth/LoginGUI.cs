@@ -1,7 +1,9 @@
 ﻿using SuperMart_Pro.Models;
+using SuperMart_Pro.View.Dashboards;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+
 
 namespace SuperMart_Pro.View.Auth
 {
@@ -103,14 +105,34 @@ namespace SuperMart_Pro.View.Auth
                 return;
             }
 
-            MessageBox.Show($"Welcome, {user.Username}!  Role: {user.Role}", "Login Successful",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            // TODO: open the appropriate dashboard based on user.Role
-            // if (user.Role == UserRole.Admin)    new AdminDashboardGUI().Show();
-            // if (user.Role == UserRole.Manager)  new ManagerDashboardGUI().Show();
-            // if (user.Role == UserRole.Cashier)  new CashierDashboardGUI().Show();
-            Close();
+            // Open the appropriate dashboard based on role
+            if (user.Role == UserRole.Admin)
+            {
+                Hide();
+                var dashboard = new AdminDashboardGUI();
+                dashboard.FormClosed += (_, _) => Close();
+                dashboard.Show();
+            }
+            else if (user.Role == UserRole.Manager)
+            {
+                Hide();
+                var dashboard = new ManagerDashboardGUI();
+                dashboard.FormClosed += (_, _) => Close();
+                dashboard.Show();
+            }
+            else if (user.Role == UserRole.Cashier)
+            {
+                Hide();
+                var dashboard = new CashierDashboardGUI();
+                dashboard.FormClosed += (_, _) => Close();
+                dashboard.Show();
+            }
+            else
+            {
+                MessageBox.Show($"Welcome, {user.Username}!  Role: {user.Role}\n\nDashboard for this role is not yet implemented.",
+                    "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Close();
+            }
         }
 
         // ─── Cancel ───────────────────────────────────────────────────────────
