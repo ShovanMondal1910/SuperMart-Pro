@@ -30,6 +30,8 @@
         {
             Headerpanel = new Panel();
             SearchgroupBox = new GroupBox();
+            UserSearchbutton = new Button();
+            SearchUserTextBox = new TextBox();
             AddressrichTextBox = new RichTextBox();
             FemaleradioButton = new RadioButton();
             MaleradioButton = new RadioButton();
@@ -68,8 +70,6 @@
             Cancelbutton = new Button();
             Clearbutton = new Button();
             Savebutton = new Button();
-            UserSearchbutton = new Button();
-            SearchUserTextBox = new TextBox();
             SearchgroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)PhotopictureBox).BeginInit();
             SuspendLayout();
@@ -94,6 +94,25 @@
             SearchgroupBox.TabIndex = 115;
             SearchgroupBox.TabStop = false;
             SearchgroupBox.Text = "Search by UserID/Phone number/UserName";
+            // 
+            // UserSearchbutton
+            // 
+            UserSearchbutton.Anchor = AnchorStyles.None;
+            UserSearchbutton.Location = new Point(393, 38);
+            UserSearchbutton.Name = "UserSearchbutton";
+            UserSearchbutton.Size = new Size(75, 29);
+            UserSearchbutton.TabIndex = 87;
+            UserSearchbutton.Text = "Search";
+            UserSearchbutton.UseVisualStyleBackColor = true;
+            UserSearchbutton.Click += UserSearchbutton_Click;
+            // 
+            // SearchUserTextBox
+            // 
+            SearchUserTextBox.Anchor = AnchorStyles.None;
+            SearchUserTextBox.Location = new Point(72, 38);
+            SearchUserTextBox.Name = "SearchUserTextBox";
+            SearchUserTextBox.Size = new Size(280, 29);
+            SearchUserTextBox.TabIndex = 86;
             // 
             // AddressrichTextBox
             // 
@@ -407,7 +426,7 @@
             // 
             CashierTypecomboBox.Anchor = AnchorStyles.None;
             CashierTypecomboBox.FormattingEnabled = true;
-            CashierTypecomboBox.Items.AddRange(new object[] { "Super Admin", "Branch Admin" });
+            CashierTypecomboBox.Items.AddRange(new object[] { "SaleCashier", "StockKeeper", "Accountant" });
             CashierTypecomboBox.Location = new Point(758, 564);
             CashierTypecomboBox.Name = "CashierTypecomboBox";
             CashierTypecomboBox.Size = new Size(280, 29);
@@ -428,6 +447,7 @@
             CashierIDtextBox.Anchor = AnchorStyles.None;
             CashierIDtextBox.Location = new Point(758, 508);
             CashierIDtextBox.Name = "CashierIDtextBox";
+            CashierIDtextBox.ReadOnly = true;
             CashierIDtextBox.Size = new Size(280, 29);
             CashierIDtextBox.TabIndex = 127;
             // 
@@ -478,25 +498,6 @@
             Savebutton.Text = "Save";
             Savebutton.UseVisualStyleBackColor = false;
             Savebutton.Click += Savebutton_Click;
-            // 
-            // UserSearchbutton
-            // 
-            UserSearchbutton.Anchor = AnchorStyles.None;
-            UserSearchbutton.Location = new Point(393, 38);
-            UserSearchbutton.Name = "UserSearchbutton";
-            UserSearchbutton.Size = new Size(75, 29);
-            UserSearchbutton.TabIndex = 87;
-            UserSearchbutton.Text = "Search";
-            UserSearchbutton.UseVisualStyleBackColor = true;
-            UserSearchbutton.Click += UserSearchbutton_Click;
-            // 
-            // SearchUserTextBox
-            // 
-            SearchUserTextBox.Anchor = AnchorStyles.None;
-            SearchUserTextBox.Location = new Point(72, 38);
-            SearchUserTextBox.Name = "SearchUserTextBox";
-            SearchUserTextBox.Size = new Size(280, 29);
-            SearchUserTextBox.TabIndex = 86;
             // 
             // UpdateCashierGUI
             // 

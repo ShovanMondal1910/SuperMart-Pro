@@ -81,6 +81,42 @@ namespace SuperMart_Pro.View.Supplier
                 ContactNumbertextBox.Focus();
                 return false;
             }
+            if (!System.Text.RegularExpressions.Regex.IsMatch(ContactNumbertextBox.Text.Trim(), @"^\+?[0-9\s\-]{7,15}$"))
+            {
+                MessageBox.Show("Contact Number is not valid.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                ContactNumbertextBox.Focus();
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(EmailtextBox.Text))
+            {
+                MessageBox.Show("Email is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                EmailtextBox.Focus();
+                return false;
+            }
+            if (!System.Text.RegularExpressions.Regex.IsMatch(EmailtextBox.Text.Trim(), @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                MessageBox.Show("Email is not valid.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                EmailtextBox.Focus();
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(AddresstextBox.Text))
+            {
+                MessageBox.Show("Address is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                AddresstextBox.Focus();
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(CountrytextBox.Text))
+            {
+                MessageBox.Show("Country is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                CountrytextBox.Focus();
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(CompanyNametextBox.Text))
+            {
+                MessageBox.Show("Company Name is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                CompanyNametextBox.Focus();
+                return false;
+            }
             return true;
         }
 

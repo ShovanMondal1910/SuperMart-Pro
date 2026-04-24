@@ -71,30 +71,44 @@ namespace SuperMart_Pro.View.Product
         {
             if (string.IsNullOrWhiteSpace(ProductIDtextBox.Text))
             {
-                MessageBox.Show("Product ID is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning); ProductIDtextBox.Focus(); 
-                return false; 
+                MessageBox.Show("Product ID is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                ProductIDtextBox.Focus(); return false;
             }
             if (string.IsNullOrWhiteSpace(ProductNametextBox.Text))
-            { 
-                MessageBox.Show("Product Name is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning); ProductNametextBox.Focus(); 
-                return false; 
+            {
+                MessageBox.Show("Product Name is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                ProductNametextBox.Focus(); return false;
             }
             if (string.IsNullOrWhiteSpace(BarcodetextBox.Text))
-            { 
-                MessageBox.Show("Barcode is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning); BarcodetextBox.Focus(); 
-                return false; 
+            {
+                MessageBox.Show("Barcode is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                BarcodetextBox.Focus(); return false;
             }
             if (string.IsNullOrWhiteSpace(SKUtextBox.Text))
             {
-                MessageBox.Show("SKU is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning); SKUtextBox.Focus(); 
-                return false; 
+                MessageBox.Show("SKU is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                SKUtextBox.Focus(); return false;
             }
-            if (string.IsNullOrWhiteSpace(SellingPricetextBox.Text))
-            { 
-                MessageBox.Show("Selling Price is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning); SellingPricetextBox.Focus(); 
-                return false; 
+            if (string.IsNullOrWhiteSpace(UnittextBox.Text))
+            {
+                MessageBox.Show("Unit is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                UnittextBox.Focus(); return false;
             }
-
+            if (string.IsNullOrWhiteSpace(SupplierIDtextBox.Text))
+            {
+                MessageBox.Show("Supplier ID is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                SupplierIDtextBox.Focus(); return false;
+            }
+            if (string.IsNullOrWhiteSpace(BuyingPricetextBox.Text) || !decimal.TryParse(BuyingPricetextBox.Text, out var bp) || bp < 0)
+            {
+                MessageBox.Show("Buying Price must be a valid non-negative number.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                BuyingPricetextBox.Focus(); return false;
+            }
+            if (string.IsNullOrWhiteSpace(SellingPricetextBox.Text) || !decimal.TryParse(SellingPricetextBox.Text, out var sp) || sp <= 0)
+            {
+                MessageBox.Show("Selling Price must be a valid positive number.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                SellingPricetextBox.Focus(); return false;
+            }
             return true;
         }
 

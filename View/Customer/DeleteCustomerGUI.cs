@@ -108,10 +108,6 @@ namespace SuperMart_Pro.View.Customer
             CustomerIDtextBox.Text                  = customer.CustomerID;
             // CustomerType is read-only, derived from LoyaltyPoints
             CustomerTypecomboBox.SelectedIndex      = (int)customer.Type - 1;
-            FirstSecurityQuestioncomboBox.Text      = customer.SecurityQuestion1;
-            FirstSecurityAnswertextBox.Text         = customer.SecurityAnswer1;
-            SecondSecurityQuestioncomboBox.Text     = customer.SecurityQuestion2;
-            SecondSecurityAnswertextBox.Text        = customer.SecurityAnswer2;
 
             // Photo
             if (customer.Photo != null && customer.Photo.Length > 0)
@@ -144,10 +140,6 @@ namespace SuperMart_Pro.View.Customer
             BranchNametextBox.Clear();
             CustomerIDtextBox.Clear();
             CustomerTypecomboBox.SelectedIndex      = -1;
-            FirstSecurityQuestioncomboBox.SelectedIndex  = -1;
-            FirstSecurityAnswertextBox.Clear();
-            SecondSecurityQuestioncomboBox.SelectedIndex = -1;
-            SecondSecurityAnswertextBox.Clear();
             SearchUserTextBox.Focus();
         }
     }

@@ -49,6 +49,8 @@
             UsernametextBox = new TextBox();
             Usernamelabel = new Label();
             SearchgroupBox = new GroupBox();
+            UserSearchbutton = new Button();
+            SearchUserTextBox = new TextBox();
             AddressrichTextBox = new RichTextBox();
             FemaleradioButton = new RadioButton();
             MaleradioButton = new RadioButton();
@@ -68,8 +70,6 @@
             UserIDtextBox = new TextBox();
             UserIDlabel = new Label();
             Headerpanel = new Panel();
-            UserSearchbutton = new Button();
-            SearchUserTextBox = new TextBox();
             SearchgroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)PhotopictureBox).BeginInit();
             SuspendLayout();
@@ -149,7 +149,7 @@
             // 
             CashierTypecomboBox.Anchor = AnchorStyles.None;
             CashierTypecomboBox.FormattingEnabled = true;
-            CashierTypecomboBox.Items.AddRange(new object[] { "Super Admin", "Branch Admin" });
+            CashierTypecomboBox.Items.AddRange(new object[] { "SaleCashier", "StockKeeper", "Accountant" });
             CashierTypecomboBox.Location = new Point(756, 574);
             CashierTypecomboBox.Name = "CashierTypecomboBox";
             CashierTypecomboBox.Size = new Size(280, 29);
@@ -170,6 +170,7 @@
             CashierIDtextBox.Anchor = AnchorStyles.None;
             CashierIDtextBox.Location = new Point(756, 518);
             CashierIDtextBox.Name = "CashierIDtextBox";
+            CashierIDtextBox.ReadOnly = true;
             CashierIDtextBox.Size = new Size(280, 29);
             CashierIDtextBox.TabIndex = 167;
             // 
@@ -291,6 +292,25 @@
             SearchgroupBox.TabIndex = 155;
             SearchgroupBox.TabStop = false;
             SearchgroupBox.Text = "Search by UserID/Phone number/UserName";
+            // 
+            // UserSearchbutton
+            // 
+            UserSearchbutton.Anchor = AnchorStyles.None;
+            UserSearchbutton.Location = new Point(388, 38);
+            UserSearchbutton.Name = "UserSearchbutton";
+            UserSearchbutton.Size = new Size(75, 29);
+            UserSearchbutton.TabIndex = 87;
+            UserSearchbutton.Text = "Search";
+            UserSearchbutton.UseVisualStyleBackColor = true;
+            UserSearchbutton.Click += UserSearchbutton_Click;
+            // 
+            // SearchUserTextBox
+            // 
+            SearchUserTextBox.Anchor = AnchorStyles.None;
+            SearchUserTextBox.Location = new Point(67, 38);
+            SearchUserTextBox.Name = "SearchUserTextBox";
+            SearchUserTextBox.Size = new Size(280, 29);
+            SearchUserTextBox.TabIndex = 86;
             // 
             // AddressrichTextBox
             // 
@@ -477,25 +497,6 @@
             Headerpanel.Size = new Size(1231, 96);
             Headerpanel.TabIndex = 136;
             // 
-            // UserSearchbutton
-            // 
-            UserSearchbutton.Anchor = AnchorStyles.None;
-            UserSearchbutton.Location = new Point(388, 38);
-            UserSearchbutton.Name = "UserSearchbutton";
-            UserSearchbutton.Size = new Size(75, 29);
-            UserSearchbutton.TabIndex = 87;
-            UserSearchbutton.Text = "Search";
-            UserSearchbutton.UseVisualStyleBackColor = true;
-            UserSearchbutton.Click += UserSearchbutton_Click;
-            // 
-            // SearchUserTextBox
-            // 
-            SearchUserTextBox.Anchor = AnchorStyles.None;
-            SearchUserTextBox.Location = new Point(67, 38);
-            SearchUserTextBox.Name = "SearchUserTextBox";
-            SearchUserTextBox.Size = new Size(280, 29);
-            SearchUserTextBox.TabIndex = 86;
-            // 
             // DeleteCashierGUI
             // 
             AutoScaleDimensions = new SizeF(10F, 21F);
@@ -542,7 +543,7 @@
             Controls.Add(UserIDlabel);
             Controls.Add(Headerpanel);
             Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "DeleteCashierGUI";
             Text = "DeleteCashierGUI";
             SearchgroupBox.ResumeLayout(false);

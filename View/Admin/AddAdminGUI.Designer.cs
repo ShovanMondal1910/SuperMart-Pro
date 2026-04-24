@@ -586,7 +586,6 @@ namespace SuperMart_Pro.View.Admin
             Margin = new Padding(4);
             Name = "AddAdminGUI";
             Text = "Add Admin";
-            WindowState = FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)PhotopictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();

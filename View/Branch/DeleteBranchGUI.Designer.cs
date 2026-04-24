@@ -314,7 +314,6 @@ namespace SuperMart_Pro.View.Branch
             Margin = new Padding(4);
             Name = "DeleteBranchGUI";
             Text = "Delete Branch";
-            WindowState = FormWindowState.Maximized;
             SearchgroupBox.ResumeLayout(false);
             SearchgroupBox.PerformLayout();
             ResumeLayout(false);

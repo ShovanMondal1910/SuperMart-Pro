@@ -85,6 +85,26 @@ namespace SuperMart_Pro.View.Branch
                 MessageBox.Show("Branch Phone is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 BranchPhonetextBox.Focus(); return false;
             }
+            if (!System.Text.RegularExpressions.Regex.IsMatch(BranchPhonetextBox.Text.Trim(), @"^\+?[0-9\s\-]{7,15}$"))
+            {
+                MessageBox.Show("Branch Phone is not valid.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                BranchPhonetextBox.Focus(); return false;
+            }
+            if (string.IsNullOrWhiteSpace(BranchEmailtextBox.Text))
+            {
+                MessageBox.Show("Branch Email is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                BranchEmailtextBox.Focus(); return false;
+            }
+            if (!System.Text.RegularExpressions.Regex.IsMatch(BranchEmailtextBox.Text.Trim(), @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                MessageBox.Show("Branch Email is not valid.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                BranchEmailtextBox.Focus(); return false;
+            }
+            if (string.IsNullOrWhiteSpace(BranchAddresstextBox.Text))
+            {
+                MessageBox.Show("Branch Address is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                BranchAddresstextBox.Focus(); return false;
+            }
             return true;
         }
 

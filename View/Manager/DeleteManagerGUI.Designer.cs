@@ -329,6 +329,7 @@
             AddressrichTextBox.Anchor = AnchorStyles.None;
             AddressrichTextBox.Location = new Point(236, 720);
             AddressrichTextBox.Name = "AddressrichTextBox";
+            AddressrichTextBox.ReadOnly = true;
             AddressrichTextBox.Size = new Size(275, 81);
             AddressrichTextBox.TabIndex = 163;
             AddressrichTextBox.Text = "";
@@ -372,6 +373,7 @@
             EmailtextBox.Anchor = AnchorStyles.None;
             EmailtextBox.Location = new Point(236, 663);
             EmailtextBox.Name = "EmailtextBox";
+            EmailtextBox.ReadOnly = true;
             EmailtextBox.Size = new Size(280, 29);
             EmailtextBox.TabIndex = 159;
             // 
@@ -390,6 +392,7 @@
             PhoneNumbertextBox.Anchor = AnchorStyles.None;
             PhoneNumbertextBox.Location = new Point(236, 606);
             PhoneNumbertextBox.Name = "PhoneNumbertextBox";
+            PhoneNumbertextBox.ReadOnly = true;
             PhoneNumbertextBox.Size = new Size(280, 29);
             PhoneNumbertextBox.TabIndex = 157;
             // 
@@ -556,7 +559,7 @@
             Controls.Add(UserIDlabel);
             Controls.Add(Headerpanel);
             Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "DeleteManagerGUI";
             Text = "DeleteManagerGUI";
             SearchgroupBox.ResumeLayout(false);

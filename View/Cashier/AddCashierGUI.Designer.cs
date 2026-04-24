@@ -273,7 +273,7 @@
             // 
             CashierTypecomboBox.Anchor = AnchorStyles.None;
             CashierTypecomboBox.FormattingEnabled = true;
-            CashierTypecomboBox.Items.AddRange(new object[] { "Super Admin", "Branch Admin" });
+            CashierTypecomboBox.Items.AddRange(new object[] { "SaleCashier", "StockKeeper", "Accountant" });
             CashierTypecomboBox.Location = new Point(777, 691);
             CashierTypecomboBox.Name = "CashierTypecomboBox";
             CashierTypecomboBox.Size = new Size(280, 29);
@@ -597,7 +597,7 @@
             Controls.Add(UserIDlabel);
             Controls.Add(Headerpanel);
             Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "AddCashierGUI";
             Text = "AddCashierGUI";
             ((System.ComponentModel.ISupportInitialize)PhotopictureBox).EndInit();

@@ -97,10 +97,10 @@ namespace SuperMart_Pro.View.Customer
             _currentCustomer.BranchID    = BranchIDtextBox.Text.Trim();
 
             // Security questions
-            _currentCustomer.SecurityQuestion1 = FirstSecurityQuestioncomboBox.SelectedItem?.ToString() ?? string.Empty;
-            _currentCustomer.SecurityAnswer1   = FirstSecurityAnswertextBox.Text.Trim();
-            _currentCustomer.SecurityQuestion2 = SecondSecurityQuestioncomboBox.SelectedItem?.ToString() ?? string.Empty;
-            _currentCustomer.SecurityAnswer2   = SecondSecurityAnswertextBox.Text.Trim();
+            _currentCustomer.SecurityQuestion1 = string.Empty;
+            _currentCustomer.SecurityAnswer1   = string.Empty;
+            _currentCustomer.SecurityQuestion2 = string.Empty;
+            _currentCustomer.SecurityAnswer2   = string.Empty;
 
             // Only update password if the user typed something new
             if (!string.IsNullOrWhiteSpace(PasswordtextBox.Text))
@@ -161,10 +161,6 @@ namespace SuperMart_Pro.View.Customer
             CustomerIDtextBox.Text                  = customer.CustomerID;
             // CustomerType is read-only, derived from LoyaltyPoints
             CustomerTypecomboBox.SelectedIndex      = (int)customer.Type - 1;
-            FirstSecurityQuestioncomboBox.Text      = customer.SecurityQuestion1;
-            FirstSecurityAnswertextBox.Text         = customer.SecurityAnswer1;
-            SecondSecurityQuestioncomboBox.Text     = customer.SecurityQuestion2;
-            SecondSecurityAnswertextBox.Text        = customer.SecurityAnswer2;
 
             // Photo
             if (customer.Photo != null && customer.Photo.Length > 0)
@@ -266,46 +262,6 @@ namespace SuperMart_Pro.View.Customer
                 return false;
             }
 
-            // First Security Question
-            if (FirstSecurityQuestioncomboBox.SelectedIndex == -1 || string.IsNullOrWhiteSpace(FirstSecurityQuestioncomboBox.SelectedItem?.ToString()))
-            {
-                MessageBox.Show("Please select a First Security Question.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                FirstSecurityQuestioncomboBox.Focus();
-                return false;
-            }
-
-            // First Security Answer
-            if (string.IsNullOrWhiteSpace(FirstSecurityAnswertextBox.Text))
-            {
-                MessageBox.Show("First Security Answer is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                FirstSecurityAnswertextBox.Focus();
-                return false;
-            }
-
-            // Second Security Question
-            if (SecondSecurityQuestioncomboBox.SelectedIndex == -1 || string.IsNullOrWhiteSpace(SecondSecurityQuestioncomboBox.SelectedItem?.ToString()))
-            {
-                MessageBox.Show("Please select a Second Security Question.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                SecondSecurityQuestioncomboBox.Focus();
-                return false;
-            }
-
-            // Second Security Answer
-            if (string.IsNullOrWhiteSpace(SecondSecurityAnswertextBox.Text))
-            {
-                MessageBox.Show("Second Security Answer is required.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                SecondSecurityAnswertextBox.Focus();
-                return false;
-            }
-
-            // Both security questions must be different
-            if (FirstSecurityQuestioncomboBox.SelectedItem?.ToString() == SecondSecurityQuestioncomboBox.SelectedItem?.ToString())
-            {
-                MessageBox.Show("First and Second Security Questions must be different.", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                SecondSecurityQuestioncomboBox.Focus();
-                return false;
-            }
-
             return true;
         }
 
@@ -329,10 +285,6 @@ namespace SuperMart_Pro.View.Customer
             BranchNametextBox.Clear();
             CustomerIDtextBox.Clear();
             CustomerTypecomboBox.SelectedIndex      = -1;
-            FirstSecurityQuestioncomboBox.SelectedIndex  = -1;
-            FirstSecurityAnswertextBox.Clear();
-            SecondSecurityQuestioncomboBox.SelectedIndex = -1;
-            SecondSecurityAnswertextBox.Clear();
             SearchUserTextBox.Focus();
         }
     }

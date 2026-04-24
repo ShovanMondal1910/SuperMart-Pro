@@ -359,7 +359,6 @@ namespace SuperMart_Pro.View.Branch
             Margin = new Padding(4);
             Name = "AddBranchGUI";
             Text = "Add Branch";
-            WindowState = FormWindowState.Maximized;
             ResumeLayout(false);
             PerformLayout();
         }
