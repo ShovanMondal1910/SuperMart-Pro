@@ -30,6 +30,11 @@
             this.btnViewCustomers = new System.Windows.Forms.Button();
             this.btnUpdateCustomer = new System.Windows.Forms.Button();
             this.btnDeleteCustomer = new System.Windows.Forms.Button();
+            this.btnCatExpenses = new System.Windows.Forms.Button();
+            this.flowExpenses = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnAddExpense = new System.Windows.Forms.Button();
+            this.btnUpdateExpense = new System.Windows.Forms.Button();
+            this.btnApproveExpense = new System.Windows.Forms.Button();
             this.pnlSidebarSpacer = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
             this.contentPanel = new System.Windows.Forms.Panel();
@@ -116,6 +121,8 @@
             this.flowSidebar.Controls.Add(this.flowProducts);
             this.flowSidebar.Controls.Add(this.btnCatSuppliers);
             this.flowSidebar.Controls.Add(this.flowSuppliers);
+            this.flowSidebar.Controls.Add(this.btnCatExpenses);
+            this.flowSidebar.Controls.Add(this.flowExpenses);
             this.flowSidebar.Controls.Add(this.pnlSidebarSpacer);
             this.flowSidebar.Controls.Add(this.btnLogout);
             this.flowSidebar.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -498,6 +505,72 @@
             this.btnDeleteSupplier.TabIndex = 3;
             this.btnDeleteSupplier.Text = "    Delete Supplier";
             this.btnDeleteSupplier.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // btnCatExpenses
+            this.btnCatExpenses.BackColor = System.Drawing.Color.FromArgb(38,50,72);
+            this.btnCatExpenses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCatExpenses.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCatExpenses.FlatAppearance.BorderSize = 0;
+            this.btnCatExpenses.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
+            this.btnCatExpenses.ForeColor = System.Drawing.Color.White;
+            this.btnCatExpenses.Margin = new System.Windows.Forms.Padding(0,2,0,0);
+            this.btnCatExpenses.Name = "btnCatExpenses";
+            this.btnCatExpenses.Size = new System.Drawing.Size(240,42);
+            this.btnCatExpenses.TabIndex = 10;
+            this.btnCatExpenses.Text = "  > Expenses";
+            this.btnCatExpenses.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // flowExpenses
+            this.flowExpenses.AutoSize = true;
+            this.flowExpenses.BackColor = System.Drawing.Color.FromArgb(22,30,46);
+            this.flowExpenses.Controls.Add(this.btnAddExpense);
+            this.flowExpenses.Controls.Add(this.btnUpdateExpense);
+            this.flowExpenses.Controls.Add(this.btnApproveExpense);
+            this.flowExpenses.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowExpenses.Margin = new System.Windows.Forms.Padding(0);
+            this.flowExpenses.Name = "flowExpenses";
+            this.flowExpenses.Padding = new System.Windows.Forms.Padding(0);
+            this.flowExpenses.Size = new System.Drawing.Size(240,114);
+            this.flowExpenses.TabIndex = 11;
+            this.flowExpenses.Visible = false;
+            this.flowExpenses.WrapContents = false;
+            // btnAddExpense
+            this.btnAddExpense.BackColor = System.Drawing.Color.FromArgb(22,30,46);
+            this.btnAddExpense.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddExpense.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddExpense.FlatAppearance.BorderSize = 0;
+            this.btnAddExpense.Font = new System.Drawing.Font("Times New Roman", 10.5F);
+            this.btnAddExpense.ForeColor = System.Drawing.Color.FromArgb(160,175,200);
+            this.btnAddExpense.Margin = new System.Windows.Forms.Padding(0);
+            this.btnAddExpense.Name = "btnAddExpense";
+            this.btnAddExpense.Size = new System.Drawing.Size(240,38);
+            this.btnAddExpense.TabIndex = 0;
+            this.btnAddExpense.Text = "    Add Expense";
+            this.btnAddExpense.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // btnUpdateExpense
+            this.btnUpdateExpense.BackColor = System.Drawing.Color.FromArgb(22,30,46);
+            this.btnUpdateExpense.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdateExpense.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateExpense.FlatAppearance.BorderSize = 0;
+            this.btnUpdateExpense.Font = new System.Drawing.Font("Times New Roman", 10.5F);
+            this.btnUpdateExpense.ForeColor = System.Drawing.Color.FromArgb(160,175,200);
+            this.btnUpdateExpense.Margin = new System.Windows.Forms.Padding(0);
+            this.btnUpdateExpense.Name = "btnUpdateExpense";
+            this.btnUpdateExpense.Size = new System.Drawing.Size(240,38);
+            this.btnUpdateExpense.TabIndex = 1;
+            this.btnUpdateExpense.Text = "    Update Expense";
+            this.btnUpdateExpense.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // btnApproveExpense
+            this.btnApproveExpense.BackColor = System.Drawing.Color.FromArgb(22,30,46);
+            this.btnApproveExpense.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnApproveExpense.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnApproveExpense.FlatAppearance.BorderSize = 0;
+            this.btnApproveExpense.Font = new System.Drawing.Font("Times New Roman", 10.5F);
+            this.btnApproveExpense.ForeColor = System.Drawing.Color.FromArgb(160,175,200);
+            this.btnApproveExpense.Margin = new System.Windows.Forms.Padding(0);
+            this.btnApproveExpense.Name = "btnApproveExpense";
+            this.btnApproveExpense.Size = new System.Drawing.Size(240,38);
+            this.btnApproveExpense.TabIndex = 2;
+            this.btnApproveExpense.Text = "    Approve Expenses";
+            this.btnApproveExpense.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // pnlSidebarSpacer
             this.pnlSidebarSpacer.BackColor = System.Drawing.Color.FromArgb(28,37,54);
             this.pnlSidebarSpacer.Name = "pnlSidebarSpacer";
@@ -585,5 +658,10 @@
         private System.Windows.Forms.Button btnViewSuppliers;
         private System.Windows.Forms.Button btnUpdateSupplier;
         private System.Windows.Forms.Button btnDeleteSupplier;
+        private System.Windows.Forms.Button btnCatExpenses;
+        private System.Windows.Forms.FlowLayoutPanel flowExpenses;
+        private System.Windows.Forms.Button btnAddExpense;
+        private System.Windows.Forms.Button btnUpdateExpense;
+        private System.Windows.Forms.Button btnApproveExpense;
     }
 }

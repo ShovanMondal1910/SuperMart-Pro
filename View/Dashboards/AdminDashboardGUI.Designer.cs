@@ -47,6 +47,12 @@
             btnViewSuppliers = new Button();
             btnUpdateSupplier = new Button();
             btnDeleteSupplier = new Button();
+            btnCatExpenses = new Button();
+            flowExpenses = new FlowLayoutPanel();
+            btnAddExpense = new Button();
+            btnViewExpenses = new Button();
+            btnUpdateExpense = new Button();
+            btnApproveExpense = new Button();
             pnlSidebarSpacer = new Panel();
             btnLogout = new Button();
             contentPanel = new Panel();
@@ -60,6 +66,7 @@
             flowCashiers.SuspendLayout();
             flowBranches.SuspendLayout();
             flowSuppliers.SuspendLayout();
+            flowExpenses.SuspendLayout();
             contentPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -143,6 +150,8 @@
             flowSidebar.Controls.Add(flowBranches);
             flowSidebar.Controls.Add(btnCatSuppliers);
             flowSidebar.Controls.Add(flowSuppliers);
+            flowSidebar.Controls.Add(btnCatExpenses);
+            flowSidebar.Controls.Add(flowExpenses);
             flowSidebar.Controls.Add(pnlSidebarSpacer);
             flowSidebar.Controls.Add(btnLogout);
             flowSidebar.Dock = DockStyle.Fill;
@@ -665,6 +674,102 @@
             btnDeleteSupplier.TextAlign = ContentAlignment.MiddleLeft;
             btnDeleteSupplier.UseVisualStyleBackColor = false;
             // 
+            // btnCatExpenses
+            // 
+            btnCatExpenses.BackColor = Color.FromArgb(38, 50, 72);
+            btnCatExpenses.Cursor = Cursors.Hand;
+            btnCatExpenses.FlatAppearance.BorderSize = 0;
+            btnCatExpenses.FlatStyle = FlatStyle.Flat;
+            btnCatExpenses.Font = new Font("Times New Roman", 11F, FontStyle.Bold);
+            btnCatExpenses.ForeColor = Color.White;
+            btnCatExpenses.Margin = new Padding(0, 2, 0, 0);
+            btnCatExpenses.Name = "btnCatExpenses";
+            btnCatExpenses.Size = new Size(240, 42);
+            btnCatExpenses.TabIndex = 16;
+            btnCatExpenses.Text = "  > Expenses";
+            btnCatExpenses.TextAlign = ContentAlignment.MiddleLeft;
+            btnCatExpenses.UseVisualStyleBackColor = false;
+            // 
+            // flowExpenses
+            // 
+            flowExpenses.AutoSize = true;
+            flowExpenses.BackColor = Color.FromArgb(22, 30, 46);
+            flowExpenses.Controls.Add(btnAddExpense);
+            flowExpenses.Controls.Add(btnViewExpenses);
+            flowExpenses.Controls.Add(btnUpdateExpense);
+            flowExpenses.Controls.Add(btnApproveExpense);
+            flowExpenses.FlowDirection = FlowDirection.TopDown;
+            flowExpenses.Margin = new Padding(0);
+            flowExpenses.Name = "flowExpenses";
+            flowExpenses.Size = new Size(240, 152);
+            flowExpenses.TabIndex = 17;
+            flowExpenses.Visible = false;
+            flowExpenses.WrapContents = false;
+            // 
+            // btnAddExpense
+            // 
+            btnAddExpense.BackColor = Color.FromArgb(22, 30, 46);
+            btnAddExpense.Cursor = Cursors.Hand;
+            btnAddExpense.FlatAppearance.BorderSize = 0;
+            btnAddExpense.FlatStyle = FlatStyle.Flat;
+            btnAddExpense.Font = new Font("Times New Roman", 10.5F);
+            btnAddExpense.ForeColor = Color.FromArgb(160, 175, 200);
+            btnAddExpense.Margin = new Padding(0);
+            btnAddExpense.Name = "btnAddExpense";
+            btnAddExpense.Size = new Size(240, 38);
+            btnAddExpense.TabIndex = 0;
+            btnAddExpense.Text = "    Add Expense";
+            btnAddExpense.TextAlign = ContentAlignment.MiddleLeft;
+            btnAddExpense.UseVisualStyleBackColor = false;
+            // 
+            // btnViewExpenses
+            // 
+            btnViewExpenses.BackColor = Color.FromArgb(22, 30, 46);
+            btnViewExpenses.Cursor = Cursors.Hand;
+            btnViewExpenses.FlatAppearance.BorderSize = 0;
+            btnViewExpenses.FlatStyle = FlatStyle.Flat;
+            btnViewExpenses.Font = new Font("Times New Roman", 10.5F);
+            btnViewExpenses.ForeColor = Color.FromArgb(160, 175, 200);
+            btnViewExpenses.Margin = new Padding(0);
+            btnViewExpenses.Name = "btnViewExpenses";
+            btnViewExpenses.Size = new Size(240, 38);
+            btnViewExpenses.TabIndex = 1;
+            btnViewExpenses.Text = "    View All Expenses";
+            btnViewExpenses.TextAlign = ContentAlignment.MiddleLeft;
+            btnViewExpenses.UseVisualStyleBackColor = false;
+            // 
+            // btnUpdateExpense
+            // 
+            btnUpdateExpense.BackColor = Color.FromArgb(22, 30, 46);
+            btnUpdateExpense.Cursor = Cursors.Hand;
+            btnUpdateExpense.FlatAppearance.BorderSize = 0;
+            btnUpdateExpense.FlatStyle = FlatStyle.Flat;
+            btnUpdateExpense.Font = new Font("Times New Roman", 10.5F);
+            btnUpdateExpense.ForeColor = Color.FromArgb(160, 175, 200);
+            btnUpdateExpense.Margin = new Padding(0);
+            btnUpdateExpense.Name = "btnUpdateExpense";
+            btnUpdateExpense.Size = new Size(240, 38);
+            btnUpdateExpense.TabIndex = 2;
+            btnUpdateExpense.Text = "    Update Expense";
+            btnUpdateExpense.TextAlign = ContentAlignment.MiddleLeft;
+            btnUpdateExpense.UseVisualStyleBackColor = false;
+            // 
+            // btnApproveExpense
+            // 
+            btnApproveExpense.BackColor = Color.FromArgb(22, 30, 46);
+            btnApproveExpense.Cursor = Cursors.Hand;
+            btnApproveExpense.FlatAppearance.BorderSize = 0;
+            btnApproveExpense.FlatStyle = FlatStyle.Flat;
+            btnApproveExpense.Font = new Font("Times New Roman", 10.5F);
+            btnApproveExpense.ForeColor = Color.FromArgb(160, 175, 200);
+            btnApproveExpense.Margin = new Padding(0);
+            btnApproveExpense.Name = "btnApproveExpense";
+            btnApproveExpense.Size = new Size(240, 38);
+            btnApproveExpense.TabIndex = 3;
+            btnApproveExpense.Text = "    Approve Expenses";
+            btnApproveExpense.TextAlign = ContentAlignment.MiddleLeft;
+            btnApproveExpense.UseVisualStyleBackColor = false;
+            // 
             // pnlSidebarSpacer
             // 
             pnlSidebarSpacer.BackColor = Color.FromArgb(28, 37, 54);
@@ -736,6 +841,7 @@
             flowCashiers.ResumeLayout(false);
             flowBranches.ResumeLayout(false);
             flowSuppliers.ResumeLayout(false);
+            flowExpenses.ResumeLayout(false);
             contentPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -780,5 +886,11 @@
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Panel contentPanel;
         private System.Windows.Forms.Label lblWelcome;
+        private System.Windows.Forms.Button btnCatExpenses;
+        private System.Windows.Forms.FlowLayoutPanel flowExpenses;
+        private System.Windows.Forms.Button btnAddExpense;
+        private System.Windows.Forms.Button btnViewExpenses;
+        private System.Windows.Forms.Button btnUpdateExpense;
+        private System.Windows.Forms.Button btnApproveExpense;
     }
 }

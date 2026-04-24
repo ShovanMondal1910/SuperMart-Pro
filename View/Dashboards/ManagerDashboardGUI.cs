@@ -1,6 +1,7 @@
 using SuperMart_Pro.View.Branch;
 using SuperMart_Pro.View.Cashier;
 using SuperMart_Pro.View.Customer;
+using SuperMart_Pro.View.Expense;
 using SuperMart_Pro.View.Product;
 using SuperMart_Pro.View.Supplier;
 using System;
@@ -40,6 +41,7 @@ namespace SuperMart_Pro.View.Dashboards
             WireCat(btnCatBranches,  flowBranches,  "Branches");
             WireCat(btnCatProducts,  flowProducts,  "Products");
             WireCat(btnCatSuppliers, flowSuppliers, "Suppliers");
+            WireCat(btnCatExpenses,  flowExpenses,  "Expenses");
 
             // ── sub-button hover colours ──────────────────────────────────────
             foreach (var btn in new[] {
@@ -48,6 +50,8 @@ namespace SuperMart_Pro.View.Dashboards
                 btnViewBranches, btnUpdateBranch,
                 btnAddProduct,   btnViewProducts,  btnUpdateProduct,  btnDeleteProduct,
                 btnAddSupplier,  btnViewSuppliers, btnUpdateSupplier, btnDeleteSupplier,
+                btnAddExpense,   btnUpdateExpense,
+                btnApproveExpense,
             })
             {
                 btn.MouseEnter += (_, _) => { if (btn != _activeSubBtn) btn.BackColor = SubBtnHover; };
@@ -55,7 +59,7 @@ namespace SuperMart_Pro.View.Dashboards
             }
 
             // ── category hover colours ────────────────────────────────────────
-            foreach (var cat in new[] { btnCatCashiers, btnCatCustomers, btnCatBranches, btnCatProducts, btnCatSuppliers })
+            foreach (var cat in new[] { btnCatCashiers, btnCatCustomers, btnCatBranches, btnCatProducts, btnCatSuppliers, btnCatExpenses })
             {
                 cat.MouseEnter += (_, _) => cat.BackColor = CategoryHover;
                 cat.MouseLeave += (_, _) => cat.BackColor = CategoryBg;
@@ -88,6 +92,11 @@ namespace SuperMart_Pro.View.Dashboards
             btnViewSuppliers.Click  += (_, _) => LoadForm(btnViewSuppliers,  new ViewAllSupplierGUI());
             btnUpdateSupplier.Click += (_, _) => LoadForm(btnUpdateSupplier, new UpdateSupplierGUI());
             btnDeleteSupplier.Click += (_, _) => LoadForm(btnDeleteSupplier, new DeleteSupplierGUI());
+
+            // ── Expense operations ────────────────────────────────────────────
+            btnAddExpense.Click    += (_, _) => LoadForm(btnAddExpense,    new AddExpenseGUI());
+            btnUpdateExpense.Click += (_, _) => LoadForm(btnUpdateExpense, new UpdateExpenseGUI());
+            btnApproveExpense.Click += (_, _) => LoadForm(btnApproveExpense, new ApproveExpenseGUI());
 
             // ── Logout ────────────────────────────────────────────────────────
             btnLogout.Click += (_, _) =>
