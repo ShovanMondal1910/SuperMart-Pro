@@ -46,13 +46,7 @@ namespace SuperMart_Pro.View.Cashier
                 lastLogout: null,
                 canProcessSales: CanProcessSalescheckBox.Checked,
                 canProcessReturns: CanProcessReturnscheckBox.Checked,
-                canManageStock: CanManageStockcheckBox.Checked,
-                createdAt: DateTime.Now,
-                createdBy: Environment.UserName,
-                updatedAt: DateTime.Now,
-                updatedBy: Environment.UserName,
-                deletedAt: null,
-                deletedBy: string.Empty
+                canManageStock: CanManageStockcheckBox.Checked
             );
 
             // TODO: pass cashier to controller/service layer

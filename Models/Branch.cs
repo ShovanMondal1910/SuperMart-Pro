@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SuperMart_Pro.Models
 {
-    internal class Branch : AuditableEntity
+    internal class Branch
     {
         private string _branchID = string.Empty;
         private string _branchName = string.Empty;
@@ -19,9 +19,7 @@ namespace SuperMart_Pro.Models
         public Branch() { }
 
         public Branch(string branchID, string branchName, string branchType, string branchAddress, string branchZip,
-            string branchPhone, string branchEmail, bool isActive, string managerID,
-            DateTime createdAt, string createdBy, DateTime updatedAt, string updatedBy, DateTime? deletedAt, string deletedBy)
-            : base(createdAt, createdBy, updatedAt, updatedBy, deletedAt, deletedBy)
+            string branchPhone, string branchEmail, bool isActive, string managerID)
         {
             _branchID = branchID;
             _branchName = branchName;

@@ -28,13 +28,7 @@ namespace SuperMart_Pro.View.Branch
                 branchPhone: BranchPhonetextBox.Text.Trim(),
                 branchEmail: BranchEmailtextBox.Text.Trim(),
                 isActive: IsActivecheckBox.Checked,
-                managerID: ManagerIDtextBox.Text.Trim(),
-                createdAt: DateTime.Now,
-                createdBy: Environment.UserName,
-                updatedAt: DateTime.Now,
-                updatedBy: Environment.UserName,
-                deletedAt: null,
-                deletedBy: string.Empty
+                managerID: ManagerIDtextBox.Text.Trim()
             );
 
             // TODO: pass branch to controller

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SuperMart_Pro.Models
 {
-    internal class Supplier : AuditableEntity
+    internal class Supplier
     {
         private string _supplierId = string.Empty;
         private string _supplierName = string.Empty;
@@ -19,9 +19,7 @@ namespace SuperMart_Pro.Models
         public Supplier() { }
 
         public Supplier(string supplierId, string supplierName, string contactNumber, string email, string address,
-            string country, string companyName, bool isActive, string website,
-            DateTime createdAt, string createdBy, DateTime updatedAt, string updatedBy, DateTime? deletedAt, string deletedBy)
-            : base(createdAt, createdBy, updatedAt, updatedBy, deletedAt, deletedBy)
+            string country, string companyName, bool isActive, string website)
         {
             _supplierId = supplierId;
             _supplierName = supplierName;

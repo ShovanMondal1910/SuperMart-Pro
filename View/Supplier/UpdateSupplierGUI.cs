@@ -37,13 +37,7 @@ namespace SuperMart_Pro.View.Supplier
                 country: CountrytextBox.Text.Trim(),
                 companyName: CompanyNametextBox.Text.Trim(),
                 isActive: IsActivecheckBox.Checked,
-                website: WebsitetextBox.Text.Trim(),
-                createdAt: DateTime.Now,
-                createdBy: Environment.UserName,
-                updatedAt: DateTime.Now,
-                updatedBy: Environment.UserName,
-                deletedAt: null,
-                deletedBy: string.Empty
+                website: WebsitetextBox.Text.Trim()
             );
 
             // TODO: pass supplier to controller/service layer for update

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SuperMart_Pro.Models
 {
-    internal class Product : AuditableEntity
+    internal class Product
     {
         private string _productID = string.Empty;
         private string _productName = string.Empty;
@@ -34,9 +34,7 @@ namespace SuperMart_Pro.Models
                     string barcode, string sku, string unit, DateTime expiryDate, decimal stockQuantity, decimal weight,
                     decimal reorderLevel, bool isExpirable, string supplierID,
                     decimal buyingPrice, decimal sellingPrice, decimal discount, decimal tax,
-                    bool isActive, bool returnable,
-                    DateTime createdAt, string createdBy, DateTime updatedAt, string updatedBy, DateTime? deletedAt, string deletedBy)
-                    : base(createdAt, createdBy, updatedAt, updatedBy, deletedAt, deletedBy)
+                    bool isActive, bool returnable)
         {
             _productID = productID;
             _productName = productName;

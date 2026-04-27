@@ -12,7 +12,7 @@ namespace SuperMart_Pro.Models
         Mixed = 4
     }
 
-    internal class Sale : AuditableEntity
+    internal class Sale
     {
         private string _saleId = string.Empty;
         private DateTime _saleTime;
@@ -31,9 +31,7 @@ namespace SuperMart_Pro.Models
         public Sale(string saleId, DateTime saleTime,
             string customerId, string userId, string branchID, string terminal,
             decimal discountAmount, decimal vatPercent, decimal amountPaid,
-            PaymentMethod paymentMethod,
-            DateTime createdAt, string createdBy, DateTime updatedAt, string updatedBy, DateTime? deletedAt, string deletedBy)
-            : base(createdAt, createdBy, updatedAt, updatedBy, deletedAt, deletedBy)
+            PaymentMethod paymentMethod)
         {
             _saleId = saleId;
             _saleTime = saleTime;

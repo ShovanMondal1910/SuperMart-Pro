@@ -12,7 +12,7 @@ namespace SuperMart_Pro.Models
         Customer = 4
     }
 
-    internal class User : AuditableEntity
+    internal class User
     {
         private string _userID = string.Empty;
         
@@ -50,10 +50,8 @@ namespace SuperMart_Pro.Models
 
         public User(string userID, string fullName, DateTime dateOfBirth, string gender, byte[] photo, string phoneNumber,
             string email, string address, string username, string passwordHash, UserRole role, bool isActive,
-            string branchID, string securityQuestion1, string securityAnswer1, string securityQuestion2, string securityAnswer2, 
-            DateTime? lastLogin, DateTime? lastLogout,
-            DateTime createdAt, string createdBy, DateTime updatedAt, string updatedBy, DateTime? deletedAt, string deletedBy)
-            : base(createdAt, createdBy, updatedAt, updatedBy, deletedAt, deletedBy)
+            string branchID, string securityQuestion1, string securityAnswer1, string securityQuestion2, string securityAnswer2,
+            DateTime? lastLogin, DateTime? lastLogout)
         {
             _userID = userID;
             _fullName = fullName;

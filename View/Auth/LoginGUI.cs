@@ -18,24 +18,21 @@ namespace SuperMart_Pro.View.Auth
                 UserRole.Admin,   true, "B001",
                 "What was the name of your first school?", "greenwood",
                 "What was your first pet's name?",         "buddy",
-                null, null,
-                DateTime.Now, "system", DateTime.Now, "system", null, string.Empty),
+                null, null),
 
             new User("U002", "Manager One",   new DateTime(1992,5,15), "Male", Array.Empty<byte>(),
                 "01700000002", "manager1@supermart.com", "Dhaka", "manager1", "Manager@1234",
                 UserRole.Manager, true, "B001",
                 "In which city or village were you born?", "dhaka",
                 "What is your mother's middle name?",      "rose",
-                null, null,
-                DateTime.Now, "system", DateTime.Now, "system", null, string.Empty),
+                null, null),
 
             new User("U003", "Cashier One",   new DateTime(1995,8,20), "Female", Array.Empty<byte>(),
                 "01700000003", "cashier1@supermart.com", "Dhaka", "cashier1", "Cashier@1234",
                 UserRole.Cashier, true, "B001",
                 "What is the name of your childhood best friend?", "john",
                 "What was your dream job as a child?",             "pilot",
-                null, null,
-                DateTime.Now, "system", DateTime.Now, "system", null, string.Empty),
+                null, null),
         };
 
         /// <summary>

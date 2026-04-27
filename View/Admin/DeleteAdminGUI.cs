@@ -64,8 +64,6 @@ namespace SuperMart_Pro.View.Admin
             if (confirm != DialogResult.Yes) return;
 
             // Soft-delete: mark as deleted rather than removing from DB
-            _currentAdmin.DeletedAt = DateTime.Now;
-            _currentAdmin.DeletedBy = Environment.UserName;
             _currentAdmin.IsActive  = false;
 
             // TODO: pass _currentAdmin to controller/service layer

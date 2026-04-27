@@ -46,13 +46,7 @@ namespace SuperMart_Pro.View.Customer
                 loyaltyPoints: 0m,
                 totalSpent: 0m,
                 dueAmount: 0m,
-                customerStatus: CustomerStatus.Active,
-                createdAt: DateTime.Now,
-                createdBy: Environment.UserName,
-                updatedAt: DateTime.Now,
-                updatedBy: Environment.UserName,
-                deletedAt: null,
-                deletedBy: string.Empty
+                customerStatus: CustomerStatus.Active
             );
 
             // CustomerType is auto-derived from LoyaltyPoints — display it read-only

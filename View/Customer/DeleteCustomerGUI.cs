@@ -64,8 +64,6 @@ namespace SuperMart_Pro.View.Customer
             if (confirm != DialogResult.Yes) return;
 
             // Soft-delete: mark as deleted rather than removing from DB
-            _currentCustomer.DeletedAt = DateTime.Now;
-            _currentCustomer.DeletedBy = Environment.UserName;
             _currentCustomer.IsActive  = false;
 
             // TODO: pass _currentCustomer to controller/service layer

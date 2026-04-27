@@ -46,13 +46,7 @@ namespace SuperMart_Pro.View.Admin
                 lastLogout: null,
                 canManageUsers: CanManageUserscheckBox.Checked,
                 canManageBranches: CanManageBranchescheckBox.Checked,
-                canViewReports: CanViewReportscheckBox.Checked,
-                createdAt: DateTime.Now,
-                createdBy: Environment.UserName,
-                updatedAt: DateTime.Now,
-                updatedBy: Environment.UserName,
-                deletedAt: null,
-                deletedBy: string.Empty
+                canViewReports: CanViewReportscheckBox.Checked
             );
 
             // TODO: pass admin to controller/service layer
