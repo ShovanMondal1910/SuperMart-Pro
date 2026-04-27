@@ -117,9 +117,6 @@ namespace SuperMart_Pro.View.Customer
             // Refresh the read-only CustomerType display (derived from LoyaltyPoints)
             CustomerTypecomboBox.SelectedIndex = (int)_currentCustomer.Type - 1;
 
-            _currentCustomer.UpdatedAt = DateTime.Now;
-            _currentCustomer.UpdatedBy = Environment.UserName;
-
             // TODO: pass _currentCustomer to controller/service layer
             MessageBox.Show("Customer updated successfully.", "Success",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);

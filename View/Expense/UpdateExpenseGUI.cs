@@ -51,13 +51,7 @@ namespace SuperMart_Pro.View.Expense
                 notes: NotesrichTextBox.Text.Trim(),
                 branchID: BranchIDtextBox.Text.Trim(),
                 approvedBy: string.Empty,
-                paymentMethod: (PaymentMethod)(PaymentMethodcomboBox.SelectedIndex + 1),
-                createdAt: DateTime.Now,
-                createdBy: Environment.UserName,
-                updatedAt: DateTime.Now,
-                updatedBy: Environment.UserName,
-                deletedAt: null,
-                deletedBy: string.Empty
+                paymentMethod: (PaymentMethod)(PaymentMethodcomboBox.SelectedIndex + 1)
             );
 
             // TODO: pass expense to controller/service layer for update

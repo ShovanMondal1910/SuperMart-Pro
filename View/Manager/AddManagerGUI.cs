@@ -47,13 +47,7 @@ namespace SuperMart_Pro.View.Manager
                 canManageStaff: CanManageStuffcheckBox.Checked,
                 canManageInventory: CanManageInventoryescheckBox.Checked,
                 canApprovePurchases: CanApprovePurchasescheckBox.Checked,
-                canViewBranchReports: CanViewBranchReportscheckBox.Checked,
-                createdAt: DateTime.Now,
-                createdBy: Environment.UserName,
-                updatedAt: DateTime.Now,
-                updatedBy: Environment.UserName,
-                deletedAt: null,
-                deletedBy: string.Empty
+                canViewBranchReports: CanViewBranchReportscheckBox.Checked
             );
 
             // TODO: pass manager to controller/service layer

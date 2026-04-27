@@ -113,9 +113,6 @@ namespace SuperMart_Pro.View.Cashier
                 _currentCashier.Photo = ms.ToArray();
             }
 
-            _currentCashier.UpdatedAt = DateTime.Now;
-            _currentCashier.UpdatedBy = Environment.UserName;
-
             // TODO: pass _currentCashier to controller/service layer
             MessageBox.Show("Cashier updated successfully.", "Success",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -25,12 +25,11 @@ namespace SuperMart_Pro.Models
 
         public Cashier(string cashierID, CashierType cashierType, string userID, string fullName, DateTime dateOfBirth,
             string gender, byte[] photo, string phoneNumber, string email, string address, string username,
-            string passwordHash, bool isActive, string branchID, string securityQuestion1, string securityAnswer1, string securityQuestion2, string securityAnswer2,    
-            DateTime? lastLogin,DateTime? lastLogout, bool canProcessSales, bool canProcessReturns, bool canManageStock,
-            DateTime createdAt, string createdBy, DateTime updatedAt, string updatedBy, DateTime? deletedAt, string deletedBy)
+            string passwordHash, bool isActive, string branchID, string securityQuestion1, string securityAnswer1, string securityQuestion2, string securityAnswer2,
+            DateTime? lastLogin, DateTime? lastLogout, bool canProcessSales, bool canProcessReturns, bool canManageStock)
             : base(userID, fullName, dateOfBirth, gender, photo, phoneNumber, email, address,
-                   username, passwordHash, UserRole.Cashier, isActive, branchID, securityQuestion1, securityAnswer1, securityQuestion2, securityAnswer2, 
-                   lastLogin, lastLogout,createdAt, createdBy, updatedAt, updatedBy, deletedAt, deletedBy)
+                   username, passwordHash, UserRole.Cashier, isActive, branchID, securityQuestion1, securityAnswer1, securityQuestion2, securityAnswer2,
+                   lastLogin, lastLogout)
         {
             _cashierID = cashierID;
             _cashierType = cashierType;

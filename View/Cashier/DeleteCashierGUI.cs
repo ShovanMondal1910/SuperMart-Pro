@@ -64,8 +64,6 @@ namespace SuperMart_Pro.View.Cashier
             if (confirm != DialogResult.Yes) return;
 
             // Soft-delete: mark as deleted rather than removing from DB
-            _currentCashier.DeletedAt = DateTime.Now;
-            _currentCashier.DeletedBy = Environment.UserName;
             _currentCashier.IsActive  = false;
 
             // TODO: pass _currentCashier to controller/service layer

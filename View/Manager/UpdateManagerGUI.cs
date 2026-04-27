@@ -114,9 +114,6 @@ namespace SuperMart_Pro.View.Manager
                 _currentManager.Photo = ms.ToArray();
             }
 
-            _currentManager.UpdatedAt = DateTime.Now;
-            _currentManager.UpdatedBy = Environment.UserName;
-
             // TODO: pass _currentManager to controller/service layer
             MessageBox.Show("Manager updated successfully.", "Success",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);

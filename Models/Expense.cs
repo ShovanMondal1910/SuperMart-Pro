@@ -14,7 +14,7 @@ namespace SuperMart_Pro.Models
         Education = 6,
         Miscellaneous = 7
     }
-    internal class Expense : AuditableEntity
+    internal class Expense
     {
         private string _expenseID = string.Empty;
         private string _description = string.Empty;
@@ -31,9 +31,7 @@ namespace SuperMart_Pro.Models
 
         public Expense(string expenseID, string description, ExpenseType expenseType, decimal amount,
             DateTime date, byte[] receiptImage, string notes, string branchID, string approvedBy,
-            PaymentMethod paymentMethod,
-            DateTime createdAt, string createdBy, DateTime updatedAt, string updatedBy, DateTime? deletedAt, string deletedBy)
-            : base(createdAt, createdBy, updatedAt, updatedBy, deletedAt, deletedBy)
+            PaymentMethod paymentMethod)
         {
             _expenseID = expenseID;
             _description = description;

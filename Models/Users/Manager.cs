@@ -25,12 +25,12 @@ namespace SuperMart_Pro.Models
 
         public Manager(string managerID, ManagerType managerType, string userID, string fullName, DateTime dateOfBirth,
             string gender, byte[] photo, string phoneNumber, string email, string address, string username,
-            string passwordHash, bool isActive, string branchID,string securityQuestion1, string securityAnswer1, string securityQuestion2, string securityAnswer2, 
-            DateTime? lastLogin,DateTime? lastLogout, bool canManageStaff, bool canManageInventory, bool canApprovePurchases,
-            bool canViewBranchReports,DateTime createdAt, string createdBy, DateTime updatedAt, string updatedBy, DateTime? deletedAt, string deletedBy)
+            string passwordHash, bool isActive, string branchID, string securityQuestion1, string securityAnswer1, string securityQuestion2, string securityAnswer2,
+            DateTime? lastLogin, DateTime? lastLogout, bool canManageStaff, bool canManageInventory, bool canApprovePurchases,
+            bool canViewBranchReports)
             : base(userID, fullName, dateOfBirth, gender, photo, phoneNumber, email, address,
-                   username, passwordHash, UserRole.Manager, isActive, branchID,securityQuestion1, securityAnswer1, securityQuestion2, securityAnswer2,
-                   lastLogin, lastLogout,createdAt, createdBy, updatedAt, updatedBy, deletedAt, deletedBy)
+                   username, passwordHash, UserRole.Manager, isActive, branchID, securityQuestion1, securityAnswer1, securityQuestion2, securityAnswer2,
+                   lastLogin, lastLogout)
         {
             _managerID = managerID;
             _managerType = managerType;

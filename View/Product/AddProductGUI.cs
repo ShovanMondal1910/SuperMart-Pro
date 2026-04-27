@@ -43,13 +43,7 @@ namespace SuperMart_Pro.View.Product
                 discount: decimal.TryParse(DiscounttextBox.Text, out var disc) ? disc : 0,
                 tax: decimal.TryParse(TaxtextBox.Text, out var tax) ? tax : 0,
                 isActive: IsActivecheckBox.Checked,
-                returnable: ReturnablecheckBox.Checked,
-                createdAt: DateTime.Now,
-                createdBy: Environment.UserName,
-                updatedAt: DateTime.Now,
-                updatedBy: Environment.UserName,
-                deletedAt: null,
-                deletedBy: string.Empty
+                returnable: ReturnablecheckBox.Checked
             );
 
             // TODO: pass product to controller/service layer

@@ -10,7 +10,7 @@ namespace SuperMart_Pro.Models
         Completed = 2,
         Cancelled = 3
     }
-    internal class Purchase : AuditableEntity
+    internal class Purchase
     {
         private string _purchaseID = string.Empty;
         private string _supplierID = string.Empty;
@@ -27,9 +27,7 @@ namespace SuperMart_Pro.Models
         }
 
         public Purchase(string purchaseID, string supplierID, DateTime orderDate,
-            DateTime? estimatedDeliveryDate, PurchaseStatus status, decimal paidAmount,
-            DateTime createdAt, string createdBy, DateTime updatedAt, string updatedBy, DateTime? deletedAt, string deletedBy)
-            : base(createdAt, createdBy, updatedAt, updatedBy, deletedAt, deletedBy)
+            DateTime? estimatedDeliveryDate, PurchaseStatus status, decimal paidAmount)
         {
             _purchaseID = purchaseID;
             _supplierID = supplierID;

@@ -114,9 +114,6 @@ namespace SuperMart_Pro.View.Admin
                 _currentAdmin.Photo = ms.ToArray();
             }
 
-            _currentAdmin.UpdatedAt = DateTime.Now;
-            _currentAdmin.UpdatedBy = Environment.UserName;
-
             // TODO: pass _currentAdmin to controller/service layer
             MessageBox.Show("Admin updated successfully.", "Success",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -64,8 +64,6 @@ namespace SuperMart_Pro.View.Manager
             if (confirm != DialogResult.Yes) return;
 
             // Soft-delete: mark as deleted rather than removing from DB
-            _currentManager.DeletedAt = DateTime.Now;
-            _currentManager.DeletedBy = Environment.UserName;
             _currentManager.IsActive  = false;
 
             // TODO: pass _currentManager to controller/service layer
