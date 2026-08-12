@@ -87,10 +87,10 @@ namespace SuperMart_Pro.View.Dashboards
             btnDeleteCashier.Click += (_, _) => LoadForm(btnDeleteCashier, new DeleteCashierGUI());
 
             // ── Branch operations ─────────────────────────────────────────────
-            btnAddBranch.Click    += (_, _) => LoadForm(btnAddBranch,    new AddBranchGUI());
-            // btnViewBranches.Click += (_, _) => LoadForm(btnViewBranches, new ViewAllBranchGUI());
-            // btnUpdateBranch.Click += (_, _) => LoadForm(btnUpdateBranch, new UpdateBranchGUI());
-            // btnDeleteBranch.Click += (_, _) => LoadForm(btnDeleteBranch, new DeleteBranchGUI());
+            btnAddBranch.Click     += (_, _) => LoadForm(btnAddBranch,     new BranchManagementGUI());
+            btnViewBranches.Click  += (_, _) => LoadForm(btnViewBranches,  new BranchManagementGUI());
+            btnUpdateBranch.Click  += (_, _) => LoadForm(btnUpdateBranch,  new BranchManagementGUI());
+            btnDeleteBranch.Click  += (_, _) => LoadForm(btnDeleteBranch,  new BranchManagementGUI());
 
             // ── Supplier operations ───────────────────────────────────────────
             btnAddSupplier.Click    += (_, _) => LoadForm(btnAddSupplier,    new AddSupplierGUI());
