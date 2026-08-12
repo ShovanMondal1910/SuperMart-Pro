@@ -1,7 +1,6 @@
 using SuperMart_Pro.Controllers;
 using SuperMart_Pro.IDGenarator;
 using SuperMart_Pro.Models;
-using SuperMart_Pro.Utils;
 using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
@@ -14,31 +13,12 @@ namespace SuperMart_Pro.View.Branch
         public BranchManagementGUI()
         {
             InitializeComponent();
-            ApplyRoundedStyles();
         }
 
         private void BranchManagementGUI_Load(object sender, EventArgs e)
         {
             LoadBranchData();
             ClearFields();
-        }
-
-        private void ApplyRoundedStyles()
-        {
-            RoundedControlHelper.ApplyRoundedCorners(BranchIDtextBox, 10);
-            RoundedControlHelper.ApplyRoundedCorners(BranchNametextBox, 10);
-            RoundedControlHelper.ApplyRoundedCorners(BranchTypecomboBox, 10);
-            RoundedControlHelper.ApplyRoundedCorners(BranchAddressrichTextBox, 10);
-            RoundedControlHelper.ApplyRoundedCorners(BranchZiptextBox, 10);
-            RoundedControlHelper.ApplyRoundedCorners(BranchPhonetextBox, 10);
-            RoundedControlHelper.ApplyRoundedCorners(BranchEmailtextBox, 10);
-            RoundedControlHelper.ApplyRoundedCorners(ManagerIDtextBox, 10);
-            RoundedControlHelper.ApplyRoundedCorners(searchTextBox, 10);
-            RoundedControlHelper.ApplyRoundedCorners(Updatebutton, 10);
-            RoundedControlHelper.ApplyRoundedCorners(Deletebutton, 10);
-            RoundedControlHelper.ApplyRoundedCorners(Clearbutton, 10);
-            RoundedControlHelper.ApplyRoundedCorners(searchButton, 8);
-            RoundedControlHelper.ApplyRoundedCorners(refreshButton, 8);
         }
 
         /// <summary>
