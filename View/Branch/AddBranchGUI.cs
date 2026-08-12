@@ -63,71 +63,71 @@ namespace SuperMart_Pro.View.Branch
 
             if (string.IsNullOrWhiteSpace(BranchIDtextBox.Text))
             {
-                BranchIDErrorlabel.Text = "* Required";
+                BranchIDErrorlabel.Text = "* Branch ID is required.";
                 isValid = false;
             }
             if (string.IsNullOrWhiteSpace(BranchNametextBox.Text))
             {
-                BranchNameErrorlabel.Text = "* Required";
+                BranchNameErrorlabel.Text = "* Branch Name is required.";
                 isValid = false;
             }
             if (BranchTypecomboBox.SelectedIndex == -1)
             {
-                BranchTypeErrorlabel.Text = "* Required";
+                BranchTypeErrorlabel.Text = "* Branch Type is required.";
                 isValid = false;
             }
             if (string.IsNullOrWhiteSpace(BranchAddressrichTextBox.Text))
             {
-                BranchAddressErrorlabel.Text = "* Required";
+                BranchAddressErrorlabel.Text = "* Branch Address is required.";
                 isValid = false;
             }
             else if (Controllers.BranchController.IsAddressExists(BranchAddressrichTextBox.Text.Trim()))
             {
-                BranchAddressErrorlabel.Text = "* Address already exists";
+                BranchAddressErrorlabel.Text = "* Branch Address already exists.";
                 isValid = false;
             }
 
             if (string.IsNullOrWhiteSpace(BranchZiptextBox.Text))
             {
-                BranchZipErrorlabel.Text = "* Required";
+                BranchZipErrorlabel.Text = "* Branch Zip is required.";
                 isValid = false;
             }
 
             if (string.IsNullOrWhiteSpace(BranchPhonetextBox.Text))
             {
-                BranchPhoneErrorlabel.Text = "* Required";
+                BranchPhoneErrorlabel.Text = "* Branch Phone is required.";
                 isValid = false;
             }
             else if (!System.Text.RegularExpressions.Regex.IsMatch(BranchPhonetextBox.Text.Trim(), @"^\+?[0-9\s\-]{7,15}$"))
             {
-                BranchPhoneErrorlabel.Text = "* Invalid Phone";
+                BranchPhoneErrorlabel.Text = "* Invalid Branch Phone.";
                 isValid = false;
             }
             else if (Controllers.BranchController.IsPhoneExists(BranchPhonetextBox.Text.Trim()))
             {
-                BranchPhoneErrorlabel.Text = "* Phone already exists";
+                BranchPhoneErrorlabel.Text = "* Branch Phone already exists.";
                 isValid = false;
             }
 
             if (string.IsNullOrWhiteSpace(BranchEmailtextBox.Text))
             {
-                BranchEmailErrorlabel.Text = "* Required";
+                BranchEmailErrorlabel.Text = "* Branch Email is required.";
                 isValid = false;
             }
             else if (!System.Text.RegularExpressions.Regex.IsMatch(BranchEmailtextBox.Text.Trim(), @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
             {
-                BranchEmailErrorlabel.Text = "* Invalid Email";
+                BranchEmailErrorlabel.Text = "* Invalid Branch Email.";
                 isValid = false;
             }
             else if (Controllers.BranchController.IsEmailExists(BranchEmailtextBox.Text.Trim()))
             {
-                BranchEmailErrorlabel.Text = "* Email already exists";
+                BranchEmailErrorlabel.Text = "* Branch Email already exists.";
                 isValid = false;
             }
 
             if (!string.IsNullOrWhiteSpace(ManagerIDtextBox.Text) && Controllers.BranchController.IsManagerIDExists(ManagerIDtextBox.Text.Trim()))
             {
-                BranchManagerIDErrorlabel.Text = "* Already assigned";
+                BranchManagerIDErrorlabel.Text = "* Manager ID already assigned.";
                 isValid = false;
             }
 
