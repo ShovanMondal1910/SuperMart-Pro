@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace SuperMart_Pro.Models
 {
-    internal class Branch
+    public class Branch
     {
         private string _branchID = string.Empty;
         private string _branchName = string.Empty;
@@ -15,11 +15,16 @@ namespace SuperMart_Pro.Models
         private string _branchEmail = string.Empty;
         private bool _isActive;
         private string _managerID = string.Empty;
+        private string _createdBy = string.Empty;
+        private DateTime _createdAt;
+        private string _updatedBy = string.Empty;
+        private DateTime _updatedAt;
 
         public Branch() { }
 
         public Branch(string branchID, string branchName, string branchType, string branchAddress, string branchZip,
-            string branchPhone, string branchEmail, bool isActive, string managerID)
+            string branchPhone, string branchEmail, bool isActive, string managerID,
+            string createdBy = "", DateTime createdAt = default, string updatedBy = "", DateTime updatedAt = default)
         {
             _branchID = branchID;
             _branchName = branchName;
@@ -30,6 +35,10 @@ namespace SuperMart_Pro.Models
             _branchEmail = branchEmail;
             _isActive = isActive;
             _managerID = managerID;
+            _createdBy = createdBy;
+            _createdAt = createdAt;
+            _updatedBy = updatedBy;
+            _updatedAt = updatedAt;
         }
 
         public string BranchID
@@ -76,6 +85,26 @@ namespace SuperMart_Pro.Models
         {
             get { return _managerID; }
             set { _managerID = value; }
+        }
+        public string CreatedBy
+        {
+            get { return _createdBy; }
+            set { _createdBy = value; }
+        }
+        public DateTime CreatedAt
+        {
+            get { return _createdAt; }
+            set { _createdAt = value; }
+        }
+        public string UpdatedBy
+        {
+            get { return _updatedBy; }
+            set { _updatedBy = value; }
+        }
+        public DateTime UpdatedAt
+        {
+            get { return _updatedAt; }
+            set { _updatedAt = value; }
         }
     }
 }

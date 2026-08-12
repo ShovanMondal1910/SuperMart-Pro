@@ -21,7 +21,7 @@ namespace SuperMart_Pro.View.Branch
             BranchTypelabel = new Label();
             BranchTypecomboBox = new ComboBox();
             BranchAddresslabel = new Label();
-            BranchAddresstextBox = new TextBox();
+            BranchAddressrichTextBox = new RichTextBox();
             BranchZiplabel = new Label();
             BranchZiptextBox = new TextBox();
             BranchPhonelabel = new Label();
@@ -48,7 +48,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             BranchIDlabel.Anchor = AnchorStyles.None;
             BranchIDlabel.AutoSize = true;
-            BranchIDlabel.Location = new Point(139, 36);
+            BranchIDlabel.Location = new Point(103, 65);
             BranchIDlabel.Name = "BranchIDlabel";
             BranchIDlabel.Size = new Size(96, 21);
             BranchIDlabel.TabIndex = 1;
@@ -57,7 +57,7 @@ namespace SuperMart_Pro.View.Branch
             // BranchIDtextBox
             // 
             BranchIDtextBox.Anchor = AnchorStyles.None;
-            BranchIDtextBox.Location = new Point(255, 33);
+            BranchIDtextBox.Location = new Point(221, 62);
             BranchIDtextBox.Name = "BranchIDtextBox";
             BranchIDtextBox.Size = new Size(273, 29);
             BranchIDtextBox.TabIndex = 2;
@@ -66,7 +66,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             BranchNamelabel.Anchor = AnchorStyles.None;
             BranchNamelabel.AutoSize = true;
-            BranchNamelabel.Location = new Point(115, 98);
+            BranchNamelabel.Location = new Point(79, 134);
             BranchNamelabel.Name = "BranchNamelabel";
             BranchNamelabel.Size = new Size(120, 21);
             BranchNamelabel.TabIndex = 3;
@@ -75,7 +75,7 @@ namespace SuperMart_Pro.View.Branch
             // BranchNametextBox
             // 
             BranchNametextBox.Anchor = AnchorStyles.None;
-            BranchNametextBox.Location = new Point(255, 95);
+            BranchNametextBox.Location = new Point(221, 131);
             BranchNametextBox.Name = "BranchNametextBox";
             BranchNametextBox.Size = new Size(273, 29);
             BranchNametextBox.TabIndex = 4;
@@ -84,7 +84,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             BranchTypelabel.Anchor = AnchorStyles.None;
             BranchTypelabel.AutoSize = true;
-            BranchTypelabel.Location = new Point(120, 161);
+            BranchTypelabel.Location = new Point(84, 197);
             BranchTypelabel.Name = "BranchTypelabel";
             BranchTypelabel.Size = new Size(115, 21);
             BranchTypelabel.TabIndex = 5;
@@ -95,7 +95,7 @@ namespace SuperMart_Pro.View.Branch
             BranchTypecomboBox.Anchor = AnchorStyles.None;
             BranchTypecomboBox.FormattingEnabled = true;
             BranchTypecomboBox.Items.AddRange(new object[] { "Main", "Sub", "Warehouse", "Outlet" });
-            BranchTypecomboBox.Location = new Point(255, 158);
+            BranchTypecomboBox.Location = new Point(221, 194);
             BranchTypecomboBox.Name = "BranchTypecomboBox";
             BranchTypecomboBox.Size = new Size(273, 29);
             BranchTypecomboBox.TabIndex = 6;
@@ -104,25 +104,26 @@ namespace SuperMart_Pro.View.Branch
             // 
             BranchAddresslabel.Anchor = AnchorStyles.None;
             BranchAddresslabel.AutoSize = true;
-            BranchAddresslabel.Location = new Point(98, 226);
+            BranchAddresslabel.Location = new Point(60, 280);
             BranchAddresslabel.Name = "BranchAddresslabel";
             BranchAddresslabel.Size = new Size(139, 21);
             BranchAddresslabel.TabIndex = 7;
             BranchAddresslabel.Text = "Branch Address :";
             // 
-            // BranchAddresstextBox
+            // BranchAddressrichTextBox
             // 
-            BranchAddresstextBox.Anchor = AnchorStyles.None;
-            BranchAddresstextBox.Location = new Point(255, 223);
-            BranchAddresstextBox.Name = "BranchAddresstextBox";
-            BranchAddresstextBox.Size = new Size(273, 29);
-            BranchAddresstextBox.TabIndex = 8;
+            BranchAddressrichTextBox.Anchor = AnchorStyles.None;
+            BranchAddressrichTextBox.Location = new Point(221, 250);
+            BranchAddressrichTextBox.Name = "BranchAddressrichTextBox";
+            BranchAddressrichTextBox.Size = new Size(273, 76);
+            BranchAddressrichTextBox.TabIndex = 8;
+            BranchAddressrichTextBox.Text = "";
             // 
             // BranchZiplabel
             // 
             BranchZiplabel.Anchor = AnchorStyles.None;
             BranchZiplabel.AutoSize = true;
-            BranchZiplabel.Location = new Point(135, 291);
+            BranchZiplabel.Location = new Point(97, 351);
             BranchZiplabel.Name = "BranchZiplabel";
             BranchZiplabel.Size = new Size(102, 21);
             BranchZiplabel.TabIndex = 9;
@@ -131,7 +132,7 @@ namespace SuperMart_Pro.View.Branch
             // BranchZiptextBox
             // 
             BranchZiptextBox.Anchor = AnchorStyles.None;
-            BranchZiptextBox.Location = new Point(255, 288);
+            BranchZiptextBox.Location = new Point(221, 348);
             BranchZiptextBox.Name = "BranchZiptextBox";
             BranchZiptextBox.Size = new Size(273, 29);
             BranchZiptextBox.TabIndex = 10;
@@ -140,7 +141,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             BranchPhonelabel.Anchor = AnchorStyles.None;
             BranchPhonelabel.AutoSize = true;
-            BranchPhonelabel.Location = new Point(109, 356);
+            BranchPhonelabel.Location = new Point(75, 418);
             BranchPhonelabel.Name = "BranchPhonelabel";
             BranchPhonelabel.Size = new Size(124, 21);
             BranchPhonelabel.TabIndex = 11;
@@ -149,7 +150,7 @@ namespace SuperMart_Pro.View.Branch
             // BranchPhonetextBox
             // 
             BranchPhonetextBox.Anchor = AnchorStyles.None;
-            BranchPhonetextBox.Location = new Point(255, 353);
+            BranchPhonetextBox.Location = new Point(221, 415);
             BranchPhonetextBox.Name = "BranchPhonetextBox";
             BranchPhonetextBox.Size = new Size(273, 29);
             BranchPhonetextBox.TabIndex = 12;
@@ -158,7 +159,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             BranchEmaillabel.Anchor = AnchorStyles.None;
             BranchEmaillabel.AutoSize = true;
-            BranchEmaillabel.Location = new Point(117, 421);
+            BranchEmaillabel.Location = new Point(81, 485);
             BranchEmaillabel.Name = "BranchEmaillabel";
             BranchEmaillabel.Size = new Size(118, 21);
             BranchEmaillabel.TabIndex = 13;
@@ -167,7 +168,7 @@ namespace SuperMart_Pro.View.Branch
             // BranchEmailtextBox
             // 
             BranchEmailtextBox.Anchor = AnchorStyles.None;
-            BranchEmailtextBox.Location = new Point(255, 418);
+            BranchEmailtextBox.Location = new Point(221, 480);
             BranchEmailtextBox.Name = "BranchEmailtextBox";
             BranchEmailtextBox.Size = new Size(273, 29);
             BranchEmailtextBox.TabIndex = 14;
@@ -176,7 +177,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             ManagerIDlabel.Anchor = AnchorStyles.None;
             ManagerIDlabel.AutoSize = true;
-            ManagerIDlabel.Location = new Point(126, 490);
+            ManagerIDlabel.Location = new Point(92, 551);
             ManagerIDlabel.Name = "ManagerIDlabel";
             ManagerIDlabel.Size = new Size(107, 21);
             ManagerIDlabel.TabIndex = 15;
@@ -185,7 +186,7 @@ namespace SuperMart_Pro.View.Branch
             // ManagerIDtextBox
             // 
             ManagerIDtextBox.Anchor = AnchorStyles.None;
-            ManagerIDtextBox.Location = new Point(255, 487);
+            ManagerIDtextBox.Location = new Point(221, 548);
             ManagerIDtextBox.Name = "ManagerIDtextBox";
             ManagerIDtextBox.Size = new Size(273, 29);
             ManagerIDtextBox.TabIndex = 16;
@@ -194,7 +195,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             IsActivecheckBox.Anchor = AnchorStyles.None;
             IsActivecheckBox.AutoSize = true;
-            IsActivecheckBox.Location = new Point(255, 567);
+            IsActivecheckBox.Location = new Point(221, 605);
             IsActivecheckBox.Name = "IsActivecheckBox";
             IsActivecheckBox.Size = new Size(95, 25);
             IsActivecheckBox.TabIndex = 17;
@@ -206,7 +207,7 @@ namespace SuperMart_Pro.View.Branch
             Savebutton.Anchor = AnchorStyles.None;
             Savebutton.BackColor = Color.OliveDrab;
             Savebutton.ForeColor = Color.White;
-            Savebutton.Location = new Point(94, 622);
+            Savebutton.Location = new Point(60, 675);
             Savebutton.Name = "Savebutton";
             Savebutton.Size = new Size(124, 41);
             Savebutton.TabIndex = 18;
@@ -218,7 +219,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             Clearbutton.Anchor = AnchorStyles.None;
             Clearbutton.BackColor = Color.Tan;
-            Clearbutton.Location = new Point(249, 622);
+            Clearbutton.Location = new Point(215, 675);
             Clearbutton.Name = "Clearbutton";
             Clearbutton.Size = new Size(124, 41);
             Clearbutton.TabIndex = 19;
@@ -231,7 +232,7 @@ namespace SuperMart_Pro.View.Branch
             Cancelbutton.Anchor = AnchorStyles.None;
             Cancelbutton.BackColor = Color.Red;
             Cancelbutton.ForeColor = Color.White;
-            Cancelbutton.Location = new Point(404, 622);
+            Cancelbutton.Location = new Point(370, 675);
             Cancelbutton.Name = "Cancelbutton";
             Cancelbutton.Size = new Size(124, 41);
             Cancelbutton.TabIndex = 20;
@@ -241,72 +242,80 @@ namespace SuperMart_Pro.View.Branch
             // 
             // BranchIDErrorlabel
             // 
-            BranchIDErrorlabel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            BranchIDErrorlabel.Anchor = AnchorStyles.None;
             BranchIDErrorlabel.AutoSize = true;
-            BranchIDErrorlabel.Location = new Point(340, 94);
+            BranchIDErrorlabel.ForeColor = Color.Red;
+            BranchIDErrorlabel.Location = new Point(500, 65);
             BranchIDErrorlabel.Name = "BranchIDErrorlabel";
             BranchIDErrorlabel.Size = new Size(0, 21);
             BranchIDErrorlabel.TabIndex = 21;
             // 
             // BranchNameErrorlabel
             // 
-            BranchNameErrorlabel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            BranchNameErrorlabel.Anchor = AnchorStyles.None;
             BranchNameErrorlabel.AutoSize = true;
-            BranchNameErrorlabel.Location = new Point(340, 156);
+            BranchNameErrorlabel.ForeColor = Color.Red;
+            BranchNameErrorlabel.Location = new Point(500, 134);
             BranchNameErrorlabel.Name = "BranchNameErrorlabel";
             BranchNameErrorlabel.Size = new Size(0, 21);
             BranchNameErrorlabel.TabIndex = 22;
             // 
             // BranchTypeErrorlabel
             // 
-            BranchTypeErrorlabel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            BranchTypeErrorlabel.Anchor = AnchorStyles.None;
             BranchTypeErrorlabel.AutoSize = true;
-            BranchTypeErrorlabel.Location = new Point(340, 219);
+            BranchTypeErrorlabel.ForeColor = Color.Red;
+            BranchTypeErrorlabel.Location = new Point(500, 197);
             BranchTypeErrorlabel.Name = "BranchTypeErrorlabel";
             BranchTypeErrorlabel.Size = new Size(0, 21);
             BranchTypeErrorlabel.TabIndex = 23;
             // 
             // BranchAddressErrorlabel
             // 
-            BranchAddressErrorlabel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            BranchAddressErrorlabel.Anchor = AnchorStyles.None;
             BranchAddressErrorlabel.AutoSize = true;
-            BranchAddressErrorlabel.Location = new Point(340, 284);
+            BranchAddressErrorlabel.ForeColor = Color.Red;
+            BranchAddressErrorlabel.Location = new Point(500, 255);
             BranchAddressErrorlabel.Name = "BranchAddressErrorlabel";
             BranchAddressErrorlabel.Size = new Size(0, 21);
             BranchAddressErrorlabel.TabIndex = 24;
             // 
             // BranchZipErrorlabel
             // 
-            BranchZipErrorlabel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            BranchZipErrorlabel.Anchor = AnchorStyles.None;
             BranchZipErrorlabel.AutoSize = true;
-            BranchZipErrorlabel.Location = new Point(340, 349);
+            BranchZipErrorlabel.ForeColor = Color.Red;
+            BranchZipErrorlabel.Location = new Point(500, 351);
             BranchZipErrorlabel.Name = "BranchZipErrorlabel";
             BranchZipErrorlabel.Size = new Size(0, 21);
             BranchZipErrorlabel.TabIndex = 25;
             // 
             // BranchPhoneErrorlabel
             // 
-            BranchPhoneErrorlabel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            BranchPhoneErrorlabel.Anchor = AnchorStyles.None;
             BranchPhoneErrorlabel.AutoSize = true;
-            BranchPhoneErrorlabel.Location = new Point(340, 414);
+            BranchPhoneErrorlabel.ForeColor = Color.Red;
+            BranchPhoneErrorlabel.Location = new Point(500, 418);
             BranchPhoneErrorlabel.Name = "BranchPhoneErrorlabel";
             BranchPhoneErrorlabel.Size = new Size(0, 21);
             BranchPhoneErrorlabel.TabIndex = 26;
             // 
             // BranchEmailErrorlabel
             // 
-            BranchEmailErrorlabel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            BranchEmailErrorlabel.Anchor = AnchorStyles.None;
             BranchEmailErrorlabel.AutoSize = true;
-            BranchEmailErrorlabel.Location = new Point(340, 479);
+            BranchEmailErrorlabel.ForeColor = Color.Red;
+            BranchEmailErrorlabel.Location = new Point(500, 480);
             BranchEmailErrorlabel.Name = "BranchEmailErrorlabel";
             BranchEmailErrorlabel.Size = new Size(0, 21);
             BranchEmailErrorlabel.TabIndex = 27;
             // 
             // BranchManagerIDErrorlabel
             // 
-            BranchManagerIDErrorlabel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            BranchManagerIDErrorlabel.Anchor = AnchorStyles.None;
             BranchManagerIDErrorlabel.AutoSize = true;
-            BranchManagerIDErrorlabel.Location = new Point(340, 548);
+            BranchManagerIDErrorlabel.ForeColor = Color.Red;
+            BranchManagerIDErrorlabel.Location = new Point(500, 551);
             BranchManagerIDErrorlabel.Name = "BranchManagerIDErrorlabel";
             BranchManagerIDErrorlabel.Size = new Size(0, 21);
             BranchManagerIDErrorlabel.TabIndex = 28;
@@ -315,7 +324,7 @@ namespace SuperMart_Pro.View.Branch
             // 
             AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(680, 711);
+            ClientSize = new Size(575, 766);
             Controls.Add(BranchManagerIDErrorlabel);
             Controls.Add(BranchEmailErrorlabel);
             Controls.Add(BranchPhoneErrorlabel);
@@ -336,7 +345,7 @@ namespace SuperMart_Pro.View.Branch
             Controls.Add(BranchPhonelabel);
             Controls.Add(BranchZiptextBox);
             Controls.Add(BranchZiplabel);
-            Controls.Add(BranchAddresstextBox);
+            Controls.Add(BranchAddressrichTextBox);
             Controls.Add(BranchAddresslabel);
             Controls.Add(BranchTypecomboBox);
             Controls.Add(BranchTypelabel);
@@ -360,7 +369,7 @@ namespace SuperMart_Pro.View.Branch
         private Label BranchTypelabel;
         private ComboBox BranchTypecomboBox;
         private Label BranchAddresslabel;
-        private TextBox BranchAddresstextBox;
+        private RichTextBox BranchAddressrichTextBox;
         private Label BranchZiplabel;
         private TextBox BranchZiptextBox;
         private Label BranchPhonelabel;

@@ -1,4 +1,4 @@
-﻿using SuperMart_Pro.View.Admin;
+using SuperMart_Pro.View.Admin;
 using SuperMart_Pro.View.Branch;
 using SuperMart_Pro.View.Cashier;
 using SuperMart_Pro.View.Expense;
@@ -88,9 +88,9 @@ namespace SuperMart_Pro.View.Dashboards
 
             // ── Branch operations ─────────────────────────────────────────────
             btnAddBranch.Click    += (_, _) => LoadForm(btnAddBranch,    new AddBranchGUI());
-            btnViewBranches.Click += (_, _) => LoadForm(btnViewBranches, new ViewAllBranchGUI());
-            btnUpdateBranch.Click += (_, _) => LoadForm(btnUpdateBranch, new UpdateBranchGUI());
-            btnDeleteBranch.Click += (_, _) => LoadForm(btnDeleteBranch, new DeleteBranchGUI());
+            // btnViewBranches.Click += (_, _) => LoadForm(btnViewBranches, new ViewAllBranchGUI());
+            // btnUpdateBranch.Click += (_, _) => LoadForm(btnUpdateBranch, new UpdateBranchGUI());
+            // btnDeleteBranch.Click += (_, _) => LoadForm(btnDeleteBranch, new DeleteBranchGUI());
 
             // ── Supplier operations ───────────────────────────────────────────
             btnAddSupplier.Click    += (_, _) => LoadForm(btnAddSupplier,    new AddSupplierGUI());
