@@ -20,20 +20,5 @@ namespace SuperMart_Pro.Database
             return new NpgsqlConnection(_connectionString);
         }
 
-        public static bool TestConnection(out string errorMessage)
-        {
-            errorMessage = string.Empty;
-            try
-            {
-                using var conn = GetConnection();
-                conn.Open();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                errorMessage = ex.Message;
-                return false;
-            }
-        }
     }
 }

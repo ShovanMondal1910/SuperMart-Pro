@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace SuperMart_Pro.Models
@@ -104,35 +104,7 @@ namespace SuperMart_Pro.Models
             set { _sale = value; }
         }
 
-        // Adds loyalty points based on purchase amount (1 point per 1000 taka)
-        // and updates CustomerType based on total points earned
-        public void AddPurchase(decimal amount)
-        {
-            if (amount <= 0) 
-            { 
-                return; 
-            }
 
-            _totalSpent += amount;
-            _loyaltyPoints += Math.Floor(amount / 1000m);
-            _lastPurchaseDate = DateTime.Now;
-
-            UpdateCustomerType();
-            CheckAndUpdateStatus();
-        }
-
-        // Sets status to Inactive if no purchase in the last 3 months, otherwise Active
-        public void CheckAndUpdateStatus()
-        {
-            if (_lastPurchaseDate == null || _lastPurchaseDate < DateTime.Now.AddMonths(-3))
-            {
-                _customerStatus = CustomerStatus.Inactive;
-            }
-            else
-            {
-                _customerStatus = CustomerStatus.Active;
-            }
-        }
 
         private void UpdateCustomerType()
         {

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -174,13 +174,5 @@ namespace SuperMart_Pro.Models
             set { _returnable = value; }
         }
 
-        public void RecordSale(decimal quantity)
-        {
-            if (quantity <= 0)
-            {
-                return;
-            }
-            _stockQuantity -= quantity;
-        }
     }
 }
